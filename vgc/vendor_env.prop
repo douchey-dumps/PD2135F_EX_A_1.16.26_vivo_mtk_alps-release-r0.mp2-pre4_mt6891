@@ -1,0 +1,6 @@
+ro.vgc.config.carrierdir=/vendor/vgc/cust/carrier/
+ro.vgc.config.regiondir=/vendor/vgc/cust/region/
+ro.vgc.config.vivodir=/vendor/vgc/cust/vivo/
+ro.vgc.config.etcdir=/vendor/vgc/etc/
+ro.vgc.config.rootdir=/vendor/vgc/
+

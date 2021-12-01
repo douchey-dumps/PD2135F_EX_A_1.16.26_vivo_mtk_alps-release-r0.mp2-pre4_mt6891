@@ -1,0 +1,10 @@
+ro.vivo.vgc.activate=true
+ro.vgc.cust.version=1.0.0
+ro.vgc.cust.name=NULL
+ro.vgc.customer=NULL
+
+
+
+ro.vgc.device.name=NULL_PD2135F_EXMA
+ro.vgc.software.version=vgc_NULL_PD2135F_EXMA_1.0.0
+ro.vgc.system.product.version=PD2135F_EX_A_1.16.26
