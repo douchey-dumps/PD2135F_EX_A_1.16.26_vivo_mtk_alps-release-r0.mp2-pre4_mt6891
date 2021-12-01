@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote fetch="ssh://compiler@smartgitslave2:29418" name="origin" review="ssh://bsp@smartgit:29418"/>
+	<default remote="origin" revision="vivo_mtk_MOLY.NR15.R3.MP.V1.6"/>
+	<project name="Modem/mtk_MT6875" path="mtk_MT6875" revision="3572384a8ba0e91bf5a9ebf23bee457405063cf9" upstream="tag_PD2135F_EX_1.16.22"/>
+</manifest>
