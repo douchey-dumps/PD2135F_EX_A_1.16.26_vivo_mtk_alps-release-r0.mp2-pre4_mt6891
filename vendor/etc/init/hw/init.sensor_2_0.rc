@@ -1,0 +1,36 @@
+# MTK platform .rc configure
+on post-fs-data
+    # calibration
+    mkdir /data/vendor/sensor 0774 system system
+
+    # mag calibration
+    mkdir /data/vendor/magsensor 0774 system system
+
+    # Sensor
+    chmod 0660 /dev/hf_manager
+    chown system system /dev/hf_manager
+    chmod 0664 /dev/vivo_sensorhub
+    chown system system /dev/vivo_sensorhub
+
+    chmod 0664 /sys/class/sensorhub_instruction/sensorhub_instruction_reset
+    chown system system /sys/class/sensorhub_instruction/sensorhub_instruction_reset
+
+    # Touch screen infrared sensor
+    chown system system /sys/class/sensors/
+    chown system system /sys/class/sensors/algo-prox/enable
+    chown system system /sys/class/sensors/algo-prox/name
+    chown system system /sys/class/sensors/algo-prox/poll_delay
+    chown system system /sys/class/sensors/algo-prox/flags
+    chmod 0774 /sys/class/sensors/
+    chmod 0644 /sys/class/sensors/algo-prox/enable
+    chmod 0644 /sys/class/sensors/algo-prox/name
+    chmod 0644 /sys/class/sensors/algo-prox/poll_delay
+    chmod 0644 /sys/class/sensors/algo-prox/flags
+    chown system system /sys/devices/virtual/sensors/algo-prox/enable
+    chown system system /sys/devices/virtual/sensors/algo-prox/name
+    chown system system /sys/devices/virtual/sensors/algo-prox/poll_delay
+    chown system system /sys/devices/virtual/sensors/algo-prox/flags
+    chmod 0644 /sys/devices/virtual/sensors/algo-prox/enable
+    chmod 0644 /sys/devices/virtual/sensors/algo-prox/name
+    chmod 0644 /sys/devices/virtual/sensors/algo-prox/poll_delay
+    chmod 0644 /sys/devices/virtual/sensors/algo-prox/flags

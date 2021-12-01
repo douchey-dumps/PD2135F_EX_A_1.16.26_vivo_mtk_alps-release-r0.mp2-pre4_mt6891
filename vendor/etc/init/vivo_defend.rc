@@ -1,0 +1,36 @@
+on property:sys.user.0.ce_available=true
+    setprop vendor.property.ce_available ${sys.user.0.ce_available}
+
+on post-fs
+    setprop vendor.oem.name ${ro.vivo.oem.name}
+    setprop vendor.vgc.cust.name ${ro.vgc.cust.name}
+    setprop ro.vendor.defend.build.versiongroup ${ro.build.version.group}
+    setprop ro.vendor.defend.gmsversion ${ro.com.google.gmsversion}
+    setprop ro.vendor.defend.system.brand ${ro.product.system.brand}
+    start vivo_defend
+
+on property:ro.vivo.dyn.name=*
+    setprop ro.vendor.defend.dyn.name ${ro.vivo.dyn.name}
+    start defend_dyn
+
+on property:sys.boot_completed=1 && property:ro.vivo.dyn.support=yes && property:ro.vivo.dyn.name=""
+    setprop ro.vendor.defend.dyn.name ${ro.vivo.dyn.name}
+    setprop ro.vendor.defend.dyn.support ${ro.vivo.dyn.support}
+    start defend_dyn
+
+#vivo lizonglin add start
+service defend_dyn /vendor/bin/vivo_defend dyn
+    class core
+    user root
+    group root
+    disabled
+    oneshot
+
+#vivo lizonglin add start
+service vivo_defend /vendor/bin/vivo_defend 
+    class core
+    user root
+    group root
+    disabled
+    oneshot
+#vivo lizonglin add end

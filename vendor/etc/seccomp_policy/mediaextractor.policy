@@ -1,0 +1,11 @@
+# MediaTek used system call
+gettimeofday: 1
+# for audio TableOfContent thread
+ioprio_set: 1
+unlinkat: 1
+setsockopt: 1
+clock_gettime: 1
+setrlimit: 1
+# vivo specific syscalls
+# extension of services/mediaextractor/seccomp_policy/mediaextractor-arm.policy
+set_tid_address: 1

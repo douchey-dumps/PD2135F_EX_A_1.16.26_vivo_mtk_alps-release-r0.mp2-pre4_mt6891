@@ -1,0 +1,4 @@
+service vivo_esepowermanager_service /vendor/bin/hw/vendor.vivo.hardware.esepowermanager@1.0-service
+    class hal
+    user system
+    group nfc system

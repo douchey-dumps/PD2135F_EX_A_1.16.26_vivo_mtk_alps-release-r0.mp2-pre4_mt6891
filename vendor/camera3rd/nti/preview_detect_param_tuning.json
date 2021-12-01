@@ -1,0 +1,933 @@
+{
+    "Name":"preview_detect_param_tuning",
+    "Project":"PD2135F_EX",
+    "Date":"20210625",
+    "TuningVersion": "10",
+    "links":[
+        {
+            "name":"common_hdrEnable",
+            "type":"int",
+            "value":[
+                    {"only_one":"0"}
+            ]
+        },
+        {
+            "name":"common_llhdrEnable",
+            "type":"int",
+            "value":[
+                    {"only_one":"0"}
+            ]
+        },
+        {
+            "name":"common_adrcGainTh",
+            "type":"int",
+            "value":[
+                    {"only_one":"200"}
+            ]
+        },
+        {
+            "name":"common_pth",
+            "type":"float",
+            "value":[
+                    {"only_one":"0.9"}
+            ]
+        },
+        {
+            "name":"common_llhdrpth",
+            "type":"float",
+            "value":[
+                    {"only_one":"0.5"}
+            ]
+        },
+        {
+            "name":"common_stablePth",
+            "type":"float",
+            "value":[
+                    {"only_one":"0.9"}
+            ]
+        },
+        {
+            "name":"common_isStableOn",
+            "type":"int",
+            "value":[
+                    {"only_one":"1"}
+            ]
+        },
+        {
+            "name":"common_backOverExpGrayValue",
+            "type":"int",
+            "value":[
+                    {"only_one":"236"}
+            ]
+        },
+        {
+            "name":"common_backOverExpNumTh",
+            "type":"int",
+            "value":[
+                    {"only_one":"10"}
+            ]
+        },
+        {
+            "name":"common_frontOverExpGrayValue",
+            "type":"int",
+            "value":[
+                    {"only_one":"238"}
+            ]
+        },
+        {
+            "name":"common_frontOverExpNumTh",
+            "type":"int",
+            "value":[
+                    {"only_one":"14"}
+            ]
+        },
+        {
+            "name":"common_n",
+            "type":"int",
+            "value":[
+                    {"only_one":"16"}
+            ]
+        },
+        {
+            "name":"common_lightFFOffset",
+            "type":"int",
+            "value":[
+                    {"only_one":"30"}
+            ]
+        },
+        {
+            "name":"common_lightmOffset",
+            "type":"int",
+            "value":[
+                    {"only_one":"50"}
+            ]
+        },
+        {
+            "name":"common_darkFFOffset",
+            "type":"int",
+            "value":[
+                    {"only_one":"20"}
+            ]
+        },
+        {
+            "name":"common_darkmOffset",
+            "type":"int",
+            "value":[
+                    {"only_one":"45"}
+            ]
+        },
+        {
+            "name":"common_lightSrcTh",
+            "type":"int",
+            "value":[
+                    {"only_one":"190"}
+            ]
+        },
+        {
+            "name":"common_darkSrcTh",
+            "type":"int",
+            "value":[
+                    {"only_one":"35"}
+            ]
+        },
+        {
+            "name":"common_isV2Enable",
+            "type":"int",
+            "value":[
+                    {"only_one":"1"}
+            ]
+        },
+        {
+            "name":"common_snsEnable",
+            "type":"int",
+            "value":[
+                    {"only_one":"0"}
+            ]
+        },
+        {
+            "name":"common_sketchParamsNum_v2",
+            "type":"int",
+            "value":[
+                    {"only_one":"0"}
+            ]
+        },
+        {
+            "name":"common_sketchParamsNum_v2",
+            "type":"int",
+            "value":[
+                    {"only_one":"1"}
+            ]
+        },
+        {
+            "name":"logic_isRegionDetectOn",
+            "type":"int",
+            "value":[
+                    {"only_one":"1"}
+            ]
+        },
+        {
+            "name":"logic_isBlockStatsOn",
+            "type":"int",
+            "value":[
+                    {"only_one":"1"}
+            ]
+        },
+        {
+            "name":"logic_regionLowlightTh",
+            "type":"int",
+            "value":[
+                    {"only_one":"40"}
+            ]
+        },
+        {
+            "name":"logic_regionHighlightTh",
+            "type":"int",
+            "value":[
+                    {"only_one":"250"}
+            ]
+        },
+        {
+            "name":"sketch_Enable",
+            "type":"int",
+            "value":[
+                    {"only_one":"1"}
+            ]
+        },
+        {
+            "name":"sketch_ParamsNum_v2",
+            "type":"int",
+            "value":[
+                    {"only_one":"2"}
+            ]
+        },
+        {
+            "name":"sketch_Params",
+            "type":"float",
+            "value":[
+                    {"line_1":"1, 9, 1, 0, 2500, 0, 300, 0, 20, 0, 0, 0, 0, 252, 255, 0.30, 0, 0, 0, 0, 0, 0, 0, 0, 245, 20, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_2":"1, 9, 0, 0, 2500, 0, 300, 0, 20, 0, 0, 0, 0, 252, 255, 0.30, 0, 0, 0, 0, 0, 0, 0, 0, 245, 20, 0, 0, 0, 0, 0, 0, 0"}
+            ]
+        },
+        {
+            "name":"TightenHdr_hdrHistParamsNum_v2",
+            "type":"int",
+            "value":[
+                    {"only_one":"2"}
+            ]
+        },
+        {
+            "name":"TightenHdr_hdrHistParams_v2",
+            "type":"float",
+            "value":[
+                    {"line_1":"0, 9, 0, 0, 2500, 0, 0, 0, 30, 0, 0, 0, 0, 252, 255, 0.15, 1, 0, 0, 0, 0, 0, 0, 0, 245, 15, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_2":"0, 9, 1, 0, 2500, 0, 0, 0, 30, 0, 0, 0, 0, 252, 255, 0.15, 1, 0, 0, 0, 0, 0, 0, 0, 245, 15, 0, 0, 0, 0, 0, 0, 0"}
+            ]
+        },
+        {
+            "name":"normal_hdrHistParamsNum_v2",
+            "type":"int",
+            "value":[
+                    {"only_one":"19"}
+            ]
+        },
+        {
+            "name":"normal_hdrHistParams_v2",
+            "type":"double",
+            "value":[
+                    {"line_1":"1, 1, 0, 0, 1500, 0, 480, 0, 30, 0, 0, 0, 0, 254, 255, 0.05, 1, 0, 0, 0, 0, 0, 0, 0, 240, 4, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_2":"1, 1, 1, 0, 1500, 0, 480, 0, 30, 0, 0, 0, 0, 254, 255, 0.05, 1, 0, 0, 0, 0, 0, 0, 0, 240, 4, 0, 0, 0, 0, 0, 0, 0 "},
+                    {"line_3":"1, 9, 1, 0, 2500, 0, 480, 0, 30, 0, 0, 0, 0, 252, 255, 0.025, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_4":"1, 9, 0, 0, 2500, 0, 480, 0, 30, 0, 0, 0, 0, 252, 255, 0.020, 1, 0, 0, 0, 0, 0, 0, 0, 195, 3, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_5":"1, 9, 0, 0, 2500, 0, 230, 0, 10, 0, 0, 0, 0, 252, 255, 0.012, 1, 0, 0, 0, 0, 0, 0, 0, 194, 7, 0, 0, 0, 0, 1, 0.009, 1"},
+                    {"line_6":"1, 9, 0, 0, 2500, 0, 250, 0, 40, 0, 15, 0.137, 1, 0, 0, 0, 0, 0, 0, 0, 0, 25, 6, 0, 190, 1, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_7":"1, 9, 0, 0, 2500, 0, 250, 0, 40, 0, 15, 0.137, 1, 0, 0, 0, 0, 0, 0, 0, 0, 25, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_8":"1, 0, 0, 0, 2500, 0, 170, 0, 50, 0, 0, 0, 0, 252, 255, 0.0005, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0.001, 1"},
+                    {"line_9":"1, 0, 0, 0, 2500, 170, 300, 0, 50, 0, 0, 0, 0, 252, 255, 0.017, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0.002, 1"},
+                    {"line_10":"1, 0, 0, 0, 2500, 0, 300, 0, 50, 0, 15, 0.10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_11":"1, 0, 1, 0, 2500, 0, 170, 0, 50, 0, 0, 0, 0, 252, 255, 0.0005, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0.001, 1"},
+                    {"line_12":"1, 0, 1, 0, 2500, 170, 300, 0, 50, 0, 0, 0, 0, 252, 255, 0.02, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0.001, 1"},
+                    {"line_13":"1, 0, 1, 0, 2500, 0, 300, 0, 50, 0, 15, 0.10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_14":"1, 3, 0, 0, 2500, 0, 300, 0, 50, 0, 15, 0, 0, 252, 255, 0.0005, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_15":"1, 3, 0, 0, 2500, 0, 300, 0, 50, 0, 15, 0.10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_16":"1, 3, 1, 0, 2500, 0, 300, 0, 50, 0, 15, 0, 0, 252, 255, 0.0005, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_17":"1, 3, 1, 0, 2500, 0, 290, 0, 50, 0, 15, 0.10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_18":"1, 0, 1, 0, 2500, 0, 150, 0, 50, 0, 5, 0, 0, 252, 255, 0.00039, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_19":"1, 3, 1, 0, 2500, 0, 150, 0, 50, 0, 5, 0, 0, 252, 255, 0.00039, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"}
+                    
+            ]
+        },
+        {
+            "name":"normal_isClothDetectEnable",
+            "type":"int",
+            "value":[
+                    {"only_one":"1"}
+            ]
+        },
+        {
+            "name":"normal_hdrClothDetectNum",
+            "type":"int",
+            "value":[
+                    {"only_one":"2"}
+            ]
+        },
+        {
+            "name":"normal_mHdrClothExpParams",
+            "type":"double",
+            "value":[
+                    {"line_1":"1, 1, 0, 300, 3.5, 3, 0.005, 245, 0.01"},
+                    {"line_2":"1, 9, 0, 350, 3.5, 5, 0.001, 245, 0.01"}
+            ]
+        },
+        {
+            "name":"normal_isHdrOnDetectOn",
+            "type":"int",
+            "value":[
+                    {"only_one":"0"}
+            ]
+        },
+        {
+            "name":"normal_hdrOnPatParamsNum",
+            "type":"int",
+            "value":[
+                    {"only_one":"1"}
+            ]
+        },
+        {
+            "name":"normal_hdrOnHistParams",
+            "type":"double",
+            "value":[
+                    {"line_1":"9, 0, 50, 400, 0, 30, 0.1, 230, 255, 0.05, 70, 200, 0.5, 50, 0"}
+            ]
+        },
+        {
+            "name":"llhdr_HistParamsNum_v2_master",
+            "type":"int",
+            "value":[
+                    {"only_one":"9"}
+            ]
+        },
+        {
+            "name":"llhdr_HistParams_v2_master",
+            "type":"double",
+            "value":[
+                    {"line_1":"1, 0, 0, 0, 0, 259, 300, 0, 201, 0, 0, 0, 0, 252, 255, 0.018, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0.0015, 1"},
+                    {"line_2":"1, 0, 0, 0, 0, 300, 540, 0, 201, 0, 0, 0, 0, 252, 255, 0.0005, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_3":"1, 0, 1, 0, 0, 269, 300, 0, 201, 0, 0, 0, 0, 252, 255, 0.01, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0.001, 1"},
+                    {"line_4":"1, 0, 1, 0, 0, 300, 540, 0, 201, 0, 0, 0, 0, 252, 255, 0.0005, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_5":"1, 0, 0, 0, 0, 259, 540, 0, 201, 0, 15, 0.10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_6":"1, 0, 1, 0, 0, 269, 540, 0, 201, 0, 15, 0.10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_7":"1, 0, 0, 0, 9600, 259, 800, 0, 0, 0, 0, 0, 0, 252, 255, 0.0065, 0.04, 0, 0, 0, 0, 0, 0, 0, 195, 2, 25, 0, 0, 0, 2, 0.002, 0.04"},
+                    {"line_8":"1, 0, 0, 0, 0, 352, 800, 10, 500, 0, 60, 0.005, 1, 253, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_9":"1, 0, 1, 0, 0, 352, 800, 10, 500, 0, 60, 0.005, 1, 253, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"}
+            ]
+        },
+        {
+            "name":"llhdr_HistParamsNum_v2_wide",
+            "type":"int",
+            "value":[
+                    {"only_one":"7"}
+            ]
+        },
+        {
+            "name":"llhdr_HistParams_v2_wide",
+            "type":"double",
+            "value":[
+                    {"line_1":"1, 3, 0, 0, 0, 255, 540, 0, 201, 0, 0, 0, 0, 252, 255, 0.0005, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_2":"1, 3, 1, 0, 0, 265, 540, 0, 201, 0, 0, 0, 0, 252, 255, 0.0005, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_3":"1, 3, 0, 0, 0, 255, 540, 0, 201, 0, 15, 0.10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_4":"1, 3, 1, 0, 0, 265, 540, 0, 201, 0, 15, 0.10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_5":"1, 3, 0, 0, 9600, 275, 800, 0, 0, 0, 50, 0.26, 0, 252, 255, 0.012, 0.04, 0, 0, 0, 0, 0, 0, 0, 195, 2, 25, 0, 0, 0, 2, 0.001, 0.04"},
+                    {"line_6":"1, 3, 0, 0, 0, 365, 800, 10, 250, 0, 60, 0.005, 1, 253, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_7":"1, 3, 1, 0, 0, 365, 800, 10, 250, 0, 60, 0.005, 1, 253, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"}
+            ]
+        },
+        {
+            "name":"llhdr_HistParamsNum_v2_tele2",
+            "type":"int",
+            "value":[
+                    {"only_one":"5"}
+            ]
+        },
+        {
+            "name":"llhdr_HistParams_v2_tele2",
+            "type":"double",
+            "value":[
+                    {"line_1":"1, 2, 0, 0, 9600, 315, 800, 10, 200, 0, 50, 0.10, 0, 253, 255, 0.003, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0.0002, 0.8"},
+                    {"line_2":"1, 2, 1, 0, 9600, 300, 800, 12, 200, 0, 60, 0.050, 0, 253, 255, 0.010, 0, 0, 0, 0, 0, 0, 0, 0, 190, 1, 0, 0, 0, 0, 1, 0.0015, 0.8"},
+                    {"line_3":"1, 2, 0, 0, 9600, 260, 400, 0, 0, 0, 0, 0, 0, 252, 255, 0.0065, 0.04, 0, 0, 0, 0, 0, 0, 0, 195, 2, 25, 0, 0, 0, 1, 0.015, 0.04"},
+                    {"line_4":"1, 2, 1, 0, 9600, 280, 400, 0, 0, 0, 0, 0, 0, 252, 255, 0.012, 0.05, 50, 220, 0, 0.55, 0, 0, 0, 200, 2, 25, 0, 0, 0, 1, 0.005, 0.06"},
+                    {"line_5":"1, 2, 0, 0, 9600, 270, 400, 0, 0, 0, 0, 0, 0, 252, 255, 0.0065, 0.04, 0, 0, 0, 0, 0, 0, 0, 195, 2, 25, 0, 0, 0, 2, 0.002, 0.04 "}
+            ]
+        },
+        {
+            "name":"llhdr_HistParamsNum_v2_tele5",
+            "type":"int",
+            "value":[
+                    {"only_one":"5"}
+            ]
+        },
+        {
+            "name":"llhdr_HistParams_v2_tele5",
+            "type":"double",
+            "value":[
+                    {"line_1":"1, 4, 0, 0, 9600, 290, 800, 10, 200, 0, 50, 0.18, 0, 253, 255, 0.005, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0.0005, 0.8"},
+                    {"line_2":"1, 4, 1, 0, 9600, 320, 800, 12, 200, 0, 60, 0.05, 0, 253, 255, 0.010, 0, 0, 0, 0, 0, 0, 0, 0, 190, 1, 0, 0, 0, 0, 1, 0.0015, 0.8"},
+                    {"line_3":"1, 4, 0, 0, 9600, 260, 300, 0, 0, 0, 0, 0, 0, 252, 255, 0.0065, 0.04, 0, 0, 0, 0, 0, 0, 0, 195, 2, 25, 0, 0, 0, 1, 0.002, 0.04"},
+                    {"line_4":"1, 4, 1, 0, 9600, 280, 330, 0, 0, 0, 0, 0, 0, 252, 255, 0.010, 0.05, 0, 0, 0, 0, 0, 0, 0, 200, 2, 25, 0, 0, 0, 1, 0.005, 0.06"},
+                    {"line_5":"1, 4, 0, 0, 9600, 260, 300, 0, 0, 0, 0, 0, 0, 252, 255, 0.0065, 0.04, 0, 0, 0, 0, 0, 0, 0, 195, 2, 25, 0, 0, 0, 2, 0.002, 0.04 "}
+            ]
+        },
+        {
+            "name":"zoomhdr_hdrHistParamsNum_v2",
+            "type":"int",
+            "value":[
+                    {"only_one":"2"}
+            ]
+        },
+        {
+            "name":"zoomhdr_hdrHistParams_v2",
+            "type":"double",
+            "value":[
+                    {"line_1":"1, HDR_CAMERA_BACK, HDR_PARAMS_FACE, 0, 2500, 0, 480, 0, 30, 0, 0, 0, 0, 252, 255, 0.10, 0, 0, 0, 0, 0, 0, 0, 0, 200, 10, 0, 0, 0, 0, 1, 0.025, 0"},
+                    {"line_2":"1, HDR_CAMERA_BACK, HDR_PARAMS_NONFACE, 0, 2500, 0, 480, 0, 30, 0, 0, 0, 0, 252, 255, 0.10, 0, 0, 0, 0, 0, 0, 0, 0, 200, 10, 0, 0, 0, 0, 1, 0.025, 0"}
+            ]
+        },
+
+        {
+            "name":"zoomhdr_isClothDetectEnable",
+            "type":"int",
+            "value":[
+                    {"only_one":"1"}
+            ]
+        },
+        {
+            "name":"zoomhdr_hdrClothDetectNum",
+            "type":"int",
+            "value":[
+                    {"only_one":"2"}
+            ]
+        },
+        {
+            "name":"zoomhdr_mHdrClothExpParams",
+            "type":"double",
+            "value":[
+                    {"line_1":"1, 4, 0, 0, 9600, 290, 800, 10, 200, 0, 50, 0.18, 0, 253, 255, 0.005, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0.0005, 0.8"},
+                    {"line_2":"1, 4, 1, 0, 9600, 320, 800, 12, 200, 0, 60, 0.05, 0, 253, 255, 0.010, 0, 0, 0, 0, 0, 0, 0, 0, 190, 1, 0, 0, 0, 0, 1, 0.0015, 0.8"}
+            ]
+        },
+        {
+            "name":"zoomhdr_isHdrOnDetectOn",
+            "type":"int",
+            "value":[
+                    {"only_one":"0"}
+            ]
+        },
+        {
+            "name":"zoomhdr_hdrOnPatParamsNum",
+            "type":"int",
+            "value":[
+                    {"only_one":"1"}
+            ]
+        },
+        {
+            "name":"zoomhdr_hdrOnHistParams",
+            "type":"double",
+            "value":[
+                    {"line_1":"HDR_CAMERA_BACK, HDR_PARAMS_NONFACE, 50, 400, 0, 30, 0.1, 230, 255, 0.05, 70, 200, 0.5, 50, 0"}
+            ]
+        },
+        {
+            "name":"zoomllhdr_HistParamsNum_v2_master",
+            "type":"int",
+            "value":[
+                    {"only_one":"2"}
+            ]
+        },
+        {
+            "name":"zoomllhdr_HistParams_v2_master",
+            "type":"double",
+            "value":[
+                    {"line_1":"1, HDR_CAMERA_ID_0, HDR_PARAMS_NONFACE, 0, 9600, 260, 800, 3, 200, 0, 20, 0.05, 0, 252, 255, 0.02, 0, 0, 0, 0, 0, 0, 0, 0, 180, 3, 0, 0, 0, 0, 1, 0.02, 0.8"},
+                    {"line_2":"1, HDR_CAMERA_ID_0, HDR_PARAMS_FACE, 0, 9600, 265, 800, 5, 200, 0, 20, 0.05, 0, 252, 255, 0.02, 0, 0, 0, 0, 0, 0, 0, 0, 180, 3, 0, 0, 0, 0, 1, 0.02, 0.8"}
+            ]
+        },
+        {
+            "name":"zoomllhdr_HistParamsNum_v2_wide",
+            "type":"int",
+            "value":[
+                    {"only_one":"2"}
+            ]
+        },
+        {
+            "name":"zoomllhdr_HistParams_v2_wide",
+            "type":"double",
+            "value":[
+                    {"line_1":"1, HDR_CAMERA_ID_3, HDR_PARAMS_NONFACE, 0, 9600, 260, 800, 3, 200, 0, 20, 0.05, 0, 252, 255, 0.02, 0, 0, 0, 0, 0, 0, 0, 0, 180, 3, 0, 0, 0, 0, 1, 0.02, 0.8"},
+                    {"line_2":"1, HDR_CAMERA_ID_3, HDR_PARAMS_FACE, 0, 9600, 265, 800, 5, 200, 0, 20, 0.05, 0, 252, 255, 0.02, 0, 0, 0, 0, 0, 0, 0, 0, 180, 3, 0, 0, 0, 0, 1, 0.02, 0.8"}
+            ]
+        },
+        {
+            "name":"zoomllhdr_HistParamsNum_v2_tele2",
+            "type":"int",
+            "value":[
+                    {"only_one":"2"}
+            ]
+        },
+        {
+            "name":"zoomllhdr_HistParams_v2_tele2",
+            "type":"double",
+            "value":[
+                    {"line_1":"1, HDR_CAMERA_ID_2, HDR_PARAMS_NONFACE, 0, 9600, 270, 800, 3, 200, 0, 20, 0.05, 0, 252, 255, 0.02, 0, 0, 0, 0, 0, 0, 0, 0, 180, 3, 0, 0, 0, 0, 1, 0.02, 0.8"},
+                    {"line_2":"1, HDR_CAMERA_ID_2, HDR_PARAMS_FACE, 0, 9600, 275, 800, 5, 200, 0, 20, 0.05, 0, 252, 255, 0.02, 0, 0, 0, 0, 0, 0, 0, 0, 180, 3, 0, 0, 0, 0, 1, 0.02, 0.8"}
+            ]
+        },
+        {
+            "name":"zoomllhdr_HistParamsNum_v2_tele5",
+            "type":"int",
+            "value":[
+                    {"only_one":"2"}
+            ]
+        },
+        {
+            "name":"zoomllhdr_HistParams_v2_tele5",
+            "type":"double",
+            "value":[
+                    {"line_1":"1, HDR_CAMERA_ID_4, HDR_PARAMS_NONFACE, 0, 9600, 280, 800, 3, 200, 0, 20, 0.05, 0, 252, 255, 0.02, 0, 0, 0, 0, 0, 0, 0, 0, 180, 3, 0, 0, 0, 0, 1, 0.02, 0.8"},
+                    {"line_2":"1, HDR_CAMERA_ID_4, HDR_PARAMS_FACE, 0, 9600, 285, 800, 5, 200, 0, 20, 0.05, 0, 252, 255, 0.02, 0, 0, 0, 0, 0, 0, 0, 0, 180, 3, 0, 0, 0, 0, 1, 0.02, 0.8"}
+            ]
+        },
+        {
+            "name":"common_isPreSns",
+            "type":"int",
+            "value":[
+                    {"only_one":"0"}
+            ]
+        },
+        {
+            "name":"common_snsHistParamsNum_v2",
+            "type":"int",
+            "value":[
+                    {"only_one":"0"}
+            ]
+        },
+        {
+            "name":"common_SNValueThPoint1",
+            "type":"int",
+            "value":[
+                    {"only_one":"8"}
+            ]
+        },
+        {
+            "name":"common_SNValueThPoint2",
+            "type":"int",
+            "value":[
+                    {"only_one":"20"}
+            ]
+        },
+        {
+            "name":"common_SNValueThPoint3",
+            "type":"int",
+            "value":[
+                    {"only_one":"40"}
+            ]
+        },
+        {
+            "name":"common_SNValueThPoint4",
+            "type":"int",
+            "value":[
+                    {"only_one":"200"}
+            ]
+        },
+        {
+            "name":"common_SNValueThPoint5",
+            "type":"int",
+            "value":[
+                    {"only_one":"250"}
+            ]
+        },
+        {
+            "name":"superNS_snsEnable",
+            "type":"int",
+            "value":[
+                    {"only_one":"0"}
+            ]
+        },
+        {
+            "name":"superNS_StarLuxIndexLimit",
+            "type":"float",
+            "value":[
+                    {"only_one":"440.0"}
+            ]
+        },
+        {
+            "name":"superNS_FastNSLuxIndexLimit",
+            "type":"float",
+            "value":[
+                    {"only_one":"370.0"}
+            ]
+        },
+        {
+            "name":"superNS_FastNsAIOFFLuxIndexLimit",
+            "type":"float",
+            "value":[
+                    {"only_one":"315.0"}
+            ]
+        },
+        {
+            "name":"superNS_snsEnable_master",
+            "type":"int",
+            "value":[
+                    {"only_one":"1"}
+            ]
+        },
+        {
+            "name":"superNS_HistParamsNum_v2_master",
+            "type":"int",
+            "value":[
+                    {"only_one":"5"}
+            ]
+        },
+        {
+            "name":"superNS_FastNSLuxIndexLimit_master",
+            "type":"float",
+            "value":[
+                    {"only_one":"398.0"}
+            ]
+        },
+        {
+            "name":"superNS_FastNsAIOFFLuxIndexLimit_master",
+            "type":"float",
+            "value":[
+                    {"only_one":"365.0"}
+            ]
+        },
+        {
+            "name":"superNS_HistParams_v2_master",
+            "type":"double",
+            "value":[
+                    {"line_1":"1, HDR_CAMERA_BACK, HDR_PARAMS_NONFACE, 0, 10000, 200, 600, 1, 200, 0, 0, 0, 0, 250, 255, 0.0065, 0.9, 0, 0, 0, 0, 0, 0, 0, 190, 2, 50, 0, 0, 0, 1, 0.001, 0.8"},
+                    {"line_2":"1, HDR_CAMERA_BACK, HDR_PARAMS_NONFACE, 0, 10000, 165, 600, 1, 200, 0, 60, 0.12, 1.0, 247, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0.001, 0.9, 0, 0, 0"},
+                    {"line_3":"1, HDR_CAMERA_BACK, HDR_PARAMS_FACE, 0, 10000, 170, 350, 1, 200, 0, 0, 0, 0, 240, 255, 0.01, 0.9, 0, 0, 0, 0, 0, 0, 0, 190, 1, 70, 0, 0, 0, 2, 0.0006, 0.6"},
+                    {"line_4":"1, HDR_CAMERA_BACK, HDR_PARAMS_FACE, 0, 10000, 200, 600, 2, 200, 0, 60, 0.15, 1, 240, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"},
+                    {"line_5":"1, HDR_CAMERA_BACK, HDR_PARAMS_NONFACE, 50, 9600, 250, 600, 0, 0, 0, 0, 0, 0, 245, 255, 0.002, 0.9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0.0001, 0.8, 1, 0.0003, 0.8"}
+            ]
+        },
+
+        {
+            "name":"superNS_snsEnable_wide",
+            "type":"int",
+            "value":[
+                    {"only_one":"1"}
+            ]
+        },
+        {
+            "name":"superNS_HistParamsNum_v2_wide",
+            "type":"int",
+            "value":[
+                    {"only_one":"4"}
+            ]
+        },
+        {
+            "name":"superNS_FastNSLuxIndexLimit_wide",
+            "type":"float",
+            "value":[
+                    {"only_one":"370.0"}
+            ]
+        },
+        {
+            "name":"superNS_FastNsAIOFFLuxIndexLimit_wide",
+            "type":"float",
+            "value":[
+                    {"only_one":"310.0"}
+            ]
+        },
+        {
+            "name":"superNS_HistParams_v2_wide",
+            "type":"double",
+            "value":[
+                    {"line_1":"1, HDR_CAMERA_BACK, HDR_PARAMS_NONFACE, 0, 9600, 200, 800, 0, 0, 0, 50, 0.18, 0, 245, 255, 0.003, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0.0004, 0.8"},
+                    {"line_2":"1, HDR_CAMERA_BACK, HDR_PARAMS_FACE, 0, 9600, 260, 800, 0, 0, 0, 60, 0.050, 0, 245, 255, 0.010, 0, 0, 0, 0, 0, 0, 0, 0, 190, 1, 0, 0, 0, 0, 1, 0.0013, 0.8"},
+                    {"line_3":"1, HDR_CAMERA_BACK, HDR_PARAMS_NONFACE, 0, 9600, 200, 310, 0, 0, 0, 0, 0, 0, 252, 255, 0.0065, 0.10, 0, 0, 0, 0, 0, 0, 0, 195, 2, 25, 0, 0, 0, 1, 0.002, 0.08"},
+                    {"line_4":"1, HDR_CAMERA_BACK, HDR_PARAMS_FACE, 0, 9600, 220, 340, 0, 0, 0, 0, 0, 0, 245, 255, 0.010, 0.05, 0, 0, 0, 0, 0, 0, 0, 200, 2, 25, 0, 0, 0, 1, 0.005, 0.06"}
+            ]
+        },
+
+        {
+            "name":"superNS_snsEnable_wide",
+            "type":"int",
+            "value":[
+                    {"only_one":"1"}
+            ]
+        },
+        {
+            "name":"superNS_HistParamsNum_v2_wide",
+            "type":"int",
+            "value":[
+                    {"only_one":"4"}
+            ]
+        },
+        {
+            "name":"superNS_FastNSLuxIndexLimit_wide",
+            "type":"float",
+            "value":[
+                    {"only_one":"370.0"}
+            ]
+        },
+        {
+            "name":"superNS_FastNsAIOFFLuxIndexLimit_wide",
+            "type":"float",
+            "value":[
+                    {"only_one":"310.0"}
+            ]
+        },
+        {
+            "name":"superNS_HistParams_v2_wide",
+            "type":"double",
+            "value":[
+                    {"line_1":"1, HDR_CAMERA_BACK, HDR_PARAMS_NONFACE, 0, 9600, 200, 800, 0, 0, 0, 50, 0.18, 0, 245, 255, 0.003, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0.0004, 0.8"},
+                    {"line_2":"1, HDR_CAMERA_BACK, HDR_PARAMS_FACE, 0, 9600, 260, 800, 0, 0, 0, 60, 0.050, 0, 245, 255, 0.010, 0, 0, 0, 0, 0, 0, 0, 0, 190, 1, 0, 0, 0, 0, 1, 0.0013, 0.8"},
+                    {"line_3":"1, HDR_CAMERA_BACK, HDR_PARAMS_NONFACE, 0, 9600, 200, 310, 0, 0, 0, 0, 0, 0, 252, 255, 0.0065, 0.10, 0, 0, 0, 0, 0, 0, 0, 195, 2, 25, 0, 0, 0, 1, 0.002, 0.08"},
+                    {"line_4":"1, HDR_CAMERA_BACK, HDR_PARAMS_FACE, 0, 9600, 220, 340, 0, 0, 0, 0, 0, 0, 245, 255, 0.010, 0.05, 0, 0, 0, 0, 0, 0, 0, 200, 2, 25, 0, 0, 0, 1, 0.005, 0.06"}
+            ]
+        },
+
+        {
+            "name":"superNS_snsEnable_tele2",
+            "type":"int",
+            "value":[
+                    {"only_one":"1"}
+            ]
+        },
+        {
+            "name":"superNS_HistParamsNum_v2_tele2",
+            "type":"int",
+            "value":[
+                    {"only_one":"4"}
+            ]
+        },
+        {
+            "name":"superNS_FastNSLuxIndexLimit_tele2",
+            "type":"float",
+            "value":[
+                    {"only_one":"370.0"}
+            ]
+        },
+        {
+            "name":"superNS_FastNsAIOFFLuxIndexLimit_tele2",
+            "type":"float",
+            "value":[
+                    {"only_one":"315.0"}
+            ]
+        },
+        {
+            "name":"superNS_HistParams_v2_wide",
+            "type":"double",
+            "value":[
+                    {"line_1":"1, HDR_CAMERA_BACK, HDR_PARAMS_NONFACE, 0, 9600, 200, 800, 0, 0, 0, 50, 0.18, 0, 245, 255, 0.003, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0.0004, 0.8"},
+                    {"line_2":"1, HDR_CAMERA_BACK, HDR_PARAMS_NONFACE, 0, 9600, 180, 280, 0, 0, 0, 0, 0, 0, 252, 255, 0.0065, 0.10, 0, 0, 0, 0, 0, 0, 0, 195, 2, 25, 0, 0, 0, 1, 0.002, 0.08"},
+                    {"line_3":"1, HDR_CAMERA_BACK, HDR_PARAMS_FACE, 0, 9600, 260, 800, 0, 0, 0, 60, 0.050, 0, 245, 255, 0.010, 0, 0, 0, 0, 0, 0, 0, 0, 190, 1, 0, 0, 0, 0, 1, 0.0013, 0.8"},
+                    {"line_4":"1, HDR_CAMERA_BACK, HDR_PARAMS_FACE, 0, 9600, 220, 330, 0, 0, 0, 0, 0, 0, 245, 255, 0.010, 0.05, 0, 0, 0, 0, 0, 0, 0, 200, 2, 25, 0, 0, 0, 1, 0.005, 0.06"}
+            ]
+        },
+
+        {
+            "name":"superNS_snsEnable_other",
+            "type":"int",
+            "value":[
+                    {"only_one":"1"}
+            ]
+        },
+        {
+            "name":"superNS_HistParamsNum_v2",
+            "type":"int",
+            "value":[
+                    {"only_one":"4"}
+            ]
+        },
+        {
+            "name":"superNS_HistParams_v2_wide",
+            "type":"double",
+            "value":[
+                    {"line_1":"1, HDR_CAMERA_BACK, HDR_PARAMS_NONFACE, 0, 9600, 200, 280, 0, 0, 0, 0, 0, 0, 252, 255, 0.005, 0.20, 0, 0, 0, 0, 0, 0, 0, 195, 2, 30, 0, 0, 0, 1, 0.001, 0.08"},
+                    {"line_2":"1, HDR_CAMERA_BACK, HDR_PARAMS_NONFACE, 0, 10000, 275, 600, 0, 0, 0, 0, 0, 0, 247, 255, 0.002, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0.001, 0.8, 1, 0.0004, 0.8"},
+                    {"line_3":"1, HDR_CAMERA_BACK, HDR_PARAMS_FACE, 0, 9600, 200, 320, 0, 0, 0, 0, 0, 0, 240, 255, 0.006, 0.08, 0, 0, 0, 0, 0, 0, 0, 200, 2, 25, 0, 0, 0, 1, 0.004, 0.06"},
+                    {"line_4":"1, HDR_CAMERA_BACK, HDR_PARAMS_FACE, 0, 10000, 310, 500, 0, 0, 0, 60, 0.25, 1, 240, 255, 0.004, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0.0010, 0.8"}
+            ]
+        },
+        {
+            "name":"superNS_SNValueThPoint1",
+            "type":"int",
+            "value":[
+                    {"only_one":"8"}
+            ]
+        },
+        {
+            "name":"superNS_SNValueThPoint2",
+            "type":"int",
+            "value":[
+                    {"only_one":"20"}
+            ]
+        },
+        {
+            "name":"superNS_SNValueThPoint3",
+            "type":"int",
+            "value":[
+                    {"only_one":"40"}
+            ]
+        },
+        {
+            "name":"superNS_SNValueThPoint4",
+            "type":"int",
+            "value":[
+                    {"only_one":"200"}
+            ]
+        },
+        {
+            "name":"superNS_SNValueThPoint5",
+            "type":"int",
+            "value":[
+                    {"only_one":"250"}
+            ]
+        },
+        {
+            "name":"superNS_ExtremeLowlightThreshold",
+            "type":"double",
+            "value":[
+                    {"only_one":"485.0"}
+            ]
+        },
+        {
+            "name":"superNS_ExtremeLowlightHinder",
+            "type":"double",
+            "value":[
+                    {"only_one":"30.0"}
+            ]
+        },
+        {
+            "name":"AIhdr_Enable",
+            "type":"int",
+            "value":[
+                    {"only_one":"0"}
+            ]
+        },
+        {
+            "name":"AIhdr_highConfidenceThreshold",
+            "type":"double",
+            "value":[
+                    {"only_one":"0.7"}
+            ]
+        },
+        {
+            "name":"AIhdr_lowConfidenceThreshold",
+            "type":"double",
+            "value":[
+                    {"only_one":"0.2"}
+            ]
+        },
+        {
+            "name":"mThreshold",
+            "type":"float",
+            "value":[
+                    {"only_one":"2000.0"}
+            ]
+        },
+        {
+            "name":"default_threshold_back",
+            "type":"float",
+            "value":[
+                    {"only_one":"2.0"}
+            ]
+        },
+        {
+            "name":"master_threshold_back",
+            "type":"float",
+            "value":[
+                    {"only_one":"2.0"}
+            ]
+        },
+        {
+            "name":"wide_threshold_back",
+            "type":"float",
+            "value":[
+                    {"only_one":"2.0"}
+            ]
+        },
+        {
+            "name":"tele_threshold_back",
+            "type":"float",
+            "value":[
+                    {"only_one":"1.2"}
+            ]
+        },
+        {
+            "name":"threshold_front",
+            "type":"float",
+            "value":[
+                    {"only_one":"2.0"}
+            ]
+        },
+        {
+            "name":"AINR_default_threshold_back",
+            "type":"float",
+            "value":[
+                    {"only_one":"300.0"}
+            ]
+        },
+        {
+            "name":"AINR_master_threshold_back",
+            "type":"float",
+            "value":[
+                    {"only_one":"300.0"}
+            ]
+        },
+        {
+            "name":"AINR_wide_threshold_back",
+            "type":"float",
+            "value":[
+                    {"only_one":"300.0"}
+            ]
+        },
+        {
+            "name":"AINR_tele2_threshold_back",
+            "type":"float",
+            "value":[
+                    {"only_one":"300.0"}
+            ]
+        },
+        {
+            "name":"AINR_tele5_threshold_back",
+            "type":"float",
+            "value":[
+                    {"only_one":"300.0"}
+            ]
+        },
+        {
+            "name":"AINR_threshold_front",
+            "type":"float",
+            "value":[
+                    {"only_one":"300.0"}
+            ]
+        },
+        {
+            "name":"mExtremoFrontThreshold",
+            "type":"float",
+            "value":[
+                    {"only_one":"350.0"}
+            ]
+        },
+        {
+            "name":"mHDRSportdeltaEVMin_throld",
+            "type":"float",
+            "value":[
+                    {"only_one":"-1000.0"}
+            ]
+        },
+        {
+            "name":"mHDRSportdeltaEVMax_throld",
+            "type":"float",
+            "value":[
+                    {"only_one":"1000.0"}
+            ]
+        }
+    ]
+}

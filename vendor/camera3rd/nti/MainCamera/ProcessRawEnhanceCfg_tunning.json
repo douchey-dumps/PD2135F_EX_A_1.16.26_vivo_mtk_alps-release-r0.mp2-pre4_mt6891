@@ -1,0 +1,10 @@
+{
+    "AlgoMode": {
+		"isoBoundary0":	600,
+		"isoBoundary1":	3000,
+		"motionLevelBoundary":	3
+    },
+    "AINRMode": {
+		"AINREnable":	1
+    }
+}

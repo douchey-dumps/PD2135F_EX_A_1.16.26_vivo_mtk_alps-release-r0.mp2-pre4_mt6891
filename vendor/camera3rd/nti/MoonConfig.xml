@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 以下是2056 一供的参考配置 -->
+<MoonConfig version="0.0.1">
+	<!-- 低曝图的raw的格式，default 1, 0 for unpacked raw, 1 for mipi10 raw, 2 for packed s13 raw -->
+	<raw_type>1</raw_type>
+	<!-- 手机平台，default 0，0 for samsung, 1 for qualcomm -->
+	<platform>2</platform>
+	<!-- 超级夜景的bayer pattern，default 2，0 for RGGB, 1 for GRBG, 2 for BGGR, 3 for GBRG -->
+	<bayer_pattern>2</bayer_pattern>
+	<!-- 1x低曝的bayer pattern，default 2，0 for RGGB, 1 for GRBG, 2 for BGGR, 3 for GBRG -->
+	<bayer_pattern1x>2</bayer_pattern1x>
+	<!-- 2x低曝的bayer pattern，default 2，0 for RGGB, 1 for GRBG, 2 for BGGR, 3 for GBRG -->
+	<bayer_pattern2x>0</bayer_pattern2x>
+	<!-- 超级夜景图的有效位, default 14, 10, 12, 13 etc.. -->
+	<bits>14</bits>
+	<!-- 1x低曝的有效位, default 14, 10, 12, 13 etc.. -->
+	<bits1x>10</bits1x>
+	<!-- 2x低曝的有效位, default 14, 10, 12, 13 etc.. -->
+    <bits2x>10</bits2x>
+	<!-- 1x低曝的宽，default 4608 -->
+    <!-- <width1x>4080</width1x>-->
+	<!-- 2x低曝的宽，default 3264 -->
+    <!-- <width2x>3264</width2x> -->
+	<!-- 2x月亮放大倍率, default 3 -->
+    <moon2xFactor>3</moon2xFactor>
+	<!-- 1x月亮放大倍率, default 6 -->
+    <moon1xFactor>6</moon1xFactor>
+	<!-- 1x镜头的 B gain, default 1，需要在系统中获取设定 -->
+    <!-- <hdrBgain></hdrBgain> -->
+	<!-- 1x镜头的 R gain, default 1，需要在系统中获取设定 -->
+    <!-- <hdrRgain></hdrRgain> -->
+	<!-- 2x镜头的 B gain, default 1，需要在系统中获取设定 -->
+    <!-- <lowBgain></lowBgain> -->
+	<!-- 2x镜头的 R gain, default 1，需要在系统中获取设定 -->
+    <!-- <lowRgain></lowRgain> -->
+    <!-- 颜色校正系数，默认为1.2，可以通过修改传入的该值调整月亮颜色 -->
+    <rGainCoff>1.2</rGainCoff>
+    <!-- 颜色校正系数，默认为0.8，可以通过修改传入的该值调整月亮颜色 -->
+    <bGainCoff>0.8</bGainCoff>
+	<!-- digital Gain, default 1 -->
+    <!--<digitalGain>1</digitalGain>-->
+    <!-- black Level, default 1024 -->
+    <!--<blackLevel>1024</blackLevel> -->
+</MoonConfig>

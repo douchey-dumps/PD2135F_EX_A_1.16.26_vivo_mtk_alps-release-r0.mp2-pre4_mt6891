@@ -1,0 +1,54 @@
+{
+    "hdrMotion": {
+        "ainrCfg": {
+            "shortGainThrold":	10000,
+            "delevThrold":	-1000
+        }
+    },
+    "HDR": {
+        "ainrCfg": {
+            "ISOThrold":	100000
+        }
+    },
+    "supernight": {
+        "ainrCfg": {
+            "Enable":	1
+        }
+    },
+    "fastnight": {
+        "ainrCfg": {
+            "Enable":	1
+        }
+    },
+    "HDRLite": {
+        "ainrCfg": {
+            "shortGainThrold":	12,
+            "darkBoostGainRatioThrold":	2.5
+        }
+    },
+    "LLHDR": {
+        "ainrCfg": {
+            "shortGainThrold":	12,
+            "darkBoostGainRatioThrold":	2.5
+        }
+    },
+    "HDRoff": {
+        "ainrCfg": {
+            "shortGainThrold":	12,
+            "darkBoostGainRatioThrold":	2.5
+        }
+    },
+    "HDRsport": {
+        "mfnrMode": {
+            "isoBoundary0":	600,
+            "isoBoundary1":	3000,
+            "motionLevelBoundary":	3
+        }
+    },
+    "prebps": {
+        "ModeCfg": {
+            "expTimeThrold":	100,
+            "shortgainThrold":	24
+        }
+    }
+}

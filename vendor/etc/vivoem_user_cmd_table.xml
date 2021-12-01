@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vivoem_cmd_table>
+	<common_items>
+		<iteminfo name="master_clear" function="set_master_data_handler"/>
+		<iteminfo name="get_pcbid" function="get_pcbid_handler"/>
+		<iteminfo name="dpdt" function="set_dpdt_status_handler"/>
+		<iteminfo name="bsptest_nv" function="set_bsptest_nv_handler"/>
+		<iteminfo name="vivolog_flag" function="vivolog_flag_handler"/>
+		<iteminfo name="read_policy_file" function="read_policy_file_handler"/>
+		<iteminfo name="device_demo" function="exhibition_flag_cmd"/>
+	</common_items>
+</vivoem_cmd_table>

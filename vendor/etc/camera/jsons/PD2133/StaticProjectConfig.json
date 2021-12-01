@@ -1,0 +1,13 @@
+{
+"featureConfig":{
+        "SupportMicroCamera":[2,"是否支持超微距功能： 0 （不支持微距）；1 （有微距摄像头，支持微距）；2（无微距镜头，使用广角摄像头做超微距）"],
+        "SupportSatPip":[1,"是否支持高倍率导航框"],
+        "SupportGimbal":[1,"是否支持云台防抖,通常支持的是主摄"],
+        "SupportFilmFormat":[1,"是否只支持电影画幅"],
+        "SupportVsyncRender":[1,"是否支持Vsync"],
+        "SupportWeatherTuning":[0,"是否支持天气对效果优化,某个高通平台的功能，三星暂不支持"],
+        "SupportVcf":[0,"是否支持VCF"],
+        "SupportRefocusHALRotate":[1,"双摄虚化是否底层旋转，目前只有MTK平台是底层旋转的"],
+        "SupportCurrentModeVersion":[0,"是否是currentmode重构后的代码"]
+    }
+}

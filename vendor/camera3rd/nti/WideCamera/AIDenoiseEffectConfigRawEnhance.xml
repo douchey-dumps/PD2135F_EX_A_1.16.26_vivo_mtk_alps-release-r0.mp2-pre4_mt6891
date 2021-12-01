@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<AiDenoiseConfig version="0.0.6">
+    <!-- 普通段ISO模式下的降噪参数 -->
+    <DenoiserBranch>
+        <!-- ISO起始值 -->
+        <ISOstart>0</ISOstart>
+        <!-- ISO终止值： 当输入图片的曝光值在该设定的ISO段范围内下调用该Branch下的参数 -->
+        <ISOend>5000</ISOend>
+        <!-- 曝光时间起始值 -->
+        <ExpTimeStart>0</ExpTimeStart>
+        <!-- 曝光时间终止值： 当输入图片的曝光时间值在该设定的曝光段范围内下调用该Branch下的参数 -->
+        <ExpTimeEnd>10000</ExpTimeEnd>
+        <!-- 以下配置仅配置EV0生效 -->
+        <!-- 用来控制噪声的调试 -->
+        <!-- 方差估计将会自动通过以下公式计算： var_input = var * scale * evscale + evbias -->
+        <!-- 例如evscale=0.9，此时方差估计变小，则会放出更多的噪声，若evscale=1.1，则方差估计变大，会导致降噪加强 -->
+        <EvScale>1</EvScale>
+        <EvBias>0</EvBias>
+        <!-- 通过控制residule的维度来控制噪声放出的强弱，考虑原降噪公式： clean_image = observed_image - ResScale * noise -->
+        <!-- AI网络估计的是noise这个值，所以当ResScale不等于1.0时，噪声都会呈现均匀增加 -->
+        <ResScale>0.9</ResScale>
+    </DenoiserBranch>
+    <DenoiserBranch>
+        <ISOstart>5000</ISOstart>
+        <ISOend>7000</ISOend>
+        <ExpTimeStart>0</ExpTimeStart>
+        <ExpTimeEnd>10000</ExpTimeEnd>
+        <EvScale>1</EvScale>
+        <EvBias>0</EvBias>
+        <ResScale>0.95</ResScale>
+    </DenoiserBranch>
+    <DenoiserBranch>
+        <ISOstart>7000</ISOstart>
+        <ISOend>15000</ISOend>
+        <ExpTimeStart>0</ExpTimeStart>
+        <ExpTimeEnd>10000</ExpTimeEnd>
+        <EvScale>1</EvScale>
+        <EvBias>0</EvBias>
+        <ResScale>0.965</ResScale>
+    </DenoiserBranch>
+</AiDenoiseConfig>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<preBPSGICConfig>
+  <TotalLevNum>9</TotalLevNum>
+  <gicEnable description="1 - enable GIC, 0 - disable GIC.">1</gicEnable>
+  <levConfigData>
+      <rawISO description="rawISO = shortGain * 50.">50</rawISO>
+      <corrStrength description="GIC correction will be stronger as corrStrength increases. 1.0 means full strength.">1.0</corrStrength>
+      <corrThresh1 description="if green differrence is larger than (corrThresh1 * current G)/512, the pixel will not be corrected.">20</corrThresh1>
+      <corrThresh2 description="if green differrence is larger than (corrThresh2 * 16383)/512, the pixel will not be corrected.">50</corrThresh2>
+  </levConfigData>
+  <levConfigData>
+      <rawISO description="rawISO = shortGain * 50.">100</rawISO>
+      <corrStrength description="GIC correction will be stronger as corrStrength increases. 1.0 means full strength.">1.0</corrStrength>
+      <corrThresh1 description="if green differrence is larger than (corrThresh1 * current G)/512, the pixel will not be corrected.">25</corrThresh1>
+      <corrThresh2 description="if green differrence is larger than (corrThresh2 * 16383)/512, the pixel will not be corrected.">50</corrThresh2>
+  </levConfigData>
+  <levConfigData>
+      <rawISO description="rawISO = shortGain * 50.">200</rawISO>
+      <corrStrength description="GIC correction will be stronger as corrStrength increases. 1.0 means full strength.">1.0</corrStrength>
+      <corrThresh1 description="if green differrence is larger than (corrThresh1 * current G)/512, the pixel will not be corrected.">30</corrThresh1>
+      <corrThresh2 description="if green differrence is larger than (corrThresh2 * 16383)/512, the pixel will not be corrected.">50</corrThresh2>
+  </levConfigData>
+  <levConfigData>
+      <rawISO description="rawISO = shortGain * 50.">400</rawISO>
+      <corrStrength description="GIC correction will be stronger as corrStrength increases. 1.0 means full strength.">1.0</corrStrength>
+      <corrThresh1 description="if green differrence is larger than (corrThresh1 * current G)/512, the pixel will not be corrected.">30</corrThresh1>
+      <corrThresh2 description="if green differrence is larger than (corrThresh2 * 16383)/512, the pixel will not be corrected.">50</corrThresh2>
+  </levConfigData>
+  <levConfigData>
+      <rawISO description="rawISO = shortGain * 50.">800</rawISO>
+      <corrStrength description="GIC correction will be stronger as corrStrength increases. 1.0 means full strength.">1.0</corrStrength>
+      <corrThresh1 description="if green differrence is larger than (corrThresh1 * current G)/512, the pixel will not be corrected.">30</corrThresh1>
+      <corrThresh2 description="if green differrence is larger than (corrThresh2 * 16383)/512, the pixel will not be corrected.">50</corrThresh2>
+  </levConfigData>
+  <levConfigData>
+      <rawISO description="rawISO = shortGain * 50.">1600</rawISO>
+      <corrStrength description="GIC correction will be stronger as corrStrength increases. 1.0 means full strength.">1.0</corrStrength>
+      <corrThresh1 description="if green differrence is larger than (corrThresh1 * current G)/512, the pixel will not be corrected.">51</corrThresh1>
+      <corrThresh2 description="if green differrence is larger than (corrThresh2 * 16383)/512, the pixel will not be corrected.">50</corrThresh2>
+  </levConfigData>
+  <levConfigData>
+      <rawISO description="rawISO = shortGain * 50.">3200</rawISO>
+      <corrStrength description="GIC correction will be stronger as corrStrength increases. 1.0 means full strength.">1.0</corrStrength>
+      <corrThresh1 description="if green differrence is larger than (corrThresh1 * current G)/512, the pixel will not be corrected.">102</corrThresh1>
+      <corrThresh2 description="if green differrence is larger than (corrThresh2 * 16383)/512, the pixel will not be corrected.">50</corrThresh2>
+  </levConfigData>
+  <levConfigData>
+      <rawISO description="rawISO = shortGain * 50.">6400</rawISO>
+      <corrStrength description="GIC correction will be stronger as corrStrength increases. 1.0 means full strength.">1.0</corrStrength>
+      <corrThresh1 description="if green differrence is larger than (corrThresh1 * current G)/512, the pixel will not be corrected.">102</corrThresh1>
+      <corrThresh2 description="if green differrence is larger than (corrThresh2 * 16383)/512, the pixel will not be corrected.">50</corrThresh2>
+  </levConfigData>
+  <levConfigData>
+      <rawISO description="rawISO = shortGain * 50.">12800</rawISO>
+      <corrStrength description="GIC correction will be stronger as corrStrength increases. 1.0 means full strength.">1.0</corrStrength>
+      <corrThresh1 description="if green differrence is larger than (corrThresh1 * current G)/512, the pixel will not be corrected.">102</corrThresh1>
+      <corrThresh2 description="if green differrence is larger than (corrThresh2 * 16383)/512, the pixel will not be corrected.">50</corrThresh2>
+  </levConfigData>
+</preBPSGICConfig>

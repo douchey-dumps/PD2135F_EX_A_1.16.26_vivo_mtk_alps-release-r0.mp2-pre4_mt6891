@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<AiDenoiseConfig version="0.0.5">
+    <!-- 算法是否要计算方差：1-模型输入需要计算先验方差，非盲去噪； 0-模型输入不需要计算先验方差，盲去噪 -->
+    <CalculateStd>0</CalculateStd>    
+    <!-- 打开水印调试：1-打开水印； 0-不打开水印 -->
+    <M2Watermark>0</M2Watermark>
+    <!-- 是否dump算法输入输出raw：1-dump； 0-不dump -->
+    <DumpAIDenoiseRaw>0</DumpAIDenoiseRaw>
+    <!--芯片平台：0-qualcom; 1-sangsum; 2-mtk; 3-pc -->
+    <Platform>2</Platform>
+    <!--网络运行框架: vdnn / qnn / hta / eden / neuron /-->
+    <Frame>neuron</Frame>
+    <!--网路运行设备: 0-cpu / 1-gpu / 2-dsp / 3-npu-->
+    <Device>3</Device>
+    <!--NPU性能模式设置: 1-PERFORMANCE_MODE / 2-ENERGYSAVEING_MODE / -->
+    <PowerMode>1</PowerMode>
+    <DenoiserBranch>
+        <!-- ISO起始值 -->
+        <ISOstart>0</ISOstart>
+        <!-- ISO终止值： 当输入图片的曝光时间值在该设定的ISO段范围内下调用该Branch下的参数 -->
+        <ISOend>15000</ISOend>
+        <!-- 曝光时间起始值 -->
+        <ExpTimeStart>0</ExpTimeStart>
+        <!-- 曝光时间终止值： 当输入图片的曝光时间值在该设定的曝光段范围内下调用该Branch下的参数 -->
+        <ExpTimeEnd>10000</ExpTimeEnd>
+        <!-- 黑电平基准：这个默认为10bit下64，不通位宽下的图像会自动换算 -->
+        <BlackLevel>0</BlackLevel>
+        <!-- ModelName 当前ISO段模型名字 -->
+        <ModelName>GD2_LTM_PROCESSEDRAW_MODEL.bin</ModelName>
+        <!-- Depth2Space/Space2Depth 算子是否需要放在模型外部做: 1-是  0-不是  当前网络模型默认是1 -->
+        <UseDepth2Space>1</UseDepth2Space>
+        <!-- 网络训练时/实际Sensor的方差校准参数 -->
+        <NoiseLevelConfig>
+            <!--噪声模型标定参数，与rawnr标定参数保持一致 -->
+            <A0>0.0</A0>
+            <A1>0.0</A1>
+            <B0>0.0</B0>
+            <B1>0.0</B1>
+            <B2>0.0</B2>
+            <!-- 网络训练时用于校准方差估计的参数，根据网络不同是个固定值，请勿修改 -->
+            <Scale>1</Scale>
+        </NoiseLevelConfig>
+        <!-- 网络基本参数 -->
+        <nnev>
+            <RunWidth>560</RunWidth>
+            <RunHeight>560</RunHeight>
+            <InputChannel>1</InputChannel>
+            <OutputChannel>1</OutputChannel>
+            <RunPattern>0</RunPattern>
+            <OutputMin>-0.9458029866218567</OutputMin>
+            <OutputMax>0.831545352935791</OutputMax>
+            <InputScale>3.0518509447574615e-05</InputScale>
+            <InputZero>0</InputZero>
+            <OutputScale>0.000028863638362963684</OutputScale>
+            <OutputZero>0</OutputZero>
+        </nnev>
+        <OverLap>48</OverLap>
+        <ThreadNum>4</ThreadNum>
+        <M2Iso> 30000 </M2Iso>
+        <!-- 平均亮度阈值小于xx，按0-1来计算 -->
+        <M2PixelAvg> 0.2 </M2PixelAvg>
+        <!-- 暗区的阈值定义 -->
+        <M2BlackAvg> 0.025 </M2BlackAvg>
+        <!-- 暗区占比大于xx，按0-1来计算 -->
+        <M2BlackRatio> 0.8 </M2BlackRatio>
+        <!-- 是否打开GIC（绿平衡校正）模块 -->
+        <GIC> 0 </GIC>
+        <!-- 是否使用fusionmap -->
+        <UseFusionMap> 0 </UseFusionMap>
+        <!-- 是否中心分块 -->
+        <ReflectPad> 1 </ReflectPad>
+    </DenoiserBranch>
+</AiDenoiseConfig>

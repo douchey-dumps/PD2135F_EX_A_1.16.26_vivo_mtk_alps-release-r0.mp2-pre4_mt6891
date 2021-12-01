@@ -1,0 +1,106 @@
+{
+	"modeNum": 12,
+
+	"mode0": {
+		"latency": 30,
+		"crop_factor": 0.8,
+		"modeindex": 0,
+		"face_enable": 0,
+		"margin": 25,
+		"description": "not use"
+	},
+	
+	"mode1": {
+		"latency": 30,
+		"crop_factor": 0.8,
+		"modeindex": 1,
+		"face_enable": 0,
+		"margin": 25,
+		"description": "Normal EIS"
+	},
+	
+	"mode2": {
+		"latency": 7,
+		"crop_factor": 0.7,
+		"modeindex": 2,
+		"face_enable": 0,
+		"margin": 0,
+		"description": "Super EIS"
+	},
+	
+	"mode3": {
+		"latency": 30,
+		"crop_factor": 0.8,
+		"modeindex": 1,
+		"face_enable": 0,
+		"margin": 25,
+		"description": "normal 60fps"
+	},
+	
+	"mode4": {
+		"latency": 30,
+		"crop_factor": 0.8,
+		"modeindex": 4,
+		"face_enable": 0,
+		"margin": 25,
+		"description": "SAT EIS use"
+	},
+
+	"mode5": {
+		"latency": 0,
+		"crop_factor": 0.9,
+		"modeindex": 1,
+		"face_enable": 0,
+		"margin": 0,
+		"description": "Photo Eis use"
+	},
+	
+	"mode6": {
+		"latency": 7,
+		"crop_factor": 0.8,
+		"modeindex": 6,
+		"face_enable": 0,
+		"margin": 25,
+		"description": "video Pro mode"
+	},
+	"mode7": {
+		"latency": 7,
+		"crop_factor": 0.8,
+		"modeindex": 7,
+		"face_enable": 1,
+		"margin": 25,
+		"description": "Front EIS"
+	},
+	"mode8": {
+		"latency": 7,
+		"crop_factor": 0.84,
+		"modeindex": 11,
+		"face_enable": 0,
+		"margin": 0,
+		"description": "not used"
+	},
+	"mode9": {
+		"latency": 7,
+		"crop_factor": 0.84,
+		"modeindex": 11,
+		"face_enable": 0,
+		"margin": 0,
+		"description": "not used"
+	},
+	"mode10": {
+		"latency": 7,
+		"crop_factor": 0.84,
+		"modeindex": 11,
+		"face_enable": 0,
+		"margin": 0,
+		"description": "not used"
+	},
+	"mode11": {
+		"latency": 7,
+		"crop_factor": 0.84,
+		"modeindex": 11,
+		"face_enable": 0,
+		"margin": 0,
+		"description": "VideoNight EIS"
+	}
+}	

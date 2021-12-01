@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AiSODConfig version="1.1.0">
+    <!--算法运行框架(集成勿改)-->
+    <FrameWork>neuron</FrameWork>
+    <!--算法运行设备(集成勿改)-->
+    <Device>3</Device>
+    <!--前置色彩模型路径-->
+    <FrontColorModelPath>/vendor/camera3rd/nti/VideoColor.bin</FrontColorModelPath>
+	<!--后置色彩模型路径-->
+    <RearColorModelPath>/vendor/camera3rd/nti/VideoColor.bin</RearColorModelPath>
+    <!--前置虚化模型路径-->
+    <FrontModelPath>/vendor/camera3rd/nti/VideoBokeh.bin</FrontModelPath>
+	<!--后置虚化模型路径-->
+    <RearModelPath>/vendor/camera3rd/nti/VideoBokeh.bin</RearModelPath>
+    <!--功耗等级(100高功耗 0低功耗)-->
+    <PowerLevel>0</PowerLevel>
+	<!--线程延迟帧数-->
+	<DelayFrames>1</DelayFrames>
+	<!--输出Mask模式(0渐变 1二值)-->
+	<MaskMode>0</MaskMode>
+</AiSODConfig>

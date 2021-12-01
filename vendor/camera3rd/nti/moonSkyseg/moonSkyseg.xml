@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SkySegConfig version="0.2.1">
+    <InputName>data</InputName>
+    <OutputName>bilinear/279</OutputName>
+    <SessionName>skyseg_opencl</SessionName>
+    <ModelPath>/vendor/camera3rd/nti/tf_refnet_mobilev3_512_sky_dn7_nobn.vdnn</ModelPath>
+</SkySegConfig>

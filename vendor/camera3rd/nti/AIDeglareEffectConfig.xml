@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AIDeglareEffectConfig version="0.0.2">
+  <GlareRatio description="deglare strength parameter, ranges in [0, 1.0]">0.5</GlareRatio>
+  <GlareGuidedFilterParams description="parameteres for glare filtering">
+    <Radius description="half length of a local square area, which would be filtered when filtering the center pixel">200</Radius>
+    <Scale description="downscale parameter, the parameter increase would speed up the filtering, but may cause quality decrease">4</Scale>
+    <Eps description="filter strength, the parameter increse would make the image more blurry">0.0001</Eps>
+    <Mode description="guided filter mode">256</Mode>
+  </GlareGuidedFilterParams>
+  <MaskGuidedFilterParams description="parameteres for highlight mask filtering, the paramter descriptions are the same with the above">
+    <Radius>20</Radius>
+    <Scale>4</Scale>
+    <Eps>0.01</Eps>
+    <Mode>0</Mode>
+  </MaskGuidedFilterParams>
+</AIDeglareEffectConfig>
