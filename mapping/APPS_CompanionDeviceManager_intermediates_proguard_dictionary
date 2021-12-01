@@ -1,0 +1,196 @@
+# compiler: R8
+# compiler_version: 2.1.7-r3
+# min_api: 30
+# pg_map_id: b985bf5
+# common_typos_disable
+com.android.companiondevicemanager.-$$Lambda$6bG4Eh0EK8HOPJjr2X_zuyIYnFM -> com.android.companiondevicemanager.l11:
+    com.android.companiondevicemanager.-$$Lambda$6bG4Eh0EK8HOPJjr2X_zuyIYnFM INSTANCE -> l11
+com.android.companiondevicemanager.-$$Lambda$DeviceChooserActivity$8PjIr6GCnltjQbJMrb-xUShy3F8 -> com.android.companiondevicemanager.l1l:
+    com.android.companiondevicemanager.DeviceChooserActivity f$0 -> l11
+com.android.companiondevicemanager.-$$Lambda$DeviceChooserActivity$HBI-2bTFMFr7CPpcQi7PMl7EEUA -> com.android.companiondevicemanager.ll1:
+    com.android.companiondevicemanager.DeviceChooserActivity f$0 -> l11
+com.android.companiondevicemanager.-$$Lambda$DeviceDiscoveryService$1$89Z6GjMzMFwl17APhqio1ehd1tU -> com.android.companiondevicemanager.lll:
+    com.android.companiondevicemanager.-$$Lambda$DeviceDiscoveryService$1$89Z6GjMzMFwl17APhqio1ehd1tU INSTANCE -> l11
+com.android.companiondevicemanager.-$$Lambda$DeviceDiscoveryService$DeviceFilterPair$ldT3ctspLIdSoSXynhEV399cJx0 -> com.android.companiondevicemanager.l111:
+    android.os.Parcelable f$0 -> l11
+com.android.companiondevicemanager.-$$Lambda$DeviceDiscoveryService$DevicesAdapter$rJB4irPFkC_NH4VFYubS4x5Ck5o -> com.android.companiondevicemanager.l11l:
+    com.android.companiondevicemanager.DeviceDiscoveryService$DevicesAdapter f$0 -> l11
+    com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair f$1 -> l1l
+com.android.companiondevicemanager.-$$Lambda$DeviceDiscoveryService$QPyzcoPNdyngPt7edActW9_88S0 -> com.android.companiondevicemanager.l1l1:
+    com.android.companiondevicemanager.-$$Lambda$DeviceDiscoveryService$QPyzcoPNdyngPt7edActW9_88S0 INSTANCE -> l11
+com.android.companiondevicemanager.-$$Lambda$FF3bv59uzMtgFDQgbuOHg5xdwqo -> com.android.companiondevicemanager.l1ll:
+    com.android.companiondevicemanager.-$$Lambda$FF3bv59uzMtgFDQgbuOHg5xdwqo INSTANCE -> l11
+com.android.companiondevicemanager.-$$Lambda$SYJuQj_QtcNJSo29OHLkVUfgs2k -> com.android.companiondevicemanager.ll11:
+    com.android.companiondevicemanager.-$$Lambda$SYJuQj_QtcNJSo29OHLkVUfgs2k INSTANCE -> l11
+com.android.companiondevicemanager.DeviceChooserActivity -> com.android.companiondevicemanager.DeviceChooserActivity:
+    android.widget.ListView mDeviceListView -> l1l
+    android.view.View mLoadingIndicator -> l11
+    android.view.View mPairButton -> ll1
+    android.view.View mCancelButton -> lll
+    1:1:void <init>():40:40 -> <init>
+    2:2:void <init>():45:45 -> <init>
+    1:1:void access$000(com.android.companiondevicemanager.DeviceChooserActivity):40:40 -> l11
+    1:4:android.widget.ProgressBar getProgressBar():132:135 -> l111
+    1:1:com.android.companiondevicemanager.DeviceDiscoveryService getService():153:153 -> l11l
+    1:3:void cancel():96:98 -> l1l
+    1:1:void lambda$onCreate$0(android.view.View):70:70 -> l1l1
+    void lambda$onCreate$0$DeviceChooserActivity(android.view.View) -> l1ll
+    1:1:java.lang.CharSequence getCallingAppName():111:111 -> ll1
+    2:2:java.lang.CharSequence getCallingAppName():113:113 -> ll1
+    3:3:java.lang.CharSequence getCallingAppName():112:112 -> ll1
+    4:4:java.lang.CharSequence getCallingAppName():116:116 -> ll1
+    5:5:java.lang.CharSequence getCallingAppName():115:115 -> ll1
+    6:6:java.lang.CharSequence getCallingAppName():118:118 -> ll1
+    1:1:void lambda$onCreate$1(android.view.View):92:92 -> ll11
+    void lambda$onCreate$1$DeviceChooserActivity(android.view.View) -> ll1l
+    1:1:int getPadding(android.content.res.Resources):140:140 -> lll
+    1:3:void onDeviceConfirmed(com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair):157:157 -> lll1
+    4:6:void onDeviceConfirmed(com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair):159:159 -> lll1
+    7:7:void onDeviceConfirmed(com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair):161:161 -> lll1
+    1:3:void onSelectionUpdate():144:146 -> llll
+    4:4:void onSelectionUpdate():148:148 -> llll
+    1:1:void onCreate(android.os.Bundle):52:52 -> onCreate
+    2:3:void onCreate(android.os.Bundle):56:57 -> onCreate
+    4:4:void onCreate(android.os.Bundle):60:60 -> onCreate
+    5:7:void onCreate(android.os.Bundle):62:64 -> onCreate
+    8:9:void onCreate(android.os.Bundle):67:68 -> onCreate
+    10:10:void onCreate(android.os.Bundle):65:65 -> onCreate
+    11:14:void onCreate(android.os.Bundle):69:72 -> onCreate
+    15:22:void onCreate(android.os.Bundle):74:81 -> onCreate
+    23:23:void onCreate(android.os.Bundle):87:87 -> onCreate
+    24:24:void onCreate(android.os.Bundle):89:89 -> onCreate
+    25:26:void onCreate(android.os.Bundle):91:92 -> onCreate
+    1:3:void onStop():103:105 -> onStop
+    1:4:void setTitle(java.lang.CharSequence):124:127 -> setTitle
+com.android.companiondevicemanager.DeviceChooserActivity$1 -> com.android.companiondevicemanager.ll1l:
+    com.android.companiondevicemanager.DeviceChooserActivity this$0 -> l11
+    1:1:void <init>(com.android.companiondevicemanager.DeviceChooserActivity):81:81 -> <init>
+    1:1:void onChanged():84:84 -> onChanged
+com.android.companiondevicemanager.DeviceDiscoveryService -> com.android.companiondevicemanager.DeviceDiscoveryService:
+    android.companion.AssociationRequest mRequest -> ll1l
+    java.util.List mBluetoothFilters -> l1l1
+    android.bluetooth.le.ScanCallback mBLEScanCallback -> l1ll1
+    android.bluetooth.BluetoothAdapter mBluetoothAdapter -> l11
+    com.android.companiondevicemanager.DeviceDiscoveryService$BluetoothBroadcastReceiver mBluetoothBroadcastReceiver -> l1lll
+    com.android.companiondevicemanager.DeviceDiscoveryService$DevicesAdapter mDevicesAdapter -> l1111
+    com.android.internal.infra.AndroidFuture mServiceCallback -> l11l1
+    java.util.List mDevicesFound -> lll1
+    java.util.List mBLEFilters -> l11l
+    java.util.List mFilters -> l111
+    boolean mIsScanning -> l11ll
+    android.companion.ICompanionDeviceDiscoveryService mBinder -> l1l1l
+    java.util.List mBLEScanFilters -> ll11
+    android.companion.IFindDeviceCallback mFindCallback -> l111l
+    java.util.List mWifiFilters -> l1ll
+    com.android.companiondevicemanager.DeviceDiscoveryService$WifiBroadcastReceiver mWifiBroadcastReceiver -> ll111
+    com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair mSelectedDevice -> llll
+    android.net.wifi.WifiManager mWifiManager -> l1l
+    com.android.companiondevicemanager.DeviceDiscoveryService sInstance -> ll11l
+    android.bluetooth.le.BluetoothLeScanner mBLEScanner -> ll1
+    android.bluetooth.le.ScanSettings mDefaultScanSettings -> lll
+    com.android.companiondevicemanager.DeviceChooserActivity mActivity -> l1l11
+    1:1:void <init>():75:75 -> <init>
+    2:2:void <init>():87:87 -> <init>
+    3:4:void <init>():102:103 -> <init>
+    5:5:void <init>():105:105 -> <init>
+    1:1:void access$000(com.android.companiondevicemanager.DeviceDiscoveryService,android.companion.AssociationRequest):75:75 -> l11
+    1:1:java.util.List access$600(com.android.companiondevicemanager.DeviceDiscoveryService):75:75 -> l111
+    1:2:void onDeviceLostMainThread(com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair):305:306 -> l1111
+    1:1:void onDeviceSelected(java.lang.String,java.lang.String):310:310 -> l111l
+    1:1:android.net.wifi.WifiManager access$700(com.android.companiondevicemanager.DeviceDiscoveryService):75:75 -> l11l
+    1:1:void onReadyToShowUI():287:287 -> l11l1
+    2:2:void onReadyToShowUI():293:293 -> l11l1
+    1:4:void reset():221:224 -> l11ll
+    1:1:java.util.List access$300(com.android.companiondevicemanager.DeviceDiscoveryService):75:75 -> l1l
+    1:1:java.util.List access$800(com.android.companiondevicemanager.DeviceDiscoveryService):75:75 -> l1l1
+    1:1:boolean shouldScan(java.util.List):215:215 -> l1l11
+    1:2:void startDiscovery(android.companion.AssociationRequest):153:154 -> l1l1l
+    3:7:void startDiscovery(android.companion.AssociationRequest):156:160 -> l1l1l
+    8:8:void startDiscovery(android.companion.AssociationRequest):162:162 -> l1l1l
+    9:10:void startDiscovery(android.companion.AssociationRequest):165:166 -> l1l1l
+    11:12:void startDiscovery(android.companion.AssociationRequest):172:173 -> l1l1l
+    13:15:void startDiscovery(android.companion.AssociationRequest):175:177 -> l1l1l
+    16:17:void startDiscovery(android.companion.AssociationRequest):183:184 -> l1l1l
+    18:20:void startDiscovery(android.companion.AssociationRequest):188:190 -> l1l1l
+    21:23:void startDiscovery(android.companion.AssociationRequest):192:194 -> l1l1l
+    24:26:void startDiscovery(android.companion.AssociationRequest):197:199 -> l1l1l
+    27:29:void startDiscovery(android.companion.AssociationRequest):202:204 -> l1l1l
+    30:30:void startDiscovery(android.companion.AssociationRequest):206:206 -> l1l1l
+    31:33:void startDiscovery(android.companion.AssociationRequest):208:210 -> l1l1l
+    34:34:void startDiscovery(android.companion.AssociationRequest):209:209 -> l1l1l
+    void lambda$QPyzcoPNdyngPt7edActW9_88S0(com.android.companiondevicemanager.DeviceDiscoveryService) -> l1ll
+    1:2:void stopScan():236:237 -> l1ll1
+    3:3:void stopScan():239:239 -> l1ll1
+    4:5:void stopScan():241:242 -> l1ll1
+    6:6:void stopScan():244:244 -> l1ll1
+    7:10:void stopScan():247:250 -> l1ll1
+    11:14:void stopScan():252:255 -> l1ll1
+    1:1:void access$400(com.android.companiondevicemanager.DeviceDiscoveryService,com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair):75:75 -> ll1
+    1:1:void onCancel():315:315 -> ll11
+    1:1:void onDeviceFound(com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair):262:262 -> ll1l
+    1:1:void access$500(com.android.companiondevicemanager.DeviceDiscoveryService,com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair):75:75 -> lll
+    1:2:void onDeviceFoundMainThread(com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair):269:270 -> lll1
+    3:3:void onDeviceFoundMainThread(com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair):274:274 -> lll1
+    4:5:void onDeviceFoundMainThread(com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair):277:278 -> lll1
+    6:7:void onDeviceFoundMainThread(com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair):280:281 -> lll1
+    1:1:void onDeviceLost(com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair):299:299 -> llll
+    1:1:android.os.IBinder onBind(android.content.Intent):132:132 -> onBind
+    1:1:void onCreate():137:137 -> onCreate
+    2:4:void onCreate():141:143 -> onCreate
+    5:6:void onCreate():145:146 -> onCreate
+    7:7:void onCreate():148:148 -> onCreate
+    1:2:boolean onUnbind(android.content.Intent):229:230 -> onUnbind
+com.android.companiondevicemanager.DeviceDiscoveryService$1 -> com.android.companiondevicemanager.lll1:
+    com.android.companiondevicemanager.DeviceDiscoveryService this$0 -> l11
+    1:1:void <init>(com.android.companiondevicemanager.DeviceDiscoveryService):106:106 -> <init>
+    1:1:void lambda$startDiscovery$0(java.lang.Object,android.companion.AssociationRequest):121:121 -> l11
+    1:3:void startDiscovery(android.companion.AssociationRequest,java.lang.String,android.companion.IFindDeviceCallback,com.android.internal.infra.AndroidFuture):118:120 -> startDiscovery
+com.android.companiondevicemanager.DeviceDiscoveryService$BLEScanCallback -> com.android.companiondevicemanager.llll:
+    com.android.companiondevicemanager.DeviceDiscoveryService this$0 -> l11
+    1:1:void <init>(com.android.companiondevicemanager.DeviceDiscoveryService):447:447 -> <init>
+    1:2:void onScanResult(int,android.bluetooth.le.ScanResult):458:459 -> onScanResult
+    3:3:void onScanResult(int,android.bluetooth.le.ScanResult):462:462 -> onScanResult
+    4:4:void onScanResult(int,android.bluetooth.le.ScanResult):464:464 -> onScanResult
+com.android.companiondevicemanager.DeviceDiscoveryService$BluetoothBroadcastReceiver -> com.android.companiondevicemanager.l1111:
+    com.android.companiondevicemanager.DeviceDiscoveryService this$0 -> l11
+    1:1:void <init>(com.android.companiondevicemanager.DeviceDiscoveryService):469:469 -> <init>
+    2:2:void <init>(com.android.companiondevicemanager.DeviceDiscoveryService,com.android.companiondevicemanager.DeviceDiscoveryService$1):469:469 -> <init>
+    1:3:void onReceive(android.content.Context,android.content.Intent):476:478 -> onReceive
+    4:5:void onReceive(android.content.Context,android.content.Intent):480:481 -> onReceive
+    6:6:void onReceive(android.content.Context,android.content.Intent):483:483 -> onReceive
+com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair -> com.android.companiondevicemanager.l111l:
+    android.companion.DeviceFilter filter -> l1l
+    android.os.Parcelable device -> l11
+    1:3:void <init>(android.os.Parcelable,android.companion.DeviceFilter):382:384 -> <init>
+    1:3:boolean equals(java.lang.Object):426:428 -> equals
+    1:1:int hashCode():433:433 -> hashCode
+    1:3:com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair findMatch(android.os.Parcelable,java.util.List):395:397 -> l11
+    4:4:com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair findMatch(android.os.Parcelable,java.util.List):400:400 -> l11
+    1:8:java.lang.String getDisplayName():408:415 -> l1l
+    9:9:java.lang.String getDisplayName():417:417 -> l1l
+    10:10:java.lang.String getDisplayName():420:420 -> l1l
+    1:1:boolean lambda$findMatch$0(android.os.Parcelable,android.companion.DeviceFilter):397:397 -> ll1
+    1:2:java.lang.String toString():438:439 -> toString
+com.android.companiondevicemanager.DeviceDiscoveryService$DevicesAdapter -> com.android.companiondevicemanager.l11l1:
+    android.graphics.drawable.Drawable BLUETOOTH_ICON -> l11
+    android.graphics.drawable.Drawable WIFI_ICON -> l1l
+    com.android.companiondevicemanager.DeviceDiscoveryService this$0 -> ll1
+    1:2:void <init>(com.android.companiondevicemanager.DeviceDiscoveryService):328:329 -> <init>
+    3:4:void <init>(com.android.companiondevicemanager.DeviceDiscoveryService):319:320 -> <init>
+    1:4:android.view.View getView(int,android.view.View,android.view.ViewGroup):337:340 -> getView
+    1:1:void bind(android.widget.TextView,com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair):345:345 -> l11
+    2:2:void bind(android.widget.TextView,com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair):347:347 -> l11
+    3:3:void bind(android.widget.TextView,com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair):346:346 -> l11
+    4:6:void bind(android.widget.TextView,com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair):351:353 -> l11
+    7:7:void bind(android.widget.TextView,com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair):350:350 -> l11
+    8:8:void bind(android.widget.TextView,com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair):355:355 -> l11
+    1:5:android.widget.TextView newView():363:367 -> l111
+    1:2:android.graphics.drawable.Drawable icon(int):323:324 -> l1l
+    1:2:void lambda$bind$0(com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair,android.view.View):356:357 -> ll1
+    void lambda$bind$0$DeviceDiscoveryService$DevicesAdapter(com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair,android.view.View) -> lll
+com.android.companiondevicemanager.DeviceDiscoveryService$WifiBroadcastReceiver -> com.android.companiondevicemanager.l11ll:
+    com.android.companiondevicemanager.DeviceDiscoveryService this$0 -> l11
+    1:1:void <init>(com.android.companiondevicemanager.DeviceDiscoveryService):488:488 -> <init>
+    2:2:void <init>(com.android.companiondevicemanager.DeviceDiscoveryService,com.android.companiondevicemanager.DeviceDiscoveryService$1):488:488 -> <init>
+    1:2:void onReceive(android.content.Context,android.content.Intent):491:492 -> onReceive
+    3:4:void onReceive(android.content.Context,android.content.Intent):498:499 -> onReceive

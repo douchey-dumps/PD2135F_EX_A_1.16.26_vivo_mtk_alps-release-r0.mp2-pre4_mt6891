@@ -1,0 +1,93 @@
+# compiler: R8
+# compiler_version: 2.1.7-r3
+# min_api: 30
+# pg_map_id: f00812b
+# common_typos_disable
+com.android.location.fused.FusedLocationProvider -> com.android.location.fused.lll:
+    com.android.location.provider.ProviderPropertiesUnbundled PROPERTIES -> l111l
+    android.location.LocationListener mNetworkListener -> l111
+    android.content.BroadcastReceiver mUserChangeReceiver -> l11l
+    long mGpsInterval -> ll11
+    android.location.Location mNetworkLocation -> l1111
+    android.location.Location mFusedLocation -> lll1
+    android.location.LocationListener mGpsListener -> lll
+    android.os.WorkSource mWorkSource -> l1ll
+    long mNetworkInterval -> ll1l
+    android.location.Location mGpsLocation -> llll
+    android.content.Context mContext -> l1l
+    com.android.location.provider.ProviderRequestUnbundled mRequest -> l1l1
+    android.location.LocationManager mLocationManager -> ll1
+    java.lang.Object mLock -> l11
+    1:1:void <clinit>():53:53 -> <clinit>
+    1:1:void <init>(android.content.Context):92:92 -> <init>
+    2:2:void <init>(android.content.Context):67:67 -> <init>
+    3:4:void <init>(android.content.Context):93:94 -> <init>
+    5:5:void <init>(android.content.Context):96:96 -> <init>
+    6:6:void <init>(android.content.Context):118:118 -> <init>
+    7:7:void <init>(android.content.Context):140:140 -> <init>
+    8:11:void <init>(android.content.Context):151:154 -> <init>
+    1:1:java.lang.Object access$000(com.android.location.fused.FusedLocationProvider):48:48 -> l11
+    1:1:android.location.Location access$402(com.android.location.fused.FusedLocationProvider,android.location.Location):48:48 -> l111
+    1:1:void stop():162:162 -> l1111
+    2:5:void stop():164:167 -> l1111
+    1:3:void updateRequirementsLocked():183:185 -> l111l
+    4:5:void updateRequirementsLocked():198:199 -> l111l
+    6:7:void updateRequirementsLocked():188:189 -> l111l
+    8:9:void updateRequirementsLocked():191:192 -> l111l
+    10:12:void updateRequirementsLocked():206:208 -> l111l
+    13:14:void updateRequirementsLocked():210:211 -> l111l
+    15:15:void updateRequirementsLocked():213:213 -> l111l
+    1:1:void access$500(com.android.location.fused.FusedLocationProvider):48:48 -> l11l
+    1:1:android.location.Location access$102(com.android.location.fused.FusedLocationProvider,android.location.Location):48:48 -> l1l
+    1:2:android.location.Location chooseBestLocation(android.location.Location,android.location.Location):305:306 -> l1l1
+    3:4:android.location.Location chooseBestLocation(android.location.Location,android.location.Location):309:310 -> l1l1
+    5:5:android.location.Location chooseBestLocation(android.location.Location,android.location.Location):314:314 -> l1l1
+    6:6:android.location.Location chooseBestLocation(android.location.Location,android.location.Location):317:317 -> l1l1
+    7:7:android.location.Location chooseBestLocation(android.location.Location,android.location.Location):320:320 -> l1l1
+    1:4:void dump(java.io.PrintWriter):277:280 -> l1ll
+    5:6:void dump(java.io.PrintWriter):282:283 -> l1ll
+    7:8:void dump(java.io.PrintWriter):285:286 -> l1ll
+    9:10:void dump(java.io.PrintWriter):288:289 -> l1ll
+    11:11:void dump(java.io.PrintWriter):291:291 -> l1ll
+    1:1:void access$200(com.android.location.fused.FusedLocationProvider):48:48 -> ll1
+    1:5:void onUserChanged():269:273 -> ll11
+    1:2:void reportBestLocationLocked():236:237 -> ll1l
+    3:3:void reportBestLocationLocked():241:241 -> ll1l
+    4:5:void reportBestLocationLocked():247:248 -> ll1l
+    6:8:void reportBestLocationLocked():251:253 -> ll1l
+    9:10:void reportBestLocationLocked():255:256 -> ll1l
+    11:11:void reportBestLocationLocked():258:258 -> ll1l
+    12:12:void reportBestLocationLocked():264:264 -> ll1l
+    1:1:com.android.location.provider.ProviderRequestUnbundled access$300(com.android.location.fused.FusedLocationProvider):48:48 -> lll
+    1:1:void resetProviderRequestLocked(java.lang.String,long,long,android.location.LocationListener):221:221 -> lll1
+    2:2:void resetProviderRequestLocked(java.lang.String,long,long,android.location.LocationListener):224:224 -> lll1
+    3:4:void resetProviderRequestLocked(java.lang.String,long,long,android.location.LocationListener):226:227 -> lll1
+    5:6:void resetProviderRequestLocked(java.lang.String,long,long,android.location.LocationListener):229:230 -> lll1
+    1:1:void start():158:158 -> llll
+    1:5:void onSetRequest(com.android.location.provider.ProviderRequestUnbundled,android.os.WorkSource):172:176 -> onSetRequest
+com.android.location.fused.FusedLocationProvider$1 -> com.android.location.fused.l11:
+    com.android.location.fused.FusedLocationProvider this$0 -> l11
+    1:1:void <init>(com.android.location.fused.FusedLocationProvider):96:96 -> <init>
+    1:4:void onLocationChanged(android.location.Location):99:102 -> onLocationChanged
+    1:1:void onProviderDisabled(java.lang.String):107:107 -> onProviderDisabled
+    2:3:void onProviderDisabled(java.lang.String):109:110 -> onProviderDisabled
+    4:5:void onProviderDisabled(java.lang.String):113:114 -> onProviderDisabled
+com.android.location.fused.FusedLocationProvider$2 -> com.android.location.fused.l1l:
+    com.android.location.fused.FusedLocationProvider this$0 -> l11
+    1:1:void <init>(com.android.location.fused.FusedLocationProvider):118:118 -> <init>
+    1:4:void onLocationChanged(android.location.Location):121:124 -> onLocationChanged
+    1:1:void onProviderDisabled(java.lang.String):129:129 -> onProviderDisabled
+    2:3:void onProviderDisabled(java.lang.String):131:132 -> onProviderDisabled
+    4:5:void onProviderDisabled(java.lang.String):135:136 -> onProviderDisabled
+com.android.location.fused.FusedLocationProvider$3 -> com.android.location.fused.ll1:
+    com.android.location.fused.FusedLocationProvider this$0 -> l11
+    1:1:void <init>(com.android.location.fused.FusedLocationProvider):140:140 -> <init>
+    1:1:void onReceive(android.content.Context,android.content.Intent):143:143 -> onReceive
+    2:2:void onReceive(android.content.Context,android.content.Intent):147:147 -> onReceive
+com.android.location.fused.FusedLocationService -> com.android.location.fused.FusedLocationService:
+    com.android.location.fused.FusedLocationProvider mProvider -> l11
+    1:1:void <init>():27:27 -> <init>
+    1:2:void dump(java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]):51:52 -> dump
+    1:3:android.os.IBinder onBind(android.content.Intent):33:35 -> onBind
+    4:4:android.os.IBinder onBind(android.content.Intent):38:38 -> onBind
+    1:3:void onDestroy():43:45 -> onDestroy

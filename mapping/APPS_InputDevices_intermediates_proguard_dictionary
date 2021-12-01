@@ -1,0 +1,7 @@
+# compiler: R8
+# compiler_version: 2.1.7-r3
+# min_api: 30
+# pg_map_id: a24a015
+# common_typos_disable
+com.android.inputdevices.InputDeviceReceiver -> com.android.inputdevices.InputDeviceReceiver:
+    1:1:void <init>():23:23 -> <init>

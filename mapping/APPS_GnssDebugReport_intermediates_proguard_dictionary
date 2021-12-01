@@ -1,0 +1,385 @@
+# compiler: R8
+# compiler_version: 2.1.7-r3
+# min_api: 30
+# pg_map_id: 6e06827
+# common_typos_disable
+android.hidl.base.V1_0.DebugInfo -> l11.l11.l11.l11.l1l:
+    int pid -> l11
+    long ptr -> l1l
+    int arch -> ll1
+    1:1:void <init>():4:4 -> <init>
+    2:4:void <init>():42:44 -> <init>
+    1:1:boolean equals(java.lang.Object):54:54 -> equals
+    2:3:boolean equals(java.lang.Object):57:58 -> equals
+    4:4:boolean equals(java.lang.Object):61:61 -> equals
+    5:5:boolean equals(java.lang.Object):64:64 -> equals
+    1:5:int hashCode():72:72 -> hashCode
+    1:3:void writeEmbeddedToBlob(android.os.HwBlob,long):150:152 -> l11
+    1:3:void writeToParcel(android.os.HwParcel):126:128 -> l1l
+    1:10:java.lang.String toString():80:89 -> toString
+android.hidl.base.V1_0.DebugInfo$Architecture -> l11.l11.l11.l11.l11:
+    1:1:java.lang.String toString(int):19:19 -> l11
+com.mediatek.gnssdebugreport.DebugData839Parser -> com.mediatek.gnssdebugreport.l11:
+    1:1:void <init>():20:20 -> <init>
+    1:2:android.os.Bundle parseData(java.lang.String):30:31 -> l11
+    3:22:android.os.Bundle parseData(java.lang.String):34:53 -> l11
+    23:25:android.os.Bundle parseData(java.lang.String):56:58 -> l11
+com.mediatek.gnssdebugreport.DebugData840Parser -> com.mediatek.gnssdebugreport.l1l:
+    1:1:void <init>():64:64 -> <init>
+    1:2:android.os.Bundle parseData(java.lang.String):73:74 -> l11
+    3:14:android.os.Bundle parseData(java.lang.String):78:89 -> l11
+    15:26:android.os.Bundle parseData(java.lang.String):91:102 -> l11
+    27:28:android.os.Bundle parseData(java.lang.String):107:108 -> l11
+    29:29:android.os.Bundle parseData(java.lang.String):104:104 -> l11
+com.mediatek.gnssdebugreport.DebugData841Parser -> com.mediatek.gnssdebugreport.ll1:
+    1:1:void <init>():114:114 -> <init>
+    1:2:android.os.Bundle parseData(java.lang.String):124:125 -> l11
+    3:12:android.os.Bundle parseData(java.lang.String):129:138 -> l11
+    13:13:android.os.Bundle parseData(java.lang.String):140:140 -> l11
+    14:24:android.os.Bundle parseData(java.lang.String):142:152 -> l11
+    25:26:android.os.Bundle parseData(java.lang.String):157:158 -> l11
+    27:27:android.os.Bundle parseData(java.lang.String):154:154 -> l11
+com.mediatek.gnssdebugreport.DebugDataParser -> com.mediatek.gnssdebugreport.lll:
+    1:1:void <init>():13:13 -> <init>
+    android.os.Bundle parseData(java.lang.String) -> l11
+com.mediatek.gnssdebugreport.GnssDebugReportService -> com.mediatek.gnssdebugreport.GnssDebugReportService:
+    com.mediatek.gnssdebugreport.GnssDebugReportServiceStub mService -> l11
+    1:1:void <init>():10:10 -> <init>
+    2:2:void <init>():13:13 -> <init>
+    1:1:android.os.IBinder onBind(android.content.Intent):22:22 -> onBind
+    1:2:void onCreate():16:17 -> onCreate
+    1:1:void onDestroy():28:28 -> onDestroy
+com.mediatek.gnssdebugreport.GnssDebugReportServiceStub -> com.mediatek.gnssdebugreport.l111:
+    com.mediatek.gnssdebugreport.MnldConn mMnldConn -> l11
+    android.os.RemoteCallbackList mCbList -> l1l
+    1:1:void <init>():13:13 -> <init>
+    2:3:void <init>():32:33 -> <init>
+    1:2:void addListener(com.mediatek.gnssdebugreport.IDebugReportCallback):65:66 -> addListener
+    1:1:void onDebugInfoResp(java.lang.String):165:165 -> l11
+    2:2:void onDebugInfoResp(java.lang.String):169:169 -> l11
+    3:3:void onDebugInfoResp(java.lang.String):172:172 -> l11
+    4:4:void onDebugInfoResp(java.lang.String):174:174 -> l11
+    5:5:void onDebugInfoResp(java.lang.String):178:178 -> l11
+    1:2:android.os.Bundle parseDebugData(java.lang.String):111:112 -> l1l
+    3:3:android.os.Bundle parseDebugData(java.lang.String):116:116 -> l1l
+    4:5:android.os.Bundle parseDebugData(java.lang.String):118:119 -> l1l
+    6:6:android.os.Bundle parseDebugData(java.lang.String):121:121 -> l1l
+    7:7:android.os.Bundle parseDebugData(java.lang.String):132:132 -> l1l
+    8:8:android.os.Bundle parseDebugData(java.lang.String):128:128 -> l1l
+    9:9:android.os.Bundle parseDebugData(java.lang.String):124:124 -> l1l
+    10:10:android.os.Bundle parseDebugData(java.lang.String):142:142 -> l1l
+    11:12:android.os.Bundle parseDebugData(java.lang.String):144:145 -> l1l
+    13:13:android.os.Bundle parseDebugData(java.lang.String):149:149 -> l1l
+    1:1:boolean registerDebugReportCallback(com.mediatek.gnssdebugreport.IDebugReportCallback):70:70 -> ll1
+    1:1:boolean unregisterDebugReportCallback(com.mediatek.gnssdebugreport.IDebugReportCallback):80:80 -> lll
+    1:2:void removeListener(com.mediatek.gnssdebugreport.IDebugReportCallback):106:107 -> removeListener
+    1:5:boolean startDebug(com.mediatek.gnssdebugreport.IDebugReportCallback):48:52 -> startDebug
+    6:7:boolean startDebug(com.mediatek.gnssdebugreport.IDebugReportCallback):54:55 -> startDebug
+    8:8:boolean startDebug(com.mediatek.gnssdebugreport.IDebugReportCallback):57:57 -> startDebug
+    9:9:boolean startDebug(com.mediatek.gnssdebugreport.IDebugReportCallback):59:59 -> startDebug
+    1:5:boolean stopDebug(com.mediatek.gnssdebugreport.IDebugReportCallback):88:92 -> stopDebug
+    6:7:boolean stopDebug(com.mediatek.gnssdebugreport.IDebugReportCallback):94:95 -> stopDebug
+    8:8:boolean stopDebug(com.mediatek.gnssdebugreport.IDebugReportCallback):97:97 -> stopDebug
+    9:9:boolean stopDebug(com.mediatek.gnssdebugreport.IDebugReportCallback):99:99 -> stopDebug
+com.mediatek.gnssdebugreport.GnssDebugReportServiceStub$DebugDataType -> com.mediatek.gnssdebugreport.GnssDebugReportServiceStub$DebugDataType:
+    com.mediatek.gnssdebugreport.GnssDebugReportServiceStub$DebugDataType Type_840 -> ll1
+    com.mediatek.gnssdebugreport.GnssDebugReportServiceStub$DebugDataType Type_839 -> l1l
+    com.mediatek.gnssdebugreport.GnssDebugReportServiceStub$DebugDataType[] $VALUES -> l111
+    com.mediatek.gnssdebugreport.GnssDebugReportServiceStub$DebugDataType Type_841 -> lll
+    com.mediatek.gnssdebugreport.GnssDebugReportServiceStub$DebugDataType Type_None -> l11
+    1:4:void <clinit>():35:38 -> <clinit>
+    5:5:void <clinit>():34:34 -> <clinit>
+    1:1:void <init>(java.lang.String,int):34:34 -> <init>
+    1:1:com.mediatek.gnssdebugreport.GnssDebugReportServiceStub$DebugDataType valueOf(java.lang.String):34:34 -> valueOf
+    1:1:com.mediatek.gnssdebugreport.GnssDebugReportServiceStub$DebugDataType[] values():34:34 -> values
+com.mediatek.gnssdebugreport.MnldConn -> com.mediatek.gnssdebugreport.lll1:
+    com.mediatek.socket.base.UdpServer mUdpServer -> l1l
+    com.mediatek.socket.base.UdpClient mUdpClient -> l11
+    com.mediatek.gnssdebugreport.MnldConn$DebugStopThread mDebugStopThread -> l1ll
+    com.mediatek.gnssdebugreport.MnldConn$OnResponseListener mCallBack -> lll
+    com.mediatek.gnssdebugreport.mnldinterface.Mnld2DebugInterface$Mnld2DebugInterfaceReceiver mReceiver -> ll11
+    com.mediatek.gnssdebugreport.mnldinterface.Debug2MnldInterface$Debug2MnldInterfaceSender mToMnldSender -> ll1
+    java.lang.Object mMnldAckLock -> l111
+    boolean mMnldAckRec -> l11l
+    com.mediatek.gnssdebugreport.MnldConn$DebugStartThread mDebugStartThread -> l1l1
+    1:1:void <init>(com.mediatek.gnssdebugreport.MnldConn$OnResponseListener):69:69 -> <init>
+    2:3:void <init>(com.mediatek.gnssdebugreport.MnldConn$OnResponseListener):28:29 -> <init>
+    4:6:void <init>(com.mediatek.gnssdebugreport.MnldConn$OnResponseListener):36:38 -> <init>
+    7:7:void <init>(com.mediatek.gnssdebugreport.MnldConn$OnResponseListener):134:134 -> <init>
+    8:8:void <init>(com.mediatek.gnssdebugreport.MnldConn$OnResponseListener):70:70 -> <init>
+    9:10:void <init>(com.mediatek.gnssdebugreport.MnldConn$OnResponseListener):72:73 -> <init>
+    11:11:void <init>(com.mediatek.gnssdebugreport.MnldConn$OnResponseListener):76:76 -> <init>
+    12:13:void <init>(com.mediatek.gnssdebugreport.MnldConn$OnResponseListener):78:79 -> <init>
+    1:1:java.lang.Object access$000(com.mediatek.gnssdebugreport.MnldConn):19:19 -> l11
+    1:1:void sleep(long):180:180 -> l111
+    2:2:void sleep(long):182:182 -> l111
+    1:2:void startDebug():53:54 -> l11l
+    1:1:boolean access$102(com.mediatek.gnssdebugreport.MnldConn,boolean):19:19 -> l1l
+    1:2:void stopDebug():58:59 -> l1l1
+    1:1:com.mediatek.gnssdebugreport.MnldConn$OnResponseListener access$200(com.mediatek.gnssdebugreport.MnldConn):19:19 -> ll1
+    1:3:boolean connect(boolean):110:112 -> lll
+    4:6:boolean connect(boolean):114:116 -> lll
+    7:7:boolean connect(boolean):115:115 -> lll
+    8:11:boolean connect(boolean):122:125 -> lll
+    12:12:boolean connect(boolean):127:127 -> lll
+    13:13:boolean connect(boolean):112:112 -> lll
+com.mediatek.gnssdebugreport.MnldConn$1 -> com.mediatek.gnssdebugreport.l11l:
+    com.mediatek.gnssdebugreport.MnldConn this$0 -> l11
+    1:1:void <init>(com.mediatek.gnssdebugreport.MnldConn):134:134 -> <init>
+    1:2:void mnldUpdateReboot():146:147 -> l111
+    1:4:void mnldAckDebugReq():137:140 -> l1l
+    1:1:void mnldUpdateGpsStatus(com.mediatek.gnssdebugreport.mnldinterface.MnldGpsStatusCategory):160:160 -> ll1
+    2:2:void mnldUpdateGpsStatus(com.mediatek.gnssdebugreport.mnldinterface.MnldGpsStatusCategory):163:163 -> ll1
+    3:3:void mnldUpdateGpsStatus(com.mediatek.gnssdebugreport.mnldinterface.MnldGpsStatusCategory):168:168 -> ll1
+    4:4:void mnldUpdateGpsStatus(com.mediatek.gnssdebugreport.mnldinterface.MnldGpsStatusCategory):165:165 -> ll1
+    1:2:void mnldUpdateMessageInfo(java.lang.String):152:153 -> lll
+com.mediatek.gnssdebugreport.MnldConn$2 -> com.mediatek.gnssdebugreport.l1l1:
+    int[] $SwitchMap$com$mediatek$gnssdebugreport$mnldinterface$MnldGpsStatusCategory -> l11
+    1:1:void <clinit>():163:163 -> <clinit>
+com.mediatek.gnssdebugreport.MnldConn$DebugStartThread -> com.mediatek.gnssdebugreport.l1ll:
+    com.mediatek.gnssdebugreport.MnldConn this$0 -> l11
+    1:1:void <init>(com.mediatek.gnssdebugreport.MnldConn):84:84 -> <init>
+    1:2:void run():86:87 -> run
+    3:3:void run():90:90 -> run
+com.mediatek.gnssdebugreport.MnldConn$DebugStopThread -> com.mediatek.gnssdebugreport.ll11:
+    com.mediatek.gnssdebugreport.MnldConn this$0 -> l11
+    1:1:void <init>(com.mediatek.gnssdebugreport.MnldConn):95:95 -> <init>
+    1:2:void run():97:98 -> run
+    3:3:void run():100:100 -> run
+com.mediatek.gnssdebugreport.MnldConn$OnResponseListener -> com.mediatek.gnssdebugreport.ll1l:
+    void onDebugInfoResp(java.lang.String) -> l11
+com.mediatek.gnssdebugreport.mnldinterface.Debug2MnldInterface$Debug2MnldInterfaceSender -> com.mediatek.gnssdebugreport.mnldinterface.l11:
+    1:1:void <init>():19:19 -> <init>
+    1:3:boolean debugReqMnldMsg(com.mediatek.socket.base.UdpClient,com.mediatek.gnssdebugreport.mnldinterface.DebugReqStatusCategory):21:23 -> l11
+    4:11:boolean debugReqMnldMsg(com.mediatek.socket.base.UdpClient,com.mediatek.gnssdebugreport.mnldinterface.DebugReqStatusCategory):25:32 -> l11
+com.mediatek.gnssdebugreport.mnldinterface.DebugReqStatusCategory -> com.mediatek.gnssdebugreport.mnldinterface.DebugReqStatusCategory:
+    com.mediatek.gnssdebugreport.mnldinterface.DebugReqStatusCategory startDebug -> l1l
+    com.mediatek.gnssdebugreport.mnldinterface.DebugReqStatusCategory[] $VALUES -> lll
+    com.mediatek.gnssdebugreport.mnldinterface.DebugReqStatusCategory end -> ll1
+    com.mediatek.gnssdebugreport.mnldinterface.DebugReqStatusCategory stopDebug -> l11
+    1:3:void <clinit>():8:10 -> <clinit>
+    4:4:void <clinit>():7:7 -> <clinit>
+    1:1:void <init>(java.lang.String,int):7:7 -> <init>
+    1:1:void encode(com.mediatek.socket.base.SocketUtils$BaseBuffer):17:17 -> l11
+    2:2:void encode(com.mediatek.socket.base.SocketUtils$BaseBuffer):25:25 -> l11
+    3:3:void encode(com.mediatek.socket.base.SocketUtils$BaseBuffer):22:22 -> l11
+    4:4:void encode(com.mediatek.socket.base.SocketUtils$BaseBuffer):19:19 -> l11
+    1:1:com.mediatek.socket.base.SocketUtils$Codable decode(com.mediatek.socket.base.SocketUtils$BaseBuffer):7:7 -> l1l
+    1:1:com.mediatek.gnssdebugreport.mnldinterface.DebugReqStatusCategory decode(com.mediatek.socket.base.SocketUtils$BaseBuffer):34:34 -> ll1
+    2:2:com.mediatek.gnssdebugreport.mnldinterface.DebugReqStatusCategory decode(com.mediatek.socket.base.SocketUtils$BaseBuffer):41:41 -> ll1
+    3:3:com.mediatek.gnssdebugreport.mnldinterface.DebugReqStatusCategory decode(com.mediatek.socket.base.SocketUtils$BaseBuffer):39:39 -> ll1
+    4:4:com.mediatek.gnssdebugreport.mnldinterface.DebugReqStatusCategory decode(com.mediatek.socket.base.SocketUtils$BaseBuffer):37:37 -> ll1
+    1:1:com.mediatek.gnssdebugreport.mnldinterface.DebugReqStatusCategory valueOf(java.lang.String):7:7 -> valueOf
+    1:1:com.mediatek.gnssdebugreport.mnldinterface.DebugReqStatusCategory[] values():7:7 -> values
+com.mediatek.gnssdebugreport.mnldinterface.DebugReqStatusCategory$1 -> com.mediatek.gnssdebugreport.mnldinterface.l1l:
+    int[] $SwitchMap$com$mediatek$gnssdebugreport$mnldinterface$DebugReqStatusCategory -> l11
+    1:1:void <clinit>():17:17 -> <clinit>
+com.mediatek.gnssdebugreport.mnldinterface.Mnld2DebugInterface$Mnld2DebugInterfaceReceiver -> com.mediatek.gnssdebugreport.mnldinterface.ll1:
+    1:1:void <init>():85:85 -> <init>
+    1:3:boolean decode(com.mediatek.socket.base.SocketUtils$UdpServerInterface):111:113 -> l11
+    4:5:boolean decode(com.mediatek.socket.base.SocketUtils$UdpServerInterface):129:130 -> l11
+    6:7:boolean decode(com.mediatek.socket.base.SocketUtils$UdpServerInterface):124:125 -> l11
+    8:8:boolean decode(com.mediatek.socket.base.SocketUtils$UdpServerInterface):120:120 -> l11
+    9:9:boolean decode(com.mediatek.socket.base.SocketUtils$UdpServerInterface):116:116 -> l11
+    void mnldUpdateReboot() -> l111
+    void mnldAckDebugReq() -> l1l
+    void mnldUpdateGpsStatus(com.mediatek.gnssdebugreport.mnldinterface.MnldGpsStatusCategory) -> ll1
+    void mnldUpdateMessageInfo(java.lang.String) -> lll
+com.mediatek.gnssdebugreport.mnldinterface.MnldGpsStatusCategory -> com.mediatek.gnssdebugreport.mnldinterface.MnldGpsStatusCategory:
+    com.mediatek.gnssdebugreport.mnldinterface.MnldGpsStatusCategory end -> ll1
+    com.mediatek.gnssdebugreport.mnldinterface.MnldGpsStatusCategory gpsStopped -> l11
+    com.mediatek.gnssdebugreport.mnldinterface.MnldGpsStatusCategory _instance -> lll
+    com.mediatek.gnssdebugreport.mnldinterface.MnldGpsStatusCategory[] $VALUES -> l111
+    com.mediatek.gnssdebugreport.mnldinterface.MnldGpsStatusCategory gpsStarted -> l1l
+    1:3:void <clinit>():8:10 -> <clinit>
+    4:4:void <clinit>():7:7 -> <clinit>
+    5:5:void <clinit>():13:13 -> <clinit>
+    1:1:void <init>(java.lang.String,int):7:7 -> <init>
+    1:1:void encode(com.mediatek.socket.base.SocketUtils$BaseBuffer):17:17 -> l11
+    2:2:void encode(com.mediatek.socket.base.SocketUtils$BaseBuffer):25:25 -> l11
+    3:3:void encode(com.mediatek.socket.base.SocketUtils$BaseBuffer):22:22 -> l11
+    4:4:void encode(com.mediatek.socket.base.SocketUtils$BaseBuffer):19:19 -> l11
+    1:1:com.mediatek.socket.base.SocketUtils$Codable decode(com.mediatek.socket.base.SocketUtils$BaseBuffer):7:7 -> l1l
+    1:1:com.mediatek.gnssdebugreport.mnldinterface.MnldGpsStatusCategory decode(com.mediatek.socket.base.SocketUtils$BaseBuffer):34:34 -> ll1
+    2:2:com.mediatek.gnssdebugreport.mnldinterface.MnldGpsStatusCategory decode(com.mediatek.socket.base.SocketUtils$BaseBuffer):41:41 -> ll1
+    3:3:com.mediatek.gnssdebugreport.mnldinterface.MnldGpsStatusCategory decode(com.mediatek.socket.base.SocketUtils$BaseBuffer):39:39 -> ll1
+    4:4:com.mediatek.gnssdebugreport.mnldinterface.MnldGpsStatusCategory decode(com.mediatek.socket.base.SocketUtils$BaseBuffer):37:37 -> ll1
+    1:1:com.mediatek.gnssdebugreport.mnldinterface.MnldGpsStatusCategory valueOf(java.lang.String):7:7 -> valueOf
+    1:1:com.mediatek.gnssdebugreport.mnldinterface.MnldGpsStatusCategory[] values():7:7 -> values
+com.mediatek.gnssdebugreport.mnldinterface.MnldGpsStatusCategory$1 -> com.mediatek.gnssdebugreport.mnldinterface.lll:
+    int[] $SwitchMap$com$mediatek$gnssdebugreport$mnldinterface$MnldGpsStatusCategory -> l11
+    1:1:void <clinit>():17:17 -> <clinit>
+com.mediatek.socket.base.SocketUtils$BaseBuffer -> l1l.l11.l11.l11.l11:
+    int mOffset -> l11
+    byte[] mBuff -> l1l
+    1:3:void <init>(int):34:36 -> <init>
+    1:1:void assertNotNull(java.lang.Object):328:328 -> l11
+    1:2:int getInt():207:208 -> l111
+    1:1:void setOffset(int):48:48 -> l1111
+    1:1:int getOffset():52:52 -> l11l
+    1:1:byte[] getBuff():56:56 -> l1l
+    1:2:short getShort():200:201 -> l1l1
+    1:4:java.lang.String getString():230:233 -> l1ll
+    5:5:java.lang.String getString():235:235 -> l1ll
+    6:6:java.lang.String getString():237:237 -> l1ll
+    1:2:byte getByte():193:194 -> ll1
+    1:2:void putByte(byte):73:74 -> ll11
+    1:2:void putCodable(com.mediatek.socket.base.SocketUtils$Codable):113:114 -> ll1l
+    1:1:com.mediatek.socket.base.SocketUtils$Codable getCodable(com.mediatek.socket.base.SocketUtils$Codable):243:243 -> lll
+    1:2:void putInt(int):83:84 -> lll1
+    1:2:void putShort(short):78:79 -> llll
+    1:5:java.lang.String toString():40:44 -> toString
+com.mediatek.socket.base.SocketUtils$Codable -> l1l.l11.l11.l11.l1l:
+    void encode(com.mediatek.socket.base.SocketUtils$BaseBuffer) -> l11
+    com.mediatek.socket.base.SocketUtils$Codable decode(com.mediatek.socket.base.SocketUtils$BaseBuffer) -> l1l
+com.mediatek.socket.base.SocketUtils$ProtocolHandler -> l1l.l11.l11.l11.ll1:
+    boolean decode(com.mediatek.socket.base.SocketUtils$UdpServerInterface) -> l11
+com.mediatek.socket.base.SocketUtils$UdpServerInterface -> l1l.l11.l11.l11.lll:
+    com.mediatek.socket.base.SocketUtils$BaseBuffer getBuff() -> l11
+com.mediatek.socket.base.UdpClient -> l1l.l11.l11.l11.l11l:
+    java.net.InetAddress mInetAddress -> l111
+    java.lang.String mHost -> ll1
+    com.mediatek.socket.base.UdpClient$LbsHidlDeathRecipient mLLbsHidlDeathRecipient -> ll1l
+    int mPort -> lll
+    java.lang.String mChannelName -> l1ll
+    vendor.mediatek.hardware.lbs.V1_0.ILbs mLbsHidlClient -> ll11
+    java.net.DatagramSocket mNetSocket -> l11l
+    java.net.DatagramPacket mPacket -> l1l1
+    com.mediatek.socket.base.SocketUtils$BaseBuffer mBuff -> l11
+    boolean mIsLocalSocket -> l1l
+    1:1:void <init>(java.lang.String,android.net.LocalSocketAddress$Namespace,int):46:46 -> <init>
+    2:2:void <init>(java.lang.String,android.net.LocalSocketAddress$Namespace,int):54:54 -> <init>
+    3:3:void <init>(java.lang.String,android.net.LocalSocketAddress$Namespace,int):56:56 -> <init>
+    4:6:void <init>(java.lang.String,android.net.LocalSocketAddress$Namespace,int):47:49 -> <init>
+    1:1:void close():141:141 -> l11
+    2:3:void close():144:145 -> l11
+    1:1:boolean lbsHidlInit(java.lang.String):65:65 -> l111
+    2:3:boolean lbsHidlInit(java.lang.String):70:71 -> l111
+    4:4:boolean lbsHidlInit(java.lang.String):73:73 -> l111
+    1:1:boolean write():116:116 -> l11l
+    2:4:boolean write():118:120 -> l11l
+    5:6:boolean write():123:124 -> l11l
+    7:9:boolean write():128:130 -> l11l
+    10:11:boolean write():133:134 -> l11l
+    1:2:boolean connect():93:94 -> l1l
+    3:5:boolean connect():97:99 -> l1l
+    6:7:boolean connect():101:102 -> l1l
+    8:8:boolean connect():105:105 -> l1l
+    1:2:java.util.ArrayList convertByteArrayToArrayList(byte[],int):83:84 -> ll1
+    3:3:java.util.ArrayList convertByteArrayToArrayList(byte[],int):86:86 -> ll1
+    1:1:com.mediatek.socket.base.SocketUtils$BaseBuffer getBuff():112:112 -> lll
+com.mediatek.socket.base.UdpClient$LbsHidlDeathRecipient -> l1l.l11.l11.l11.l111:
+    com.mediatek.socket.base.UdpClient this$0 -> l11
+    1:1:void <init>(com.mediatek.socket.base.UdpClient):57:57 -> <init>
+    1:1:void serviceDied(long):60:60 -> serviceDied
+com.mediatek.socket.base.UdpServer -> l1l.l11.l11.l11.ll11:
+    com.mediatek.socket.base.SocketUtils$ProtocolHandler mReceiver -> l11l
+    com.mediatek.socket.base.UdpServer$LbsHidlCallback mLbsHidlCallback -> lll
+    vendor.mediatek.hardware.lbs.V1_0.ILbs mLbsHidlClient -> ll1
+    com.mediatek.socket.base.SocketUtils$BaseBuffer mBuff -> l11
+    com.mediatek.socket.base.UdpServer$LbsHidlDeathRecipient mLLbsHidlDeathRecipient -> l111
+    java.lang.String mChannelName -> l1l
+    1:1:void <init>(java.lang.String,android.net.LocalSocketAddress$Namespace,int):98:98 -> <init>
+    2:2:void <init>(java.lang.String,android.net.LocalSocketAddress$Namespace,int):47:47 -> <init>
+    3:3:void <init>(java.lang.String,android.net.LocalSocketAddress$Namespace,int):59:59 -> <init>
+    4:5:void <init>(java.lang.String,android.net.LocalSocketAddress$Namespace,int):100:101 -> <init>
+    6:6:void <init>(java.lang.String,android.net.LocalSocketAddress$Namespace,int):103:103 -> <init>
+    1:1:com.mediatek.socket.base.SocketUtils$BaseBuffer getBuff():156:156 -> l11
+    1:1:boolean access$300(com.mediatek.socket.base.UdpServer,java.lang.String):22:22 -> l111
+    1:2:void covertArrayListToByteArray(java.util.ArrayList,byte[]):42:43 -> l11l
+    1:1:com.mediatek.socket.base.SocketUtils$BaseBuffer access$000(com.mediatek.socket.base.UdpServer):22:22 -> l1l
+    1:2:boolean lbsHidlInit(java.lang.String):74:75 -> l1l1
+    3:3:boolean lbsHidlInit(java.lang.String):77:77 -> l1l1
+    4:4:boolean lbsHidlInit(java.lang.String):79:79 -> l1l1
+    1:1:void msleep(long):205:205 -> l1ll
+    2:2:void msleep(long):207:207 -> l1ll
+    1:1:void access$100(com.mediatek.socket.base.UdpServer,long):22:22 -> ll1
+    1:1:void setReceiver(com.mediatek.socket.base.SocketUtils$ProtocolHandler):88:88 -> ll11
+    1:1:java.lang.String access$200(com.mediatek.socket.base.UdpServer):22:22 -> lll
+com.mediatek.socket.base.UdpServer$LbsHidlCallback -> l1l.l11.l11.l11.l1l1:
+    com.mediatek.socket.base.UdpServer this$0 -> l11
+    1:1:void <init>(com.mediatek.socket.base.UdpServer):48:48 -> <init>
+    1:1:boolean callbackToClient(java.util.ArrayList):50:50 -> ll1
+    2:3:boolean callbackToClient(java.util.ArrayList):52:53 -> ll1
+com.mediatek.socket.base.UdpServer$LbsHidlDeathRecipient -> l1l.l11.l11.l11.l1ll:
+    com.mediatek.socket.base.UdpServer this$0 -> l11
+    1:1:void <init>(com.mediatek.socket.base.UdpServer):60:60 -> <init>
+    1:1:void serviceDied(long):63:63 -> serviceDied
+    2:3:void serviceDied(long):66:67 -> serviceDied
+vendor.mediatek.hardware.lbs.V1_0.ILbs -> ll1.l11.l11.l11.l11.l1l:
+    boolean sendToServer(java.util.ArrayList) -> l11
+    java.util.ArrayList interfaceChain() -> l111
+    1:1:vendor.mediatek.hardware.lbs.V1_0.ILbs asInterface(android.os.IHwBinder):18:18 -> l11l
+    2:3:vendor.mediatek.hardware.lbs.V1_0.ILbs asInterface(android.os.IHwBinder):20:21 -> l11l
+    4:4:vendor.mediatek.hardware.lbs.V1_0.ILbs asInterface(android.os.IHwBinder):24:24 -> l11l
+    5:6:vendor.mediatek.hardware.lbs.V1_0.ILbs asInterface(android.os.IHwBinder):27:28 -> l11l
+    void setCallback(vendor.mediatek.hardware.lbs.V1_0.ILbsCallback) -> l1l
+    1:1:vendor.mediatek.hardware.lbs.V1_0.ILbs getService(java.lang.String):70:70 -> lll
+vendor.mediatek.hardware.lbs.V1_0.ILbs$Proxy -> ll1.l11.l11.l11.l11.l11:
+    android.os.IHwBinder mRemote -> l11
+    1:2:void <init>(android.os.IHwBinder):200:201 -> <init>
+    1:1:android.os.IHwBinder asBinder():206:206 -> asBinder
+    1:1:boolean equals(java.lang.Object):221:221 -> equals
+    1:1:int hashCode():226:226 -> hashCode
+    1:3:boolean sendToServer(java.util.ArrayList):250:252 -> l11
+    4:4:boolean sendToServer(java.util.ArrayList):254:254 -> l11
+    5:7:boolean sendToServer(java.util.ArrayList):256:258 -> l11
+    8:8:boolean sendToServer(java.util.ArrayList):260:260 -> l11
+    9:10:boolean sendToServer(java.util.ArrayList):263:264 -> l11
+    1:2:java.util.ArrayList interfaceChain():292:293 -> l111
+    3:3:java.util.ArrayList interfaceChain():295:295 -> l111
+    4:6:java.util.ArrayList interfaceChain():297:299 -> l111
+    7:7:java.util.ArrayList interfaceChain():301:301 -> l111
+    8:9:java.util.ArrayList interfaceChain():304:305 -> l111
+    1:3:void setCallback(vendor.mediatek.hardware.lbs.V1_0.ILbsCallback):233:235 -> l1l
+    4:4:void setCallback(vendor.mediatek.hardware.lbs.V1_0.ILbsCallback):237:237 -> l1l
+    5:7:void setCallback(vendor.mediatek.hardware.lbs.V1_0.ILbsCallback):239:241 -> l1l
+    8:9:void setCallback(vendor.mediatek.hardware.lbs.V1_0.ILbsCallback):243:244 -> l1l
+    1:2:java.lang.String interfaceDescriptor():329:330 -> l1l1
+    3:3:java.lang.String interfaceDescriptor():332:332 -> l1l1
+    4:6:java.lang.String interfaceDescriptor():334:336 -> l1l1
+    7:7:java.lang.String interfaceDescriptor():338:338 -> l1l1
+    8:9:java.lang.String interfaceDescriptor():341:342 -> l1l1
+    1:1:boolean linkToDeath(android.os.IHwBinder$DeathRecipient,long):402:402 -> linkToDeath
+    1:1:java.lang.String toString():212:212 -> toString
+vendor.mediatek.hardware.lbs.V1_0.ILbsCallback -> ll1.l11.l11.l11.l11.lll:
+    boolean callbackToClient(java.util.ArrayList) -> ll1
+vendor.mediatek.hardware.lbs.V1_0.ILbsCallback$Stub -> ll1.l11.l11.l11.l11.ll1:
+    1:1:void <init>():420:420 -> <init>
+    1:1:java.util.ArrayList interfaceChain():428:428 -> l111
+    void setHALInstrumentation() -> l1111
+    void debug(android.os.NativeHandle,java.util.ArrayList) -> l1l1
+    1:4:android.hidl.base.V1_0.DebugInfo getDebugInfo():473:476 -> l1ll
+    1:1:java.util.ArrayList getHashChain():448:448 -> ll11
+    java.lang.String interfaceDescriptor() -> ll1l
+    1:1:void notifySyspropsChanged():483:483 -> lll1
+    void ping() -> llll
+    1:1:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):630:630 -> onTransact
+    2:2:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):632:632 -> onTransact
+    3:3:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):619:619 -> onTransact
+    4:7:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):621:624 -> onTransact
+    8:8:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):609:609 -> onTransact
+    9:11:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):611:613 -> onTransact
+    12:12:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):596:596 -> onTransact
+    13:13:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):598:598 -> onTransact
+    14:14:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):562:562 -> onTransact
+    15:16:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):564:565 -> onTransact
+    17:17:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):567:567 -> onTransact
+    18:21:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):569:572 -> onTransact
+    22:22:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):576:576 -> onTransact
+    23:23:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):578:578 -> onTransact
+    24:24:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):582:582 -> onTransact
+    25:25:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):579:579 -> onTransact
+    26:26:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):586:586 -> onTransact
+    27:27:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):588:588 -> onTransact
+    28:28:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):590:590 -> onTransact
+    29:29:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):551:551 -> onTransact
+    30:33:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):553:556 -> onTransact
+    34:34:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):539:539 -> onTransact
+    35:39:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):541:545 -> onTransact
+    40:40:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):528:528 -> onTransact
+    41:44:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):530:533 -> onTransact
+    45:45:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):516:516 -> onTransact
+    46:50:void onTransact(int,android.os.HwParcel,android.os.HwParcel,int):518:522 -> onTransact
+    1:1:android.os.IHwInterface queryLocalInterface(java.lang.String):495:495 -> queryLocalInterface
+    1:1:java.lang.String toString():507:507 -> toString

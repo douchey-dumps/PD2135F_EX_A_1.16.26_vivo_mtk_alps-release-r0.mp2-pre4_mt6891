@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<firmwareItems>
+	<!--Samsung 3D 128GB 96L TLC, Selen, UFS3.0-->
+	<firmwareItem project="" type="UFS" vendor="SAMSUNG" product_name="KLUDG4UHDB-B2D1" version="0900" fw_file_name="StorageFW_SELEN_UFS3.0_128GB_P09.bin" allow_ffu_from="" end="1"/>
+	<!--Samsung 3D 256GB 96L TLC, Selen, UFS3.0-->
+	<firmwareItem project="" type="UFS" vendor="SAMSUNG" product_name="KLUEG8UHDB-C2D1" version="0900" fw_file_name="StorageFW_SELEN_UFS3.0_256GB_P09.bin" allow_ffu_from="" end="1"/>
+	<!--Samsung 0810039 3D 128GB 96L TLC, Santos, UFS2.1+TW-->
+	<firmwareItem project="PD2061 PD2083F" type="UFS" vendor="samsung" product_name="KM8V8001JM-B813" version="1900" fw_file_name="StorageFW_SANTOS_UFS_2_1_128GB_P19.bin" allow_ffu_from="" end="1"/>
+	<!--SKHynix 0810061 3D 128GB 96L TLC, Voyager, UFS2.1+TW-->
+	<firmwareItem project="PD2061 PD2131" type="UFS" vendor="hynix" product_name="H9HQ15AECMADAR" version="A401" fw_file_name="StorageFW_Voyager_UFS2.1_A401.bin" allow_ffu_from="" end="1"/>
+	<!--SKHynix 0810088 3D 128GB 96L TLC, Voyager, UFS2.2-->
+	<firmwareItem project="PD2061 PD2131" type="UFS" vendor="hynix" product_name="H9HQ15AECMBDAR" version="A002" fw_file_name="StorageFW_LD_Voyager_UFS2.2_A002.bin" allow_ffu_from="" end="1"/>
+	<!--MICRON 0810046 3D 128GB 96L TLC, UFS2.2-->
+	<firmwareItem project="PD2061" type="UFS" vendor="MICRON" product_name="MT128GASAO4U21  " version="0608" fw_file_name="StorageFW_SM2752_UFS2.2_0608.bin" allow_ffu_from="" end="1"/>
+	<!--Samsung 3D 256GB 96L TLC, Selen, UFS3.0-->
+	<firmwareItem project="PD2072" type="UFS" vendor="samsung" product_name="KLUEG8UHDB-C2D1" version="0900" fw_file_name="StorageFW_SELEN_UFS3.0_256GB_P09.bin" allow_ffu_from="" end="1"/>
+	<!--Samsung 0810047 3D 256GB 96L TLC, Santos, UFS2.1+TW, FFFF means that no need to upgrade-->
+	<firmwareItem project="PD2083F PD2102F_EX PD2123 PD2130" type="UFS" vendor="samsung" product_name="KM8F8001JM-B813" version="0000" fw_file_name="0000" allow_ffu_from="FFFF" end="1"/>
+	<!--Samsung 0810113 3D 128GB 128L TLC, Selen, UFS2.2, FFFF means that no need to upgrade-->
+	<firmwareItem project="PD2083F TD2011 PD2102F_EX PD2123 PD2131 PD2130" type="UFS" vendor="samsung" product_name="KM8V9001JM-B813" version="0000" fw_file_name="0000" allow_ffu_from="FFFF" end="1"/>
+	<!--Samsung 3D 512GB 96L TLC, Selen, UFS3.0-->
+	<!-- <firmwareItem type="UFS" vendor="SAMSUNG" product_name="KLUFG8RHDA-B2D1" version="0100" fw_file_name="SAMSUNG_KLUFG8RHDA-B2D1_0500.bin" allow_ffu_from="0100, FFA1" end="0"/> -->
+	<!--SKHynix 0810048 3D 128GB 96L TLC, Voyager, UFS2.1+TW-->
+	<firmwareItem project="TD2011 PD2102F_EX PD2123 PD2131 PD2130" type="UFS" vendor="hynix" product_name="H9HQ15AFAMADAR" version="A401" fw_file_name="StorageFW_Voyager_UFS2.1_A401.bin" allow_ffu_from="" end="1"/>
+	<!--Samsung 0810117 3D 128GB 128L TLC, Selen, UFS3.1, FFFF means that no need to upgrade-->
+	<firmwareItem project="TD2011 PD2130" type="UFS" vendor="samsung" product_name="KMJS9001RM-BG01" version="0000" fw_file_name="0000" allow_ffu_from="" end="1"/>
+	<!--SKHynix 0810072 3D 128GB 96L TLC, Voyager, UFS2.2-->
+	<firmwareItem project="PD2123 PD2131" type="UFS" vendor="hynix" product_name="H9HQ21AFAMADAR" version="0000" fw_file_name="0000" allow_ffu_from="" end="1"/>
+	<!--Samsung 0810093 3D 256GB 128L TLC, Selen, UFS3.1, FFFF means that no need to upgrade-->
+	<firmwareItem project="PD2123 PD2131 PD2130" type="UFS" vendor="samsung" product_name="KMAS9001PM-BC02" version="0000" fw_file_name="0000" allow_ffu_from="" end="1"/>
+	<!--Samsung 0810092 3D 256GB 128L TLC, Selen, UFS3.1, FFFF means that no need to upgrade-->
+	<firmwareItem project="PD2123 PD2131 PD2130" type="UFS" vendor="samsung" product_name="KMAG9001PM-B814" version="0000" fw_file_name="0000" allow_ffu_from="" end="1"/>
+	<!--Samsung 0810080 3D 128GB TLC, Selen, UFS3.1, 0000 means that no need to upgrade-->
+	<firmwareItem project="PD2133 PD2135 PD2133F PD2135F PD2149" type="UFS" vendor="samsung" product_name="KLUDG4UHDC-B0E1" version="0000" fw_file_name="0000" allow_ffu_from="" end="1"/>
+	<!--Samsung 0810081 3D 256GB TLC, Selen, UFS3.1, 0000 means that no need to upgrade-->
+	<firmwareItem project="PD2133 PD2135 PD2133F PD2135F PD2149" type="UFS" vendor="samsung" product_name="KLUEG8UHDC-B0E1" version="0000" fw_file_name="0000" allow_ffu_from="" end="1"/>
+	<!--Samsung 0810057 3D 256GB TLC, Santos, UFS2.1-->
+	<firmwareItem project="PD2130" type="UFS" vendor="samsung" product_name="KM8F8001MM-B813" version="0900" fw_file_name="StorageFW_UFS_2_1_Santos_V5_512GbTLC_256GB_P09.bin" allow_ffu_from="" end="1"/>
+	<!--SKhynix 0810126 3D 256GB TLC, Voyager, UFS3.1, 0000 means that no need to upgrade-->
+	<firmwareItem project="PD2130" type="UFS" vendor="hynix" product_name="H9HR21JFA3MEVR" version="0000" fw_file_name="0000" allow_ffu_from="" end="1"/>
+
+</firmwareItems>

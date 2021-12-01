@@ -1,0 +1,8 @@
+# compiler: R8
+# compiler_version: 2.1.7-r3
+# min_api: 30
+# pg_map_id: 5ca7eb6
+# common_typos_disable
+com.android.bookmarkprovider.BookmarkProvider -> com.android.bookmarkprovider.BookmarkProvider:
+    1:1:void <init>():31:31 -> <init>
+    1:1:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String):61:61 -> query

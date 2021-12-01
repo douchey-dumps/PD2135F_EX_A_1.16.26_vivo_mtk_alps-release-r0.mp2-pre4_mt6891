@@ -1,0 +1,61 @@
+# compiler: R8
+# compiler_version: 2.1.7-r3
+# min_api: 30
+# pg_map_id: e967dee
+# common_typos_disable
+com.android.pacprocessor.LibpacInterface -> com.android.pacprocessor.l11:
+    boolean startPacSupport() -> l11
+    boolean stopPacSupport() -> l1l
+    boolean setCurrentProxyScript(java.lang.String) -> ll1
+    java.lang.String makeProxyRequest(java.lang.String,java.lang.String) -> lll
+com.android.pacprocessor.PacNative -> com.android.pacprocessor.PacNative:
+    boolean mIsActive -> l11
+    com.android.pacprocessor.PacNative sInstance -> l1l
+    1:1:void <clinit>():26:26 -> <clinit>
+    2:2:void <clinit>():41:41 -> <clinit>
+    1:1:void <init>():44:44 -> <init>
+    1:3:boolean startPacSupport():54:56 -> l11
+    4:5:boolean startPacSupport():58:59 -> l11
+    1:1:com.android.pacprocessor.PacNative getInstance():49:49 -> l111
+    1:4:boolean stopPacSupport():64:67 -> l1l
+    5:5:boolean stopPacSupport():69:69 -> l1l
+    6:6:boolean stopPacSupport():71:71 -> l1l
+    1:3:boolean setCurrentProxyScript(java.lang.String):76:78 -> ll1
+    4:4:boolean setCurrentProxyScript(java.lang.String):80:80 -> ll1
+    1:3:java.lang.String makeProxyRequest(java.lang.String,java.lang.String):85:87 -> lll
+    4:4:java.lang.String makeProxyRequest(java.lang.String,java.lang.String):90:90 -> lll
+com.android.pacprocessor.PacService -> com.android.pacprocessor.PacService:
+    boolean sUseWebViewPacProcessor -> ll1
+    com.android.pacprocessor.PacService$ProxyServiceStub mStub -> l1l
+    com.android.pacprocessor.LibpacInterface mLibpac -> l11
+    1:1:void <clinit>():34:34 -> <clinit>
+    1:1:void <init>():32:32 -> <init>
+    2:4:void <init>():37:39 -> <init>
+    5:5:void <init>():41:41 -> <init>
+    1:1:com.android.pacprocessor.LibpacInterface access$100(com.android.pacprocessor.PacService):32:32 -> l11
+    1:1:android.os.IBinder onBind(android.content.Intent):57:57 -> onBind
+    1:2:void onCreate():45:46 -> onCreate
+    1:2:void onDestroy():51:52 -> onDestroy
+com.android.pacprocessor.PacService$1 -> com.android.pacprocessor.l1l:
+com.android.pacprocessor.PacService$ProxyServiceStub -> com.android.pacprocessor.ll1:
+    com.android.pacprocessor.PacService this$0 -> l11
+    1:1:void <init>(com.android.pacprocessor.PacService):60:60 -> <init>
+    2:2:void <init>(com.android.pacprocessor.PacService,com.android.pacprocessor.PacService$1):60:60 -> <init>
+    1:4:java.lang.String resolvePacFile(java.lang.String,java.lang.String):71:74 -> resolvePacFile
+    5:5:java.lang.String resolvePacFile(java.lang.String,java.lang.String):77:77 -> resolvePacFile
+    6:6:java.lang.String resolvePacFile(java.lang.String,java.lang.String):68:68 -> resolvePacFile
+    7:7:java.lang.String resolvePacFile(java.lang.String,java.lang.String):65:65 -> resolvePacFile
+    8:8:java.lang.String resolvePacFile(java.lang.String,java.lang.String):79:79 -> resolvePacFile
+    1:1:void setPacFile(java.lang.String):85:85 -> setPacFile
+    2:2:void setPacFile(java.lang.String):89:89 -> setPacFile
+    3:4:void setPacFile(java.lang.String):86:87 -> setPacFile
+com.android.pacprocessor.PacWebView -> com.android.pacprocessor.lll:
+    com.android.pacprocessor.PacWebView sInstance -> l1l
+    android.webkit.PacProcessor mProcessor -> l11
+    1:1:void <clinit>():28:28 -> <clinit>
+    1:1:void <init>():25:25 -> <init>
+    2:2:void <init>():29:29 -> <init>
+    1:1:com.android.pacprocessor.PacWebView getInstance():32:32 -> l111
+    1:3:boolean setCurrentProxyScript(java.lang.String):37:39 -> ll1
+    4:4:boolean setCurrentProxyScript(java.lang.String):41:41 -> ll1
+    1:1:java.lang.String makeProxyRequest(java.lang.String,java.lang.String):46:46 -> lll

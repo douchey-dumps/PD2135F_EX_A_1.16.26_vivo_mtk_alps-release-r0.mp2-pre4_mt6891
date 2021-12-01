@@ -1,0 +1,16 @@
+# compiler: R8
+# compiler_version: 2.1.7-r3
+# min_api: 30
+# pg_map_id: f23943b
+# common_typos_disable
+com.mediatek.gnss.nonframeworklbs.MainActivity -> com.mediatek.gnss.nonframeworklbs.MainActivity:
+    android.widget.Button mButtonLaunchPermission -> l11
+    1:1:void <init>():11:11 -> <init>
+    1:1:void access$000(com.mediatek.gnss.nonframeworklbs.MainActivity):11:11 -> l11
+    1:5:void launchPackageSettings():30:34 -> l1l
+    1:3:void onCreate(android.os.Bundle):18:20 -> onCreate
+    4:4:void onCreate(android.os.Bundle):22:22 -> onCreate
+com.mediatek.gnss.nonframeworklbs.MainActivity$1 -> com.mediatek.gnss.nonframeworklbs.l11:
+    com.mediatek.gnss.nonframeworklbs.MainActivity this$0 -> l11
+    1:1:void <init>(com.mediatek.gnss.nonframeworklbs.MainActivity):22:22 -> <init>
+    1:1:void onClick(android.view.View):24:24 -> onClick

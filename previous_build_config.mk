@@ -1,0 +1,1 @@
+PREVIOUS_BUILD_CONFIG := full_k6893v1_64-user

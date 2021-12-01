@@ -1,0 +1,112 @@
+# compiler: R8
+# compiler_version: 2.1.7-r3
+# min_api: 30
+# pg_map_id: 0393944
+# common_typos_disable
+com.android.proxyhandler.ProxyServer -> com.android.proxyhandler.ll1:
+    java.net.ServerSocket serverSocket -> ll1
+    int mPort -> lll
+    com.android.net.IProxyPortListener mCallback -> l111
+    java.util.concurrent.ExecutorService threadExecutor -> l11
+    boolean mIsRunning -> l1l
+    1:1:void <init>():322:322 -> <init>
+    2:2:void <init>():57:57 -> <init>
+    3:5:void <init>():323:325 -> <init>
+    1:1:void setCallback(com.android.net.IProxyPortListener):371:371 -> l11
+    2:2:void setCallback(com.android.net.IProxyPortListener):373:373 -> l11
+    3:3:void setCallback(com.android.net.IProxyPortListener):375:375 -> l11
+    4:5:void setCallback(com.android.net.IProxyPortListener):378:379 -> l11
+    1:1:void setPort(int):360:360 -> l1l
+    2:2:void setPort(int):362:362 -> l1l
+    3:3:void setPort(int):364:364 -> l1l
+    4:5:void setPort(int):367:368 -> l1l
+    1:3:void startServer():382:384 -> ll1
+    1:2:void stopServer():387:388 -> lll
+    3:4:void stopServer():390:391 -> lll
+    5:5:void stopServer():393:393 -> lll
+    6:6:void stopServer():396:396 -> lll
+    1:1:void run():331:331 -> run
+    2:2:void run():333:333 -> run
+    3:3:void run():335:335 -> run
+    4:4:void run():337:337 -> run
+    5:6:void run():339:340 -> run
+    7:7:void run():342:342 -> run
+    8:8:void run():344:344 -> run
+    9:9:void run():347:347 -> run
+    10:10:void run():353:353 -> run
+    11:11:void run():351:351 -> run
+    12:12:void run():356:356 -> run
+com.android.proxyhandler.ProxyServer$1 -> com.android.proxyhandler.l11:
+com.android.proxyhandler.ProxyServer$ProxyConnection -> com.android.proxyhandler.l1l:
+    java.net.Socket connection -> l11
+    1:1:void <init>(com.android.proxyhandler.ProxyServer,java.net.Socket,com.android.proxyhandler.ProxyServer$1):63:63 -> <init>
+    2:3:void <init>(com.android.proxyhandler.ProxyServer,java.net.Socket):66:67 -> <init>
+    1:3:void filterAndForwardRequestHeaders(java.net.Socket,java.net.Socket):294:296 -> l11
+    4:4:void filterAndForwardRequestHeaders(java.net.Socket,java.net.Socket):298:298 -> l11
+    1:5:void sendLine(java.net.Socket,java.lang.String):241:245 -> l111
+    1:2:void sendRequestLineWithPath(java.net.Socket,java.lang.String,java.net.URI,java.lang.String):192:193 -> l11l
+    3:3:void sendRequestLineWithPath(java.net.Socket,java.lang.String,java.net.URI,java.lang.String):195:195 -> l11l
+    1:4:java.lang.String getAbsolutePathFromAbsoluteURI(java.net.URI):207:210 -> l1l
+    5:5:java.lang.String getAbsolutePathFromAbsoluteURI(java.net.URI):213:213 -> l1l
+    6:6:java.lang.String getAbsolutePathFromAbsoluteURI(java.net.URI):215:215 -> l1l
+    7:7:java.lang.String getAbsolutePathFromAbsoluteURI(java.net.URI):218:218 -> l1l
+    8:8:java.lang.String getAbsolutePathFromAbsoluteURI(java.net.URI):221:221 -> l1l
+    9:9:java.lang.String getAbsolutePathFromAbsoluteURI(java.net.URI):223:223 -> l1l
+    1:1:boolean shouldRemoveHeaderLine(java.lang.String):308:308 -> l1l1
+    2:3:boolean shouldRemoveHeaderLine(java.lang.String):310:311 -> l1l1
+    4:4:boolean shouldRemoveHeaderLine(java.lang.String):313:313 -> l1l1
+    1:1:void skipToRequestBody(java.net.Socket):255:255 -> l1ll
+    1:2:java.lang.String getLine(java.io.InputStream):227:228 -> ll1
+    3:3:java.lang.String getLine(java.io.InputStream):232:232 -> ll1
+    4:4:java.lang.String getLine(java.io.InputStream):234:234 -> ll1
+    5:5:java.lang.String getLine(java.io.InputStream):237:237 -> ll1
+    1:2:void sendAugmentedRequestToHost(java.net.Socket,java.net.Socket,java.lang.String,java.net.URI,java.lang.String):272:273 -> lll
+    3:3:void sendAugmentedRequestToHost(java.net.Socket,java.net.Socket,java.lang.String,java.net.URI,java.lang.String):278:278 -> lll
+    4:4:void sendAugmentedRequestToHost(java.net.Socket,java.net.Socket,java.lang.String,java.net.URI,java.lang.String):281:281 -> lll
+    1:4:void run():73:76 -> run
+    5:7:void run():79:81 -> run
+    8:10:void run():87:89 -> run
+    11:11:void run():91:91 -> run
+    12:12:void run():95:95 -> run
+    13:13:void run():101:101 -> run
+    14:14:void run():97:97 -> run
+    15:17:void run():104:106 -> run
+    18:18:void run():116:116 -> run
+    19:19:void run():118:118 -> run
+    20:20:void run():120:120 -> run
+    21:21:void run():123:123 -> run
+    22:22:void run():125:125 -> run
+    23:26:void run():128:131 -> run
+    27:29:void run():133:135 -> run
+    30:30:void run():137:137 -> run
+    31:31:void run():140:140 -> run
+    32:33:void run():145:146 -> run
+    34:37:void run():153:156 -> run
+    38:38:void run():158:158 -> run
+    39:39:void run():161:161 -> run
+    40:40:void run():167:167 -> run
+    41:41:void run():111:111 -> run
+    42:42:void run():170:170 -> run
+    43:43:void run():173:173 -> run
+com.android.proxyhandler.ProxyService -> com.android.proxyhandler.ProxyService:
+    com.android.proxyhandler.ProxyServer server -> l11
+    1:1:void <init>():29:29 -> <init>
+    1:1:com.android.proxyhandler.ProxyServer access$000():29:29 -> l11
+    1:1:android.os.IBinder onBind(android.content.Intent):57:57 -> onBind
+    1:4:void onCreate():40:43 -> onCreate
+    1:3:void onDestroy():49:51 -> onDestroy
+com.android.proxyhandler.ProxyService$1 -> com.android.proxyhandler.lll:
+    1:1:void <init>(com.android.proxyhandler.ProxyService):57:57 -> <init>
+    1:2:void getProxyPort(android.os.IBinder):60:61 -> getProxyPort
+    3:3:void getProxyPort(android.os.IBinder):63:63 -> getProxyPort
+com.android.proxyhandler.SocketConnect -> com.android.proxyhandler.l111:
+    java.io.InputStream from -> l11
+    java.io.OutputStream to -> l1l
+    1:4:void <init>(java.net.Socket,java.net.Socket):16:19 -> <init>
+    1:2:void connect(java.net.Socket,java.net.Socket):43:44 -> l11
+    3:3:void connect(java.net.Socket,java.net.Socket):46:46 -> l11
+    4:4:void connect(java.net.Socket,java.net.Socket):50:50 -> l11
+    5:5:void connect(java.net.Socket,java.net.Socket):54:54 -> l11
+    1:1:void run():28:28 -> run
+    2:3:void run():34:35 -> run
+    4:4:void run():32:32 -> run

@@ -1,0 +1,110 @@
+# compiler: R8
+# compiler_version: 2.1.7-r3
+# min_api: 30
+# pg_map_id: 038c414
+# common_typos_disable
+com.android.email.partnerprovider.PartnerProvider -> com.android.email.partnerprovider.PartnerProvider:
+    android.content.UriMatcher uriMatcher -> l1l
+    java.lang.String[] GLOBAL_SIGNATURE_COLUMNS -> ll1
+    vivo.app.vgc.AbsVivoVgcManager vivoVgcManager -> l11
+    1:1:void <clinit>():43:43 -> <clinit>
+    2:4:void <clinit>():47:49 -> <clinit>
+    5:5:void <clinit>():103:103 -> <clinit>
+    1:1:void <init>():29:29 -> <init>
+    2:2:void <init>():44:44 -> <init>
+    1:1:int delete(android.net.Uri,java.lang.String,java.lang.String[]):187:187 -> delete
+    1:1:android.net.Uri insert(android.net.Uri,android.content.ContentValues):182:182 -> insert
+    1:1:java.lang.String getAttributeValue(android.content.res.XmlResourceParser,java.lang.String):299:299 -> l11
+    2:2:java.lang.String getAttributeValue(android.content.res.XmlResourceParser,java.lang.String):301:301 -> l11
+    3:3:java.lang.String getAttributeValue(android.content.res.XmlResourceParser,java.lang.String):303:303 -> l11
+    1:1:java.util.List parseProviders(android.content.res.XmlResourceParser):214:214 -> l111
+    2:2:java.util.List parseProviders(android.content.res.XmlResourceParser):216:216 -> l111
+    3:3:java.util.List parseProviders(android.content.res.XmlResourceParser):226:226 -> l111
+    4:5:java.util.List parseProviders(android.content.res.XmlResourceParser):219:220 -> l111
+    6:6:java.util.List parseProviders(android.content.res.XmlResourceParser):222:222 -> l111
+    7:7:java.util.List parseProviders(android.content.res.XmlResourceParser):234:234 -> l111
+    1:2:java.util.List loadAccountSetupEntries():275:276 -> l1l
+    3:3:java.util.List loadAccountSetupEntries():278:278 -> l1l
+    4:6:java.util.List loadAccountSetupEntries():280:282 -> l1l
+    7:7:java.util.List loadAccountSetupEntries():284:284 -> l1l
+    8:8:java.util.List loadAccountSetupEntries():286:286 -> l1l
+    9:9:java.util.List loadAccountSetupEntries():288:288 -> l1l
+    10:10:java.util.List loadAccountSetupEntries():293:293 -> l1l
+    1:1:java.util.List loadProviders():197:197 -> ll1
+    2:2:java.util.List loadProviders():199:199 -> ll1
+    3:4:java.util.List loadProviders():201:202 -> ll1
+    5:5:java.util.List loadProviders():205:205 -> ll1
+    6:7:java.util.List loadProviders():207:208 -> ll1
+    1:5:com.android.email.partnerprovider.PartnerProvider$Provider parseProvider(android.content.res.XmlResourceParser):238:242 -> lll
+    6:6:com.android.email.partnerprovider.PartnerProvider$Provider parseProvider(android.content.res.XmlResourceParser):245:245 -> lll
+    7:7:com.android.email.partnerprovider.PartnerProvider$Provider parseProvider(android.content.res.XmlResourceParser):262:262 -> lll
+    8:16:com.android.email.partnerprovider.PartnerProvider$Provider parseProvider(android.content.res.XmlResourceParser):248:256 -> lll
+    17:17:com.android.email.partnerprovider.PartnerProvider$Provider parseProvider(android.content.res.XmlResourceParser):258:258 -> lll
+    18:18:com.android.email.partnerprovider.PartnerProvider$Provider parseProvider(android.content.res.XmlResourceParser):270:270 -> lll
+    1:1:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String):120:120 -> query
+    2:2:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String):170:170 -> query
+    3:6:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String):154:157 -> query
+    7:8:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String):159:160 -> query
+    9:11:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String):164:166 -> query
+    12:15:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String):138:141 -> query
+    16:19:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String):143:146 -> query
+    20:20:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String):148:148 -> query
+    21:21:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String):122:122 -> query
+    22:23:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String):124:125 -> query
+    24:31:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String):127:134 -> query
+    32:32:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String):126:126 -> query
+    33:33:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String):116:116 -> query
+    1:1:int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[]):192:192 -> update
+com.android.email.partnerprovider.PartnerProvider$1 -> com.android.email.partnerprovider.l11:
+com.android.email.partnerprovider.PartnerProvider$AccountSetupEntry -> com.android.email.partnerprovider.l1l:
+    java.lang.String label -> l11
+    java.lang.String[] COLUMNS -> ll1
+    android.graphics.Bitmap logo -> l1l
+    1:1:void <clinit>():91:91 -> <clinit>
+    1:1:void <init>():87:87 -> <init>
+    2:2:void <init>(com.android.email.partnerprovider.PartnerProvider$1):87:87 -> <init>
+    1:1:java.lang.String access$1000(com.android.email.partnerprovider.PartnerProvider$AccountSetupEntry):87:87 -> l11
+    1:1:java.lang.String[] access$900():87:87 -> l111
+    1:1:java.lang.String access$1002(com.android.email.partnerprovider.PartnerProvider$AccountSetupEntry,java.lang.String):87:87 -> l1l
+    1:1:android.graphics.Bitmap access$1100(com.android.email.partnerprovider.PartnerProvider$AccountSetupEntry):87:87 -> ll1
+    1:1:android.graphics.Bitmap access$1102(com.android.email.partnerprovider.PartnerProvider$AccountSetupEntry,android.graphics.Bitmap):87:87 -> lll
+com.android.email.partnerprovider.PartnerProvider$Provider -> com.android.email.partnerprovider.ll1:
+    java.lang.String incomingUsernameTemplate -> l11l
+    java.lang.String outgoingUriTemplate -> l1l1
+    java.lang.String domain -> ll1
+    java.lang.String incomingUriTemplate -> l111
+    java.lang.String outgoingUsernameTemplate -> l1ll
+    java.lang.String id -> l11
+    java.lang.String signature -> lll
+    java.lang.String[] COLUMNS -> ll11
+    java.lang.String label -> l1l
+    1:1:void <clinit>():62:62 -> <clinit>
+    1:1:void <init>():52:52 -> <init>
+    2:2:void <init>(com.android.email.partnerprovider.PartnerProvider$1):52:52 -> <init>
+    1:1:java.lang.String[] access$000():52:52 -> l11
+    1:1:java.lang.String access$202(com.android.email.partnerprovider.PartnerProvider$Provider,java.lang.String):52:52 -> l111
+    1:1:java.lang.String access$602(com.android.email.partnerprovider.PartnerProvider$Provider,java.lang.String):52:52 -> l1111
+    1:1:java.lang.String access$700(com.android.email.partnerprovider.PartnerProvider$Provider):52:52 -> l111l
+    1:1:java.lang.String access$300(com.android.email.partnerprovider.PartnerProvider$Provider):52:52 -> l11l
+    1:1:java.lang.String access$702(com.android.email.partnerprovider.PartnerProvider$Provider,java.lang.String):52:52 -> l11l1
+    1:1:java.lang.String access$800(com.android.email.partnerprovider.PartnerProvider$Provider):52:52 -> l11ll
+    1:1:java.lang.String access$100(com.android.email.partnerprovider.PartnerProvider$Provider):52:52 -> l1l
+    1:1:java.lang.String access$302(com.android.email.partnerprovider.PartnerProvider$Provider,java.lang.String):52:52 -> l1l1
+    1:1:java.lang.String access$802(com.android.email.partnerprovider.PartnerProvider$Provider,java.lang.String):52:52 -> l1l11
+    1:1:java.lang.String access$400(com.android.email.partnerprovider.PartnerProvider$Provider):52:52 -> l1ll
+    1:1:java.lang.String access$102(com.android.email.partnerprovider.PartnerProvider$Provider,java.lang.String):52:52 -> ll1
+    1:1:java.lang.String access$402(com.android.email.partnerprovider.PartnerProvider$Provider,java.lang.String):52:52 -> ll11
+    1:1:java.lang.String access$500(com.android.email.partnerprovider.PartnerProvider$Provider):52:52 -> ll1l
+    1:1:java.lang.String access$200(com.android.email.partnerprovider.PartnerProvider$Provider):52:52 -> lll
+    1:1:java.lang.String access$502(com.android.email.partnerprovider.PartnerProvider$Provider,java.lang.String):52:52 -> lll1
+    1:1:java.lang.String access$600(com.android.email.partnerprovider.PartnerProvider$Provider):52:52 -> llll
+com.android.ex.editstyledtext.EditStyledText -> com.android.ex.editstyledtext.l11:
+com.android.ex.editstyledtext.EditStyledText$SavedStyledTextState -> com.android.ex.editstyledtext.EditStyledText$SavedStyledTextState:
+    int mBackgroundColor -> l11
+    1:2:java.lang.String toString():2008:2009 -> toString
+    1:2:void writeToParcel(android.os.Parcel,int):2002:2003 -> writeToParcel
+com.android.ex.editstyledtext.EditStyledText$SoftKeyReceiver -> com.android.ex.editstyledtext.EditStyledText$SoftKeyReceiver:
+    int mNewStart -> l11
+    int mNewEnd -> l1l
+    com.android.ex.editstyledtext.EditStyledText mEST -> ll1
+    1:1:void onReceiveResult(int,android.os.Bundle):1988:1988 -> onReceiveResult

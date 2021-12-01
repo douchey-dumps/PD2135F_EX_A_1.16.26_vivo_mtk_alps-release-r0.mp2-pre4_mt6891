@@ -1,0 +1,107 @@
+# compiler: R8
+# compiler_version: 2.1.7-r3
+# min_api: 30
+# pg_map_id: c4a9907
+# common_typos_disable
+com.android.vpndialogs.AlwaysOnDisconnectedDialog -> com.android.vpndialogs.AlwaysOnDisconnectedDialog:
+    android.net.IConnectivityManager mService -> l11
+    java.lang.String mVpnPackage -> ll1
+    int mUserId -> l1l
+    1:1:void <init>():43:43 -> <init>
+    1:1:java.lang.String getAlwaysOnVpnPackage():107:107 -> l11
+    2:2:java.lang.String getAlwaysOnVpnPackage():109:109 -> l11
+    1:1:java.lang.CharSequence getMessage(boolean):124:124 -> l1l
+    2:4:java.lang.CharSequence getMessage(boolean):128:130 -> l1l
+    1:1:java.lang.CharSequence getVpnLabel():116:116 -> ll1
+    2:3:java.lang.CharSequence getVpnLabel():118:119 -> ll1
+    1:2:void onClick(android.content.DialogInterface,int):89:90 -> onClick
+    3:4:void onClick(android.content.DialogInterface,int):92:93 -> onClick
+    5:5:void onClick(android.content.DialogInterface,int):95:95 -> onClick
+    6:6:void onClick(android.content.DialogInterface,int):98:98 -> onClick
+    1:1:void onCreate(android.os.Bundle):54:54 -> onCreate
+    2:2:void onCreate(android.os.Bundle):57:57 -> onCreate
+    3:3:void onCreate(android.os.Bundle):56:56 -> onCreate
+    4:5:void onCreate(android.os.Bundle):58:59 -> onCreate
+    6:6:void onCreate(android.os.Bundle):61:61 -> onCreate
+    7:10:void onCreate(android.os.Bundle):65:68 -> onCreate
+    11:18:void onCreate(android.os.Bundle):70:77 -> onCreate
+    19:22:void onCreate(android.os.Bundle):79:82 -> onCreate
+com.android.vpndialogs.AlwaysOnDisconnectedDialog$1 -> com.android.vpndialogs.l11:
+com.android.vpndialogs.AlwaysOnDisconnectedDialog$VpnSpan -> com.android.vpndialogs.l1l:
+    com.android.vpndialogs.AlwaysOnDisconnectedDialog this$0 -> l11
+    1:1:void <init>(com.android.vpndialogs.AlwaysOnDisconnectedDialog):135:135 -> <init>
+    2:2:void <init>(com.android.vpndialogs.AlwaysOnDisconnectedDialog,com.android.vpndialogs.AlwaysOnDisconnectedDialog$1):135:135 -> <init>
+    1:3:void onClick(android.view.View):138:140 -> onClick
+com.android.vpndialogs.ConfirmDialog -> com.android.vpndialogs.ConfirmDialog:
+    int mVpnType -> l11
+    android.net.IConnectivityManager mService -> ll1
+    java.lang.String mPackage -> l1l
+    1:1:void <init>():54:54 -> <init>
+    2:3:void <init>(int):57:58 -> <init>
+    1:2:android.graphics.drawable.Drawable getDrawable(java.lang.String):129:130 -> getDrawable
+    3:5:android.graphics.drawable.Drawable getDrawable(java.lang.String):132:134 -> getDrawable
+    6:6:android.graphics.drawable.Drawable getDrawable(java.lang.String):136:136 -> getDrawable
+    1:1:java.lang.String getAlwaysOnVpnPackage():102:102 -> l11
+    2:2:java.lang.String getAlwaysOnVpnPackage():104:104 -> l11
+    1:1:java.lang.CharSequence getVpnLabel():120:120 -> l1l
+    2:2:java.lang.CharSequence getVpnLabel():122:122 -> l1l
+    1:1:boolean prepareVpn():112:112 -> ll1
+    2:2:boolean prepareVpn():114:114 -> ll1
+    1:1:void onClick(android.content.DialogInterface,int):149:149 -> onClick
+    2:3:void onClick(android.content.DialogInterface,int):152:153 -> onClick
+    4:4:void onClick(android.content.DialogInterface,int):156:156 -> onClick
+    1:2:void onCreate(android.os.Bundle):63:64 -> onCreate
+    3:3:void onCreate(android.os.Bundle):66:66 -> onCreate
+    4:4:void onCreate(android.os.Bundle):65:65 -> onCreate
+    5:7:void onCreate(android.os.Bundle):68:70 -> onCreate
+    8:9:void onCreate(android.os.Bundle):73:74 -> onCreate
+    10:10:void onCreate(android.os.Bundle):77:77 -> onCreate
+    11:12:void onCreate(android.os.Bundle):79:80 -> onCreate
+    13:15:void onCreate(android.os.Bundle):83:85 -> onCreate
+    16:16:void onCreate(android.os.Bundle):84:84 -> onCreate
+    17:22:void onCreate(android.os.Bundle):87:92 -> onCreate
+    23:26:void onCreate(android.os.Bundle):94:97 -> onCreate
+com.android.vpndialogs.ManageDialog -> com.android.vpndialogs.ManageDialog:
+    com.android.internal.net.VpnConfig mConfig -> l11
+    android.widget.TextView mDataTransmitted -> lll
+    android.net.IConnectivityManager mService -> l1l
+    android.os.Handler mHandler -> l1l1
+    android.widget.TextView mDuration -> ll1
+    boolean mDataRowsHidden -> l11l
+    android.widget.TextView mDataReceived -> l111
+    1:1:void <init>():38:38 -> <init>
+    1:1:boolean handleMessage(android.os.Message):134:134 -> handleMessage
+    2:6:boolean handleMessage(android.os.Message):136:140 -> handleMessage
+    7:7:boolean handleMessage(android.os.Message):139:139 -> handleMessage
+    8:8:boolean handleMessage(android.os.Message):143:143 -> handleMessage
+    9:12:boolean handleMessage(android.os.Message):146:149 -> handleMessage
+    13:13:boolean handleMessage(android.os.Message):153:153 -> handleMessage
+    14:14:boolean handleMessage(android.os.Message):157:157 -> handleMessage
+    15:15:boolean handleMessage(android.os.Message):160:160 -> handleMessage
+    1:2:java.lang.String[] getNumbers():169:170 -> l11
+    3:5:java.lang.String[] getNumbers():173:175 -> l11
+    6:6:java.lang.String[] getNumbers():177:177 -> l11
+    7:7:java.lang.String[] getNumbers():188:188 -> l11
+    8:8:java.lang.String[] getNumbers():192:192 -> l11
+    1:1:void onClick(android.content.DialogInterface,int):117:117 -> onClick
+    2:4:void onClick(android.content.DialogInterface,int):119:121 -> onClick
+    5:5:void onClick(android.content.DialogInterface,int):123:123 -> onClick
+    6:7:void onClick(android.content.DialogInterface,int):127:128 -> onClick
+    1:1:void onCreate(android.os.Bundle):55:55 -> onCreate
+    2:2:void onCreate(android.os.Bundle):60:60 -> onCreate
+    3:3:void onCreate(android.os.Bundle):59:59 -> onCreate
+    4:4:void onCreate(android.os.Bundle):62:62 -> onCreate
+    5:5:void onCreate(android.os.Bundle):66:66 -> onCreate
+    6:8:void onCreate(android.os.Bundle):70:72 -> onCreate
+    9:12:void onCreate(android.os.Bundle):74:77 -> onCreate
+    13:14:void onCreate(android.os.Bundle):79:80 -> onCreate
+    15:15:void onCreate(android.os.Bundle):82:82 -> onCreate
+    16:18:void onCreate(android.os.Bundle):84:86 -> onCreate
+    19:24:void onCreate(android.os.Bundle):88:93 -> onCreate
+    25:26:void onCreate(android.os.Bundle):95:96 -> onCreate
+    27:27:void onCreate(android.os.Bundle):98:98 -> onCreate
+    28:29:void onCreate(android.os.Bundle):100:101 -> onCreate
+    1:2:void onDestroy():107:108 -> onDestroy
+    3:3:void onDestroy():110:110 -> onDestroy
+com.android.vpndialogs.PlatformVpnConfirmDialog -> com.android.vpndialogs.PlatformVpnConfirmDialog:
+    1:1:void <init>():27:27 -> <init>

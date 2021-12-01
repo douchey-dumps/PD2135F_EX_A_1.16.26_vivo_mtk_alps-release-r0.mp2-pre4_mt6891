@@ -1,0 +1,49 @@
+# compiler: R8
+# compiler_version: 2.1.7-r3
+# min_api: 30
+# pg_map_id: 203a811
+# common_typos_disable
+com.mediatek.mdmconfig.MdmConfig -> com.mediatek.mdmconfig.MdmConfig:
+    android.widget.Button mSetBut -> l11
+    android.widget.Switch mSwtich -> l1l
+    android.widget.ProgressBar mProgressBar -> ll1
+    1:1:void <init>():66:66 -> <init>
+    1:1:android.widget.ProgressBar access$000(com.mediatek.mdmconfig.MdmConfig):66:66 -> l11
+    1:1:void setMDMConfig(int):195:195 -> l111
+    2:3:void setMDMConfig(int):198:199 -> l111
+    4:5:void setMDMConfig(int):202:203 -> l111
+    1:4:void updateConfigProp():180:183 -> l11l
+    5:5:void updateConfigProp():185:185 -> l11l
+    1:1:android.widget.Button access$100(com.mediatek.mdmconfig.MdmConfig):66:66 -> l1l
+    1:1:void waitServiceSwitchDone(int):157:157 -> l1l1
+    2:3:void waitServiceSwitchDone(int):160:161 -> l1l1
+    4:4:void waitServiceSwitchDone(int):163:163 -> l1l1
+    5:5:void waitServiceSwitchDone(int):165:165 -> l1l1
+    6:7:void waitServiceSwitchDone(int):167:168 -> l1l1
+    8:8:void waitServiceSwitchDone(int):170:170 -> l1l1
+    9:9:void waitServiceSwitchDone(int):172:172 -> l1l1
+    10:10:void waitServiceSwitchDone(int):175:175 -> l1l1
+    1:1:void access$200(com.mediatek.mdmconfig.MdmConfig,int):66:66 -> ll1
+    1:1:void access$300(com.mediatek.mdmconfig.MdmConfig,int):66:66 -> lll
+    1:8:void onCreate(android.os.Bundle):111:118 -> onCreate
+    9:9:void onCreate(android.os.Bundle):120:120 -> onCreate
+    10:10:void onCreate(android.os.Bundle):134:134 -> onCreate
+    1:3:void onResume():151:153 -> onResume
+com.mediatek.mdmconfig.MdmConfig$1 -> com.mediatek.mdmconfig.l11:
+    com.mediatek.mdmconfig.MdmConfig this$0 -> l11
+    1:1:void <init>(com.mediatek.mdmconfig.MdmConfig):120:120 -> <init>
+    1:3:void onCheckedChanged(android.widget.CompoundButton,boolean):123:125 -> onCheckedChanged
+    4:6:void onCheckedChanged(android.widget.CompoundButton,boolean):127:129 -> onCheckedChanged
+com.mediatek.mdmconfig.MdmConfig$2 -> com.mediatek.mdmconfig.l1l:
+    com.mediatek.mdmconfig.MdmConfig this$0 -> l11
+    1:1:void <init>(com.mediatek.mdmconfig.MdmConfig):134:134 -> <init>
+    1:4:void onClick(android.view.View):137:140 -> onClick
+    5:5:void onClick(android.view.View):142:142 -> onClick
+    6:6:void onClick(android.view.View):144:144 -> onClick
+com.mediatek.mdmconfig.MdmConfig$UIUpdater -> com.mediatek.mdmconfig.ll1:
+    com.mediatek.mdmconfig.MdmConfig this$0 -> l11
+    1:1:void <init>(com.mediatek.mdmconfig.MdmConfig):80:80 -> <init>
+    1:3:void run():82:84 -> run
+    4:6:void run():86:88 -> run
+    7:19:void run():90:102 -> run
+    20:20:void run():104:104 -> run

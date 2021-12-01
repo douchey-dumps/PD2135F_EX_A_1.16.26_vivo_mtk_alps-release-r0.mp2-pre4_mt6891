@@ -1,0 +1,60 @@
+# compiler: R8
+# compiler_version: 2.1.7-r3
+# min_api: 30
+# pg_map_id: 261aa79
+# common_typos_disable
+com.android.sharedstoragebackup.ObbBackupService -> com.android.sharedstoragebackup.ObbBackupService:
+    com.android.internal.backup.IObbBackupService mService -> l11
+    1:1:void <init>():44:44 -> <init>
+    2:2:void <init>():51:51 -> <init>
+    1:1:android.os.IBinder onBind(android.content.Intent):149:149 -> onBind
+com.android.sharedstoragebackup.ObbBackupService$1 -> com.android.sharedstoragebackup.l11:
+    1:1:void <init>(com.android.sharedstoragebackup.ObbBackupService):51:51 -> <init>
+    1:1:void backupObbs(java.lang.String,android.os.ParcelFileDescriptor,int,android.app.backup.IBackupManager):58:58 -> backupObbs
+    2:2:void backupObbs(java.lang.String,android.os.ParcelFileDescriptor,int,android.app.backup.IBackupManager):60:60 -> backupObbs
+    3:4:void backupObbs(java.lang.String,android.os.ParcelFileDescriptor,int,android.app.backup.IBackupManager):62:63 -> backupObbs
+    5:5:void backupObbs(java.lang.String,android.os.ParcelFileDescriptor,int,android.app.backup.IBackupManager):67:67 -> backupObbs
+    6:9:void backupObbs(java.lang.String,android.os.ParcelFileDescriptor,int,android.app.backup.IBackupManager):69:72 -> backupObbs
+    10:10:void backupObbs(java.lang.String,android.os.ParcelFileDescriptor,int,android.app.backup.IBackupManager):74:74 -> backupObbs
+    11:11:void backupObbs(java.lang.String,android.os.ParcelFileDescriptor,int,android.app.backup.IBackupManager):76:76 -> backupObbs
+    12:12:void backupObbs(java.lang.String,android.os.ParcelFileDescriptor,int,android.app.backup.IBackupManager):87:87 -> backupObbs
+    13:13:void backupObbs(java.lang.String,android.os.ParcelFileDescriptor,int,android.app.backup.IBackupManager):89:89 -> backupObbs
+    14:14:void backupObbs(java.lang.String,android.os.ParcelFileDescriptor,int,android.app.backup.IBackupManager):91:91 -> backupObbs
+    15:15:void backupObbs(java.lang.String,android.os.ParcelFileDescriptor,int,android.app.backup.IBackupManager):95:95 -> backupObbs
+    16:16:void backupObbs(java.lang.String,android.os.ParcelFileDescriptor,int,android.app.backup.IBackupManager):83:83 -> backupObbs
+    17:17:void backupObbs(java.lang.String,android.os.ParcelFileDescriptor,int,android.app.backup.IBackupManager):87:87 -> backupObbs
+    18:18:void backupObbs(java.lang.String,android.os.ParcelFileDescriptor,int,android.app.backup.IBackupManager):89:89 -> backupObbs
+    19:19:void backupObbs(java.lang.String,android.os.ParcelFileDescriptor,int,android.app.backup.IBackupManager):87:87 -> backupObbs
+    20:20:void backupObbs(java.lang.String,android.os.ParcelFileDescriptor,int,android.app.backup.IBackupManager):89:89 -> backupObbs
+    21:21:void backupObbs(java.lang.String,android.os.ParcelFileDescriptor,int,android.app.backup.IBackupManager):91:91 -> backupObbs
+    22:22:void backupObbs(java.lang.String,android.os.ParcelFileDescriptor,int,android.app.backup.IBackupManager):95:95 -> backupObbs
+    23:23:void backupObbs(java.lang.String,android.os.ParcelFileDescriptor,int,android.app.backup.IBackupManager):98:98 -> backupObbs
+    1:2:java.util.ArrayList allFileContents(java.io.File):129:130 -> l11
+    3:6:java.util.ArrayList allFileContents(java.io.File):132:135 -> l11
+    7:9:java.util.ArrayList allFileContents(java.io.File):137:139 -> l11
+    1:1:void restoreObbFile(java.lang.String,android.os.ParcelFileDescriptor,long,int,java.lang.String,long,long,int,android.app.backup.IBackupManager):109:109 -> restoreObbFile
+    2:2:void restoreObbFile(java.lang.String,android.os.ParcelFileDescriptor,long,int,java.lang.String,long,long,int,android.app.backup.IBackupManager):111:111 -> restoreObbFile
+    3:3:void restoreObbFile(java.lang.String,android.os.ParcelFileDescriptor,long,int,java.lang.String,long,long,int,android.app.backup.IBackupManager):117:117 -> restoreObbFile
+    4:4:void restoreObbFile(java.lang.String,android.os.ParcelFileDescriptor,long,int,java.lang.String,long,long,int,android.app.backup.IBackupManager):122:122 -> restoreObbFile
+    5:5:void restoreObbFile(java.lang.String,android.os.ParcelFileDescriptor,long,int,java.lang.String,long,long,int,android.app.backup.IBackupManager):119:119 -> restoreObbFile
+    6:6:void restoreObbFile(java.lang.String,android.os.ParcelFileDescriptor,long,int,java.lang.String,long,long,int,android.app.backup.IBackupManager):122:122 -> restoreObbFile
+    7:7:void restoreObbFile(java.lang.String,android.os.ParcelFileDescriptor,long,int,java.lang.String,long,long,int,android.app.backup.IBackupManager):125:125 -> restoreObbFile
+com.android.sharedstoragebackup.SharedStorageAgent -> com.android.sharedstoragebackup.SharedStorageAgent:
+    android.os.storage.StorageVolume[] mVolumes -> l11
+    1:1:void <init>():17:17 -> <init>
+    1:1:void onCreate():25:25 -> onCreate
+    2:2:void onCreate():27:27 -> onCreate
+    3:3:void onCreate():29:29 -> onCreate
+    1:2:void onFullBackup(android.app.backup.FullBackupDataOutput):41:42 -> onFullBackup
+    3:4:void onFullBackup(android.app.backup.FullBackupDataOutput):45:46 -> onFullBackup
+    5:5:void onFullBackup(android.app.backup.FullBackupDataOutput):48:48 -> onFullBackup
+    6:7:void onFullBackup(android.app.backup.FullBackupDataOutput):50:51 -> onFullBackup
+    8:9:void onFullBackup(android.app.backup.FullBackupDataOutput):55:56 -> onFullBackup
+    1:1:void onRestoreFile(android.os.ParcelFileDescriptor,long,int,java.lang.String,java.lang.String,long,long):70:70 -> onRestoreFile
+    2:2:void onRestoreFile(android.os.ParcelFileDescriptor,long,int,java.lang.String,java.lang.String,long,long):75:75 -> onRestoreFile
+    3:6:void onRestoreFile(android.os.ParcelFileDescriptor,long,int,java.lang.String,java.lang.String,long,long):78:81 -> onRestoreFile
+    7:7:void onRestoreFile(android.os.ParcelFileDescriptor,long,int,java.lang.String,java.lang.String,long,long):83:83 -> onRestoreFile
+    8:8:void onRestoreFile(android.os.ParcelFileDescriptor,long,int,java.lang.String,java.lang.String,long,long):86:86 -> onRestoreFile
+    9:9:void onRestoreFile(android.os.ParcelFileDescriptor,long,int,java.lang.String,java.lang.String,long,long):89:89 -> onRestoreFile
+    10:10:void onRestoreFile(android.os.ParcelFileDescriptor,long,int,java.lang.String,java.lang.String,long,long):92:92 -> onRestoreFile
+    11:11:void onRestoreFile(android.os.ParcelFileDescriptor,long,int,java.lang.String,java.lang.String,long,long):95:95 -> onRestoreFile
