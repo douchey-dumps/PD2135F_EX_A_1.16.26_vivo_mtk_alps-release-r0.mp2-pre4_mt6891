@@ -1,0 +1,8 @@
+on property:vendor.vivo.nfc.boot=1
+	enable nfc_hal_service
+
+service nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service.sec
+    class hal
+    disabled
+    user nfc
+    group nfc

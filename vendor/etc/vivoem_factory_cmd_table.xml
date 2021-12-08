@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vivoem_cmd_table>
+	<common_items>
+		<iteminfo name="GSensorXY" function="set_gsensor_cali_data_handler"/>
+		<iteminfo name="wifi_init" function="enter_wifi_ftm_handler"/>
+		<iteminfo name="vivolog_flag" function="vivolog_flag_handler"/>
+		<iteminfo name="read_file" function="read_file_handler"/>
+		<iteminfo name="emit" function="enter_wifi_tx_handler"/>
+		<iteminfo name="emit_stop" function="exit_wifi_tx_handler"/>
+		<!--wlan tx/rx chain mask-->
+		<iteminfo name="chainmask" function="wifi_chainmask_handler"/>
+		<iteminfo name="receive" function="enter_wifi_rx_handler"/>
+		<iteminfo name="receive_stop" function="exit_wifi_rx_handler"/>
+		<iteminfo name="wifi_chain_test" function="enter_wifi_chain_test_handler"/>
+		<iteminfo name="enter_bt_test_mode" function="enter_bt_test_handler"/>
+		<iteminfo name="exit_bt_test_mode" function="exit_bt_test_handler"/>
+		<iteminfo name="exit_wifi_test" function="exit_wifi_test_handler"/>
+		<iteminfo name="infrared_data" function="set_ps_cali_data_handler"/>
+		<iteminfo name="get_nv_cali_val" function="get_ps_cali_data_handler"/>
+		<iteminfo name="get_low_nv_cali_val" function="get_ps_cali_data_handler"/>
+		<iteminfo name="get_double_ps_nv_cali_val" function="get_double_ps_cali_data_handler"/>
+		<iteminfo name="light_sensor_data" function="set_als_cali_data_handler"/>
+		<iteminfo name="light_cct_sensor_data" function="set_als_cct_cali_data_handler"/>
+		<iteminfo name="light_sensor_leak_data" function="set_als_leak_data_handler"/>
+		<iteminfo name="acm_flag" function="set_diag_data_handler"/>
+		<iteminfo name="Gyroscope" function="set_gyroscope_cali_data_handler"/>
+		<iteminfo name="camera_pop_cali" function="set_camera_pop_cali_handler"/>
+		<iteminfo name="master_clear" function="set_master_data_handler"/>
+		<iteminfo name="motor_blocked_time" function="get_motor_blocked_time_handler"/>
+		<iteminfo name="get_optr_flag" function="get_optr_flag_handler"/>
+		<iteminfo name="read_policy_file" function="read_policy_file_handler"/>
+		<iteminfo name="no_log_read_policy_file" function="no_log_read_policy_file_handler"/>
+		<iteminfo name="write_policy_file" function="write_policy_file_handler"/>
+		<iteminfo name="write_policy_hex_file" function="write_policy_hex_file_cmd"/>
+		<iteminfo name="read_policy_exist_file" function="read_policy_exist_file_cmd"/>
+		<iteminfo name="read_policy_hex_file" function="read_policy_hex_file_cmd"/>
+		<iteminfo name="device_demo" function="exhibition_flag_cmd"/>
+		<iteminfo name="bsptest_nv" function="set_bsptest_nv_handler"/>
+		<iteminfo name="write_chipId" function="write_chipId_handler"/>
+		<iteminfo name="uicc_check" function="Uicc_check_handler"/>
+		<iteminfo name="operate_laser_VL53L3" function="laser_VL53L3_handler"/>
+		<iteminfo name="operate_laser_TMF8801" function="laser_TMF8801_handler"/>
+		<iteminfo name="operate_sensor_cct" function="sensor_cct_handler"/>
+		<iteminfo name="rotate_by_angles" function="rotate_appointted_angles_handler"/>
+		<iteminfo name="get_target_hall_blocked_time" function="get_target_hall_blocked_time_handler"/>
+		<iteminfo name="get_all_hall_blocked_time" function="get_all_hall_blocked_time_handler"/>
+		<iteminfo name="set_ratary_camera_cali_data" function="set_rotary_camera_cali_data_handler"/>
+		<iteminfo name="rotate_to_maximum_angles" function="rotate_to_maximum_angles_handler"/>
+		<iteminfo name="execute_half_pop_calibration" function="rotate_to_maximum_angles_handler"/>
+		<iteminfo name="camera_rotate_fluency_test" function="camera_rotate_fluency_test_handler"/>
+		<iteminfo name="save_NTC_value" function="save_ntc_temperature_handler"/>
+		<iteminfo name="camera_info_code" function="get_camera_info_code_handler"/>
+		<iteminfo name="get_vendor_prop" function="get_vendor_prop_handler"/>
+		<iteminfo name="otg_udrw" function="otg_udrw_handler"/>
+		<iteminfo name="reload_wlan_driver" function="reload_wlan_driver"/>
+		<iteminfo name="prop_set" function="prop_set_handler"/>
+		<!--vivo<jishanjin>add at 2020/3/28, for modem OTA-->
+		<iteminfo name="sym_link_policy_file" function="sym_link_policy_file_handler"/>
+		<!--vivo<jishanjin>add at end-->
+		<iteminfo name="operate_linear_motor" function="operate_linear_motor_handler"/>
+		<iteminfo name="operate_barometer" function="otg_udrw_handler"/>
+		<iteminfo name="get_pcbid" function="get_pcbid_handler"/>
+		<iteminfo name="update_sw_cmd" function="update_sw_cmd_handler"/>
+		<iteminfo name="set_phone_color" function="set_phone_color_handler"/>
+		<iteminfo name="GSensorCalXYZ" function="set_new_gsensor_cali_data_handler"/>
+		<iteminfo name="GyrosCalXYZ" function="set_new_gyroscope_cali_data_handler"/>
+		<iteminfo name="smartspeaker" function="SmartSpeakerAmplifier_handler"/>
+		<iteminfo name="start_full_performance_test" function="start_full_performance_test_handler"/>
+		<iteminfo name="exit_full_performance_test" function="exit_full_performance_test_handler"/>
+		<iteminfo name="flashlight_test" function="flashlight_test_handler"/>
+		<iteminfo name="kernel_debug" function="kernel_debugging_handler"/>
+		<iteminfo name="led_result" function="get_flashlight_cali_result_handler"/>
+		<iteminfo name="app_version" function="get_app_version_handler"/>
+		<iteminfo name="executeCmd" function="execute_command_handler"/>
+		<iteminfo name="SpeakerfResDetect" function="SpeakerfResDetect_test_handler"/>
+		<iteminfo name="RootIntegrityCheck" function="rootIntegrityCheck_handler"/>
+		<iteminfo name="nfc_read_only" function="nfc_read_only_handler"/>
+		<iteminfo name="nfc_reset" function="nfc_reset_handler"/>
+		<iteminfo name="nfc_ese_nv" function="nfc_ese_nv_handler"/>
+		<iteminfo name="brightness_test" function="brightness_test_handler"/>
+		<iteminfo name="set_brightness" function="set_brightness_handler"/>
+		<iteminfo name="stop_brightness_test" function="stop_brightness_handler"/>
+		<iteminfo name="brightness_light_set" function="brightness_light_set_handler"/>
+		<iteminfo name="cts_flag" function="cts_flag_handler"/>
+		<iteminfo name="update_flag" function="update_flag_handler"/>
+		<iteminfo name="volte_value" function="volte_value_handler"/>
+		<iteminfo name="low_charge_value" function="low_charge_value_handler"/>
+		<iteminfo name="diag_socket_log" function="diag_socket_log_handler"/>
+		<iteminfo name="button_light" function="button_light_test_handler"/>
+		<iteminfo name="stop_wifi_scan" function="stop_wifi_scan_handler"/>
+		<iteminfo name="reboot_software_selfCheck" function="reboot_software_selfCheck_handler"/>
+		<iteminfo name="clear_last_socket_property" function="clear_last_socket_property_command_handler"/>
+		<iteminfo name="lcm_nova_ip_check" function="lcm_nova_ip_check_handler"/>
+	</common_items>
+	<qualcomm_items>
+		<!--FACTORY_PRODUCT_SOLUTION_QCOM-->
+		<iteminfo name="cmapi_st_staus" function="cmapi_st_staus_handler"/>
+		<iteminfo name="set_netlock" function="set_net_lock_prop_handler"/>
+		<iteminfo name="set_invalid_sim" function="set_invalid_sim_handler"/>
+		<iteminfo name="virtual_sim" function="virtual_sim_handler"/>
+		<iteminfo name="dpdt" function="set_dpdt_status_handler"/>
+		<iteminfo name="get_imei" function="get_imei_handler"/>
+		<!--vivo<jishanjin>add at 2020/11/6, for write MEID-->
+		<iteminfo name="write_meid" function="write_meid_handler"/>
+		<!--vivo<jishanjin>add end-->
+		<iteminfo name="enter_bt_tx_continuous" function="enter_bt_tx_continuous_handler"/>
+		<iteminfo name="enter_bt_le_tx_mode" function="enter_bt_le_tx_mode_handler"/>
+		<iteminfo name="enter_bt_le_rx_mode" function="enter_bt_le_rx_mode_handler"/>
+		<iteminfo name="enter_bt_2m_le_tx_mode" function="enter_bt_le_tx_mode_handler"/>
+		<iteminfo name="enter_bt_2m_le_rx_mode" function="enter_bt_le_rx_mode_handler"/>
+		<iteminfo name="antenna_5g_select" function="antenna_5g_select_handler"/>
+		<iteminfo name="lcm_rate" function="lcm_rate_for_uefi_handler"/>
+		<iteminfo name="read_ultrasound_value" function="read_ultrasound_value_handler"/>
+	</qualcomm_items>
+	<mtk_items>
+		<!--FACTORY_PRODUCT_SOLUTION_MTK-->
+		<iteminfo name="smart_amplifier_log" function="smart_amplifier_log_handler"/>
+		<iteminfo name="flash_nvram" function="mtk_flashNvram_handler"/>
+	</mtk_items>
+	<samsung_items>
+		<!--FACTORY_PRODUCT_SOLUTION_SAMSUNG-->
+		<iteminfo name="read_ultrasound_value" function="read_ultrasound_value_handler"/>
+	</samsung_items>
+	<sensor_items>
+		<!--VIVO_SENSOR_FACTORY_TEST-->
+		<iteminfo name="ud_light_sensor" function="enter_UD_light_sensor_test_handler"/>
+	</sensor_items>
+	<audio_items>
+		<!--VIVO_AUDIO_FACTORY_TEST-->
+		<iteminfo name="startMainEchoTest" function="start_main_echo_test_handler"/>
+		<iteminfo name="exitMainEchoTest" function="exit_main_echo_test_handler"/>
+		<iteminfo name="startSubEchoTest" function="start_Sub_echo_test_handler"/>
+		<iteminfo name="exitSubEchoTest" function="exit_Sub_echo_test_handler"/>
+		<iteminfo name="startReceiveTest" function="start_Receive_test_handler"/>
+		<iteminfo name="exitReceiveTest" function="exit_Receive_test_handler"/>
+		<iteminfo name="startSendTest" function="start_Send_test_handler"/>
+		<iteminfo name="exitSendTest" function="exit_Send_test_handler"/>
+		<iteminfo name="startKTVEchoTest" function="start_ktv_echo_test_handler"/>
+		<iteminfo name="startKTVElecTest" function="start_ktv_elec_test_handler"/>
+		<iteminfo name="exitKTVEchoTest" function="exit_ktv_echo_test_handler"/>
+		<iteminfo name="exitKTVElecTest" function="exit_ktv_elec_test_handler"/>
+		<iteminfo name="switch_hifi" function="switch_left_and_right_hifi_handler"/>
+		<iteminfo name="double_speaker" function="double_spaker_handler"/>
+		<iteminfo name="multi_mic" function="app_multi_mic_handler"/>
+		<iteminfo name="voice_wakeup" function="voice_wakeup_handler"/>
+		<iteminfo name="dp_check" function="dp_partition_check"/>
+		<iteminfo name="headset_liquid_enable" function="headset_liquid_enable_handler"/>
+	</audio_items>
+</vivoem_cmd_table>

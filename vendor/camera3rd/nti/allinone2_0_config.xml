@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SceneSegConfig version="0.0.1">
+    <!-- 平台 cpu gpu qnn-->
+    <SegPlatform>neuron</SegPlatform>
+    <!-- 运行设备 0.cpu 1.gpu, 2.dsp, 3.qnn-->
+    <SegDevices>3</SegDevices>
+    <SegScale>0.273556</SegScale>
+    <SegZeroPoint>188</SegZeroPoint>
+    <SegModelPath>/vendor/camera3rd/nti/sceneseg_mtk.bin</SegModelPath>
+    
+    <DetPlatform>qnn</DetPlatform>
+    <DetDevices>3</DetDevices>
+    <DetScale>0.00369723</DetScale>
+    <DetZeroPoint>20534</DetZeroPoint>
+    <DetModelPath>/vendor/camera3rd/nti/tsdet_mtk.bin</DetModelPath>
+</SceneSegConfig>

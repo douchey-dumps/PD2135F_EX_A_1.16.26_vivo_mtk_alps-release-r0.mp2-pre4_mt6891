@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MoonDetCaptConfig version="0.0.1">
+	<!-- 日志等级 0.FATAL 4.Debug -->
+	<DebugLevel>4</DebugLevel>
+	<!-- GammePreprocess 0.Fasle 1.True -->
+	<GammaPreprocess>1</GammaPreprocess>
+	<!-- 线程数 -->
+	<ThreadNum>1</ThreadNum>
+	<!-- 模型路径 -->
+	<ModelPath>/vendor/camera3rd/nti/moondet_sim18_25_bm_gpu.vdnn</ModelPath>
+	<!-- 运行平台 -->
+	<RunTime>gpu</RunTime>
+	<!-- 输入节点名称 -->
+	<InputName>data</InputName>
+	<!-- 输出节点名称，用and隔开 -->
+	<OutputNames>conv2d/126 conv2d/141 conv2d/155</OutputNames>
+</MoonDetCaptConfig>

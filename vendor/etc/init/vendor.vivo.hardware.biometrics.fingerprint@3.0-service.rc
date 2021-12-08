@@ -1,0 +1,38 @@
+on post-fs
+    chown system system /dev/goodix_fp
+    chmod 0644 /dev/goodix_fp
+    chown system system /dev/jiiov_fp
+    chmod 0644 /dev/jiiov_fp
+    chown system system /dev/esfp0
+    chmod 0644 /dev/esfp0
+    chown system system /dev/silead_fp
+    chmod 0644 /dev/silead_fp
+    chown system system /dev/nvt_device
+    chmod 0644 /dev/nvt_device
+    mkdir /mnt/vendor/persist/fingerprint 0777 system system
+    chown system system /sys/fingerprint/hbm_notify_enable
+    chmod 0644 /sys/fingerprint/hbm_notify_enable
+    chown system system /sys/fingerprint/hbm_notify_debug
+    chmod 0644 /sys/fingerprint/hbm_notify_debug
+    chown system system /sys/fp_id/fp_id
+    chmod 0644 /sys/fp_id/fp_id
+
+on property:vendor.fingerprint.boot=*
+    write /sys/fp_id/fp_id ${vendor.fingerprint.boot}
+
+on post-fs-data
+    mkdir /data/vendor/fingerprint 0771 system system
+    setprop persist.sys.fptype ${vendor.fingerprint.boot}
+    setprop persist.vivo.fingerprint.front true
+
+service biometrics-fingerprint /vendor/bin/hw/vendor.vivo.hardware.biometrics.fingerprint@3.0-service
+    class late_start
+    user system
+    group system input uhid
+    onrestart restart gf9518-restart-counter-sh
+
+service gf9518-restart-counter-sh /system/vendor/bin/sh /vendor/bin/init.vivo.fingerprint_restart_counter.sh biometrics-fingerprint 5
+    user system
+    group system
+    disabled
+    oneshot

@@ -1,0 +1,8 @@
+on boot
+	chown system /sys/vpad_touch/app_name
+	chmod 0644 /sys/vpad_touch/app_name
+
+service vivo-vpad_bbkts-hal-1-0 /vendor/bin/hw/vendor.vivo.hardware.vpad_bbkts@1.0-service
+	class hal
+	user system
+	group system

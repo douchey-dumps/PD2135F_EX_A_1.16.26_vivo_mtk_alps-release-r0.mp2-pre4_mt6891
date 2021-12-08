@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AIEnhaceConfig version="1.2.1.0">
+    <!-- 网络相关参数 -->
+    <!-- PD 0.7250 1.8250 2.8350 100.980 101.981 200.tj1000 201.tj1100/tj1200 300.win 400.linux-->
+    <Platform>201</Platform>
+    <Overlap>16</Overlap>
+    <MaxSessionNum>6</MaxSessionNum>
+    <TheadNum>3</TheadNum>
+    <LockCPUFreq>1</LockCPUFreq>
+    <BindingCoresMask>00001110</BindingCoresMask>
+    <!-- 1: ISO Thredshold = ISO * DRCGain; 2: ISO Thredshold = ISO -->
+    <MutiDRCGain>0</MutiDRCGain>
+
+    <!-- face enhance param-->
+    <!-- <FaceEn use="0">
+        <FaceWorkLensRatio>5</FaceWorkLensRatio>
+        <FaceXML>/vendor/camera3rd/nti/aisr/FaceEnhanceConfig.xml</FaceXML>
+        <ModelPath>/vendor/camera3rd/nti</ModelPath>
+    </FaceEn> -->
+
+    <SceneSegWeight>
+        <!-- base -->
+        <!-- <Background index="0" amount="0">1</Background>
+        <Portrait index="1" amount="0">1</Portrait>
+        <Sky index="2" amount="0">1</Sky>
+        <Screen index="3" amount="0">1</Screen>
+        <Building index="4" amount="0">1</Building>
+        <River index="5" amount="0">1</River>
+        <Vegetation index="6" amount="0">1</Vegetation>
+        <Road index="7" amount="0">1</Road>
+        <Text index="8" amount="0">1</Text>
+        <Animal index="9" amount="0">1</Animal> -->
+
+        <!-- perceptual -->
+        <!-- pre01 -->
+        <!-- <Background index="0" amount="0">0.6</Background>
+        <Portrait index="1" amount="0">0.6</Portrait>
+        <Sky index="2" amount="0">0.6</Sky>
+        <Screen index="3" amount="0">0.6</Screen>
+        <Building index="4" amount="0">0.6</Building>
+        <River index="5" amount="0">0.6</River>
+        <Vegetation index="6" amount="0.3">0.4</Vegetation>
+        <Road index="7" amount="0">0.6</Road>
+        <Text index="8" amount="0">0.6</Text>
+        <Animal index="9" amount="0">0.8</Animal> -->
+
+        <!-- edge -->
+        <!-- pre02 -->
+        <Background index="0" amount="0.3">0.9</Background>
+        <Portrait index="1" amount="0.3">0.9</Portrait>
+        <Sky index="2" amount="0">0.9</Sky>
+        <Screen index="3" amount="0.3">0.9</Screen>
+        <Building index="4" amount="0.3">0.9</Building>
+        <River index="5" amount="0.3">0.9</River>
+        <Vegetation index="6" amount="0.5">0.9</Vegetation>
+        <Road index="7" amount="0.3">0.9</Road>
+        <Text index="8" amount="0.3">0.9</Text>
+        <Animal index="9" amount="0.3">0.9</Animal>
+
+    </SceneSegWeight>
+
+    <!-- npu模型路径 range:0(-1~1) 1(0~1)-->
+    <sisr1x use="1" space2depth="1" range="1" resi="1" engine="10" device="4" inw="1024" inh="1024">301004004004000001.bin</sisr1x>
+    <!-- <sisr1xlowiso use="1" space2depth="1" range="0" resi="1" engine="9" device="4" inw="512" inh="512">/vendor/camera3rd/nti/aisr/201009004001010016.bin</sisr1xlowiso>
+    <sisr1xhighiso use="1" space2depth="1" range="0" resi="1" engine="9" device="4" inw="512" inh="512">/vendor/camera3rd/nti/aisr/201009004001010019.bin</sisr1xhighiso> -->
+    <sceneseg use="0" space2depth="0" range="1" resi="1" engine="10" device="4" inw="256" inh="256">301004004003002001.bin</sceneseg>>
+
+    <!-- Model selection based on ISO. ISO min-low: w/o aisr, ISO low-middle: 1xlowiso, ISO middle-high: 1x/2x/4x, ISO high-max: 1xhighiso. -->
+    <ISOParam>
+        <x1>
+            <low>0</low>
+            <middle>1600</middle>
+            <high>99999</high>
+        </x1>
+
+        <x2>
+            <low>0</low>
+            <middle>99999</middle>
+            <high>99999</high>
+        </x2>
+
+        <x5>
+            <low>0</low>
+            <middle>0</middle>
+            <high>1600</high>
+        </x5>
+    </ISOParam>
+
+    <!-- Model selection based on digitalZoom. -->
+    <ZoomParam>
+        <x1>
+            <sisr2x>100</sisr2x>
+            <sisr4x>100</sisr4x>
+        </x1>
+
+        <x2>
+            <sisr2x>100</sisr2x>
+            <sisr4x>100</sisr4x>
+        </x2>
+
+        <x5>
+            <sisr2x>100</sisr2x>
+            <sisr4x>100</sisr4x>
+        </x5>
+    </ZoomParam>
+
+    <!-- final sharp parameter = x1SharpParam/x2SharpParam/x5SharpParam * SharpStrength -->
+    <SharpFunc use="1">
+        <SharpStrength>1</SharpStrength>
+        <SharpenThreshold>0</SharpenThreshold>
+        <!-- Sharp patameters. 
+        DigitalZoom min-zoomMin: (ISO min-low: low, ISO low-max: 0), 
+        DigitalZoom zoomMin-max: (ISO min-low: low, ISO low-high: middle, ISO high-max: high). -->
+        <x1>
+            <low>0</low>
+            <middle>0</middle>
+            <high>0</high>
+            <zoomMin>1</zoomMin>
+        </x1>
+
+        <x2>
+            <low>0</low>
+            <middle>0</middle>
+            <high>0</high>
+            <zoomMin>1</zoomMin>
+        </x2>
+
+        <x5>
+            <low>0</low>
+            <middle>0</middle>
+            <high>0</high>
+            <zoomMin>1</zoomMin>
+        </x5>
+    </SharpFunc>
+
+
+    <!-- Noise-Leak patameters(0-1). The higher value, the more noise will leak. 
+    DigitalZoom min-zoomMax: (ISO low-middle: low, ISO middle-high: middle, ISO high-max: high), 
+    DigitalZoom zoomMax-max: 1. -->
+    <NoiseLeakParam>
+        <x1NoiseLeakParam>
+            <low>1</low>
+            <middle>1</middle>
+            <high>1</high>
+            <zoomMax>100</zoomMax>
+        </x1NoiseLeakParam>
+
+        <x2NoiseLeakParam>
+            <low>0.8</low>
+            <middle>1</middle>
+            <high>1</high>
+            <zoomMax>100</zoomMax>
+        </x2NoiseLeakParam>
+
+        <x5NoiseLeakParam>
+            <low>1</low>
+            <middle>1</middle>
+            <high>1</high>
+            <zoomMax>100</zoomMax>
+        </x5NoiseLeakParam>
+    </NoiseLeakParam>
+</AIEnhaceConfig>

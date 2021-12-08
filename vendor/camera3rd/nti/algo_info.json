@@ -1,0 +1,217 @@
+{
+    "supportedAlgorithms" : [
+        {
+            "algoName" : "beauty",
+            "version":"3.5",
+            "extra": [
+                {
+                    "key":"makeupVersion",
+                    "value":6
+                },
+                {
+                    "key":"simplifyBeautySupport",
+                    "value":1
+                },
+                {
+                    "key":"pinchFaceVersion",
+                    "value":3
+                },
+                {
+                    "key":"backBeautyVersion",
+                    "value":3
+                },
+                {
+                    "key":"partyPortraitSupport",
+                    "value":1
+                },
+                {
+                    "key":"moleRemovalSupport",
+                    "value":1
+                },
+                {
+                    "key":"faceSelectVersion",
+                    "value":3
+                }
+            ]
+        },
+        {
+            "algoName" : "dualBokeh",
+            "version":"1.0",
+            "extra": [
+                {
+                    "key":"lightSpotVersion",
+                    "value":2
+                }
+            ]
+        },
+        {
+            "algoName" : "lut",
+            "version" : "1.0",
+            "extra" :[
+                {
+                    "key":"styleVersion",
+                    "value":9
+                }
+            ]
+        },
+        {
+            "algoName" : "beatyBody",
+            "version":"1.0",
+            "extra": []
+        },
+        {
+            "algoName" : "rawhdr",
+            "version":"1.0",
+            "extra": [
+                {
+                    "key":"frontSuperNightVersion",
+                    "value":3
+                },
+                {
+                    "key":"interruptsupport",
+                    "value":0
+                }
+            ]
+        },
+        {
+            "algoName" : "movieportrait",
+            "version":"2.0",
+            "extra": []
+        },
+        {
+            "algoName" : "relight",
+            "version":"3.0",
+            "extra": [
+                {
+                    "key":"3DLightEffectSupport",
+                    "value":1
+                },
+                {
+                    "key":"singleDependency",
+                    "value":1
+                }
+            ]
+        },
+        {
+            "algoName" : "palmDetect",
+            "version":"2.0",
+            "extra": []
+        },
+        {
+            "algoName" : "distortion",
+            "version":"1.0",
+            "extra": [
+                {
+                    "key":"opticalDistortion",
+                    "value":1
+                },
+                {
+                    "key":"faceDistortion",
+                    "value":1
+                }
+            ]
+        },
+        {
+            "algoName" : "aicomposition",
+            "version":"1.0",
+            "extra": []
+        },
+        {
+            "algoName" : "fusion",
+            "version":"1.0",
+            "extra": []
+        },
+        {
+            "algoName" : "videoNr",
+            "version":"1.0",
+            "extra": []
+        },
+        {
+            "algoName" : "motiondenoise",
+            "version":"3.0",
+            "extra": []
+        },
+        {
+            "algoName" : "superstar",
+            "version":"2.0",
+            "extra": []
+        },
+        {
+            "algoName" : "previewAiDetect",
+            "version":"1.0",
+            "extra": [
+                {
+                    "key":"aiDetectVersion",
+                    "value":2
+                },
+                {
+                    "key":"dirtyDetectVersion",
+                    "value":2
+                }
+            ]
+        },
+        {
+            "algoName" : "eyeDetect",
+            "version":"1.0",
+            "extra": [
+                {
+                    "key":"translateMode",
+                    "value":1
+                }
+            ]
+        },
+        {
+            "algoName" : "lotDetect",
+            "version":"1.0",
+            "extra": [
+                {
+                    "key":"translateMode",
+                    "value":1
+                }
+            ]
+        },
+        {
+            "algoName" : "pixelshift",
+            "version":"2.0",
+            "extra": []
+        },
+        {
+            "algoName":"previewdetect",
+            "version":"1.0",
+            "extra":[
+                {
+                    "key":"backlight",
+                    "value":1
+                },
+                {
+                    "key":"banding",
+                    "value":1
+                },
+                {
+                    "key":"motionMetering",
+                    "value":1
+                },
+                {
+                    "key":"tripodDetect",
+                    "value":1
+                },
+                {
+                    "key":"vivosuperns",
+                    "value":1
+                },
+                {
+                    "key":"fastnight",
+                    "value":1
+                },
+                {
+                    "key":"rawhdr",
+                    "value":1
+                },
+                {
+                    "key":"sceneChange",
+                    "value":1
+                }
+            ]
+        }
+    ]
+}

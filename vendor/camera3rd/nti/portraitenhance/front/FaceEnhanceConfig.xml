@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrontCamFaceEnhanceConfig version="1.0.10">
+    <!-- 手机平台 PD 0.7250 1.8250 2.8350 100.980 101.981 200.tj1000 300.win 400.linux-->
+    <Platform>200</Platform>
+    <!-- 算法应用场景 -->
+    <WorkScence>0</WorkScence>
+    <!-- 是否内部检测人脸 0: 内部不计算; 1: 内部计算 -->
+    <FaceDetectOn>0</FaceDetectOn>
+    <!-- 是否内部做肤色分割 0: 内部不计算; 1: 内部计算 -->
+    <SkinSegOn>0</SkinSegOn>
+    <HumanSegOn>1</HumanSegOn>
+    <KeyPointOn>0</KeyPointOn>
+    <MaxFaceEnNum>3</MaxFaceEnNum>
+    <BigModelMaxFaceEnNum use="0">2</BigModelMaxFaceEnNum>
+    <!-- 0: 统一使用1024分辨率处理; 1: 大于1024x1024使用1024分辨率处理，小于1024x1024，使用实际分辨率 -->
+    <FacePostProcHWMethod>1</FacePostProcHWMethod>
+    <!--NoProcess>1</NoProcess-->
+
+    <LocalEnhance>0</LocalEnhance>
+    <TheadNum>3</TheadNum>
+    <BindingCoresMask>00001110</BindingCoresMask>
+    <UseDrcgain>0</UseDrcgain>
+    <ISOParam>
+        <low>200</low>
+        <middle>800</middle>
+        <high>800</high>
+    </ISOParam>
+    <SegMethodSelectParam>
+        <FaceMaskSmallISOThred>25000</FaceMaskSmallISOThred>
+        <FaceMaskMidISOThred>25000</FaceMaskMidISOThred>
+        <FaceMaskBigISOThred>25000</FaceMaskBigISOThred>
+        <HairMaskSmallISOThred>25000</HairMaskSmallISOThred>
+        <HairMaskMidISOThred>25000</HairMaskMidISOThred>
+        <HairMaskBigISOThred>25000</HairMaskBigISOThred>
+    </SegMethodSelectParam>
+
+    <!-- 网络选择，正式版本可能没有这个参数-->
+    <ModelPath>
+        <HumanSeg use="1" space2depth="0" range="0" resi="1" engine="10" device="4" inw="512" inh="512">301010004003000001.bin</HumanSeg>
+        <SkinSeg use="0" space2depth="0" range="0" resi="1" engine="10" device="1" inw="320" inh="320">900007001004001001.bin</SkinSeg>
+        <FaceEnhanceModel use="1" space2depth="0" range="0" resi="1" engine="10" device="4" inw="512" inh="512">301010004004000013.bin</FaceEnhanceModel>
+        <FaceEnhanceMidModel use="1" space2depth="0" range="0" resi="1" engine="10" device="4" inw="768" inh="768">301010004004000014.bin</FaceEnhanceMidModel>
+        <FaceEnhanceBigModel use="1" space2depth="0" range="0" resi="1" engine="10" device="4" inw="1024" inh="1024">301010004004000015.bin</FaceEnhanceBigModel>
+        <MidISOFaceEnhanceModel use="1" space2depth="0" range="0" resi="1" engine="10" device="4" inw="512" inh="512">301010004004000013.bin</MidISOFaceEnhanceModel>
+        <MidISOFaceEnhanceMidModel use="1" space2depth="0" range="0" resi="1" engine="10" device="4" inw="768" inh="768">301010004004000014.bin</MidISOFaceEnhanceMidModel>
+        <MidISOFaceEnhanceBigModel use="1" space2depth="0" range="0" resi="1" engine="10" device="4" inw="1024" inh="1024">301010004004000015.bin</MidISOFaceEnhanceBigModel>
+        <HighISOFaceEnhanceModel use="1" space2depth="0" range="0" resi="1" engine="10" device="4" inw="512" inh="512">301010004004000013.bin</HighISOFaceEnhanceModel>
+        <HighISOFaceEnhanceMidModel use="1" space2depth="0" range="0" resi="1" engine="10" device="4" inw="768" inh="768">301010004004000014.bin</HighISOFaceEnhanceMidModel>
+        <HighISOFaceEnhanceBigModel use="1" space2depth="0" range="0" resi="1" engine="10" device="4" inw="1024" inh="1024">301010004004000015.bin</HighISOFaceEnhanceBigModel>
+    </ModelPath>
+
+    <!-- final sharp parameter = x1SharpParam/x2SharpParam/x5SharpParam * SharpStrength -->
+    <SharpFunc use="0">
+        <PreGlobalSharpFunc use="0">
+            <SharpStrength>1</SharpStrength>
+            <SharpenThreshold>0</SharpenThreshold>
+            <BlendRate>30</BlendRate>
+        </PreGlobalSharpFunc>
+        <SharpNet use="0" space2depth="1" range="0" resi="1" engine="10" device="4" inw="1024" inh="1024">301010004004003001.bin</SharpNet>
+        <GlobalSharpFunc use="0">
+            <SharpStrength>1</SharpStrength>
+            <SharpenThreshold>0</SharpenThreshold>
+            <BlendRate>30</BlendRate>
+        </GlobalSharpFunc>
+        <LeftBrowSharpFunc use="0">
+            <SharpStrength>1</SharpStrength>
+            <SharpenThreshold>0</SharpenThreshold>
+            <BlendRate>30</BlendRate>
+        </LeftBrowSharpFunc>
+        <RightBrowSharpFunc use="0">
+            <SharpStrength>1</SharpStrength>
+            <SharpenThreshold>0</SharpenThreshold>
+            <BlendRate>30</BlendRate>
+        </RightBrowSharpFunc>
+        <LeftEyeSharpFunc use="0">
+            <SharpStrength>1</SharpStrength>
+            <SharpenThreshold>0</SharpenThreshold>
+            <BlendRate>30</BlendRate>
+        </LeftEyeSharpFunc>
+        <RightEyeSharpFunc use="0">
+            <SharpStrength>1</SharpStrength>
+            <SharpenThreshold>0</SharpenThreshold>
+            <BlendRate>30</BlendRate>
+        </RightEyeSharpFunc>
+        <NoseSharpFunc use="0">
+            <SharpStrength>1</SharpStrength>
+            <SharpenThreshold>0</SharpenThreshold>
+            <BlendRate>30</BlendRate>
+        </NoseSharpFunc>
+        <LipsSharpFunc use="0">
+            <SharpStrength>1</SharpStrength>
+            <SharpenThreshold>0</SharpenThreshold>
+            <BlendRate>30</BlendRate>
+        </LipsSharpFunc>
+    </SharpFunc>
+
+    <FaceSrFunc>
+        <SingleFaceThreshold>896</SingleFaceThreshold>
+        <LowISOThres>100</LowISOThres>
+        <MidLowISOThred>1800</MidLowISOThred>
+        <MidHighISOThred>10000</MidHighISOThred>
+        <HighISOThred>25600</HighISOThred>
+        <BlendRate>30</BlendRate>
+        <ExtendRate>0</ExtendRate>
+        <FaceEnhanceModelMaxFaceSize>640</FaceEnhanceModelMaxFaceSize>
+        <FaceEnhanceModelMinFaceSize>128</FaceEnhanceModelMinFaceSize>
+        <FaceEnhanceMidModelMaxFaceSize>956</FaceEnhanceMidModelMaxFaceSize>
+        <FaceEnhanceMidModelMinFaceSize>640</FaceEnhanceMidModelMinFaceSize>
+        <FaceEnhanceBigModelMaxFaceSize>6000</FaceEnhanceBigModelMaxFaceSize>
+        <FaceEnhanceBigModelMinFaceSize>956</FaceEnhanceBigModelMinFaceSize>
+        <MidISOFaceEnhanceModelMaxFaceSize>640</MidISOFaceEnhanceModelMaxFaceSize>
+        <MidISOFaceEnhanceModelMinFaceSize>128</MidISOFaceEnhanceModelMinFaceSize>
+        <MidISOFaceEnhanceMidModelMaxFaceSize>956</MidISOFaceEnhanceMidModelMaxFaceSize>
+        <MidISOFaceEnhanceMidModelMinFaceSize>640</MidISOFaceEnhanceMidModelMinFaceSize>
+        <MidISOFaceEnhanceBigModelMaxFaceSize>6000</MidISOFaceEnhanceBigModelMaxFaceSize>
+        <MidISOFaceEnhanceBigModelMinFaceSize>956</MidISOFaceEnhanceBigModelMinFaceSize>
+        <HighISOFaceEnhanceModelMaxFaceSize>640</HighISOFaceEnhanceModelMaxFaceSize>
+        <HighISOFaceEnhanceModelMinFaceSize>128</HighISOFaceEnhanceModelMinFaceSize>
+        <HighISOFaceEnhanceMidModelMaxFaceSize>956</HighISOFaceEnhanceMidModelMaxFaceSize>
+        <HighISOFaceEnhanceMidModelMinFaceSize>640</HighISOFaceEnhanceMidModelMinFaceSize>
+        <HighISOFaceEnhanceBigModelMaxFaceSize>6000</HighISOFaceEnhanceBigModelMaxFaceSize>
+        <HighISOFaceEnhanceBigModelMinFaceSize>956</HighISOFaceEnhanceBigModelMinFaceSize>
+        <FaceEnhanceModelOutlineConfThred>0.55</FaceEnhanceModelOutlineConfThred>
+        <FaceEnhanceMidModelOutlineConfThred>0.55</FaceEnhanceMidModelOutlineConfThred>
+        <FaceEnhanceBigModelOutlineConfThred>0</FaceEnhanceBigModelOutlineConfThred>
+        <MidISOFaceEnhanceModelOutlineConfThred>0.55</MidISOFaceEnhanceModelOutlineConfThred>
+        <MidISOFaceEnhanceMidModelOutlineConfThred>0.55</MidISOFaceEnhanceMidModelOutlineConfThred>
+        <MidISOFaceEnhanceBigModelOutlineConfThred>0</MidISOFaceEnhanceBigModelOutlineConfThred>
+        <HighISOFaceEnhanceModelOutlineConfThred>0.55</HighISOFaceEnhanceModelOutlineConfThred>
+        <HighISOFaceEnhanceMidModelOutlineConfThred>0.55</HighISOFaceEnhanceMidModelOutlineConfThred>
+        <HighISOFaceEnhanceBigModelOutlineConfThred>0</HighISOFaceEnhanceBigModelOutlineConfThred>
+        <UpOffset>0</UpOffset>
+    </FaceSrFunc>
+    
+    <FaceBeauty use="0">
+        <FBParam>
+            <DespotLevel enable="1">100</DespotLevel>
+            <SkinSoftLevel enable="0">50</SkinSoftLevel>
+            <SkinWhiteLevel enable="0">50</SkinWhiteLevel>
+            <SkinColorLevel enable="0">50</SkinColorLevel>
+            <BlushLevel enable="0">50</BlushLevel>
+            <EyebrowLevel enable="0">50</EyebrowLevel>
+            <WhitenToothLevel enable="0">50</WhitenToothLevel>
+            <DeSkinShineLevel enable="0">50</DeSkinShineLevel>
+            <IrisShineLevel enable="0">50</IrisShineLevel>
+            <Depouch enable="0">
+                <DepouchLevel>50</DepouchLevel>
+                <SilkwormLevel>50</SilkwormLevel>
+            </Depouch>
+            <EyeShine enable="0">
+                <EyeShineLevel>50</EyeShineLevel>
+                <EyeClarityLevel>50</EyeClarityLevel>
+            </EyeShine>
+            <FacialStereo enable="0">
+                <FacialStereoLevel>50</FacialStereoLevel>
+                <FacialStereoShadowLevel>50</FacialStereoShadowLevel>
+            </FacialStereo>
+            <LipBeauty enable="0">
+                <LipBeautyGende>0</LipBeautyGende>
+                <LipColorLevel>50</LipColorLevel>
+                <LipMoistenLevel>50</LipMoistenLevel>
+                <LipGlossLevel>50</LipGlossLevel>
+                <LipSmoothLevel>50</LipSmoothLevel>
+            </LipBeauty>
+        </FBParam>
+        <Despot>
+            <bEnAdvancedOption>1</bEnAdvancedOption>
+            <bDespotProtectMustache>0</bDespotProtectMustache>
+            <bDespotProtectTilak>0</bDespotProtectTilak>
+            <bDespotDeBlackhead>1</bDespotDeBlackhead>
+            <bDespotDeBlacknevus>0</bDespotDeBlacknevus>
+            <bDespotProtectfreckle>0</bDespotProtectfreckle>
+            <bOptPerformance>0</bOptPerformance>
+        </Despot>
+        <PreProParam>
+            <bSkinSegmentEnabled>1</bSkinSegmentEnabled>
+            <bGlassDetectEnabled>0</bGlassDetectEnabled>
+            <bSilkwormDetectEnabled>0</bSilkwormDetectEnabled>
+        </PreProParam>
+    </FaceBeauty>
+
+</FrontCamFaceEnhanceConfig>

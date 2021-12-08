@@ -1,0 +1,11 @@
+# vivo liuyang add for set chain begin
+on property:sys.boot_completed=1
+    write /dev/kmsg "reset chainValue to MIMO"
+    setprop persist.sys.wlan.chain MIMO
+
+on property:persist.sys.wlan.chain=*
+    chown system system /sys/module/wlan_drv_gen4m/parameters/chainValue
+    chmod 0777 /sys/module/wlan_drv_gen4m/parameters/chainValue
+    write /sys/module/wlan_drv_gen4m/parameters/chainValue ${persist.sys.wlan.chain}
+    write /dev/kmsg "set chainValue to ${persist.sys.wlan.chain}"
+# vivo liuyang add for set chain end

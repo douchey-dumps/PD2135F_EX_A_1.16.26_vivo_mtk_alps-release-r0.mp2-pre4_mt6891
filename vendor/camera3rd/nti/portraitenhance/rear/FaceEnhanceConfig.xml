@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AiFaceEnhanceConfig version="1.0.20.4">
+    <!-- 算法应用场景 -->
+    <WorkScence>0</WorkScence>
+    <!-- 是否内部检测人脸 0: 内部不计算; 1: 内部计算 -->
+    <FaceDetectOn>1</FaceDetectOn>
+    <!-- 是否内部做肤色分割 0: 内部不计算; 1: 内部计算 -->
+    <SkinSegOn>0</SkinSegOn>
+    <HumanSegOn>1</HumanSegOn>
+    <KeyPointOn>1</KeyPointOn>
+    <MaxFaceEnNum>1</MaxFaceEnNum>
+    <LocalEnhance>0</LocalEnhance>
+    <BigModelResolution>1024</BigModelResolution>
+    <TheadNum>3</TheadNum>
+    <BindingCoresMask>00001110</BindingCoresMask>
+    <ISOParam>
+        <low>200</low>
+        <middle>800</middle>
+        <high>800</high>
+    </ISOParam>
+    <!-- 网络选择，正式版本可能没有这个参数-->
+    <ModelPath>
+        <HumanSeg use="1" space2depth="0" range="0" resi="1" engine="10" device="4" inw="512" inh="512">301010004003010001.bin</HumanSeg>
+        <FaceEnhanceModel use="0" sapce2depth="0" range="0" resi="1" engine="10" device="4" inw="256" inh="256">102004004002000000.bin</FaceEnhanceModel>
+        <FaceEnhanceMidModel use="1" sapce2depth="0" range="0" resi="1" engine="10" device="4" inw="512" inh="512">301010004002010001118.bin</FaceEnhanceMidModel>
+        <FaceEnhanceBigModel use="0" sapce2depth="0" range="0" resi="1" engine="10" device="4" inw="1024" inh="1024">301010004002000003120.bin</FaceEnhanceBigModel>
+        <MidISOFaceEnhanceModel use="0" sapce2depth="0" range="0" resi="1" engine="10" device="4" inw="256" inh="256">102004004002000000.bin</MidISOFaceEnhanceModel>
+        <MidISOFaceEnhanceMidModel use="1" sapce2depth="0" range="0" resi="1" engine="10" device="4" inw="512" inh="512">301010004002010001118.bin</MidISOFaceEnhanceMidModel>
+        <MidISOFaceEnhanceBigModel use="1" sapce2depth="0" range="0" resi="1" engine="10" device="4" inw="1024" inh="1024">301010004002000003120.bin</MidISOFaceEnhanceBigModel>
+        <HighISOFaceEnhanceModel use="0" sapce2depth="0" range="0" resi="1" engine="10" device="4" inw="256" inh="256">102004004002000000.bin</HighISOFaceEnhanceModel>
+        <HighISOFaceEnhanceMidModel use="1" sapce2depth="0" range="0" resi="1" engine="10" device="4" inw="512" inh="512">301010004002010001118.bin</HighISOFaceEnhanceMidModel>
+        <HighISOFaceEnhanceBigModel use="1" sapce2depth="0" range="0" resi="1" engine="10" device="4" inw="1024" inh="1024">301010004002000003120.bin</HighISOFaceEnhanceBigModel>
+    </ModelPath>
+
+    <PreSkinSoftenAdParam use="0">
+        <sharpenMode>0</sharpenMode>
+        <sharpenLevel>0</sharpenLevel>
+        <sharpenEyebrowLevel>30</sharpenEyebrowLevel>
+    </PreSkinSoftenAdParam>
+    <PostSkinSoftenAdParam use="1">
+        <sharpenMode>0</sharpenMode>
+        <sharpenLevel>0</sharpenLevel>
+        <!-- 眉毛锐化-->
+        <sharpenEyebrowLevel>30</sharpenEyebrowLevel>
+    </PostSkinSoftenAdParam>
+    <FullSizeSkinSoftenAdParam use="1">
+        <sharpenMode>0</sharpenMode>
+        <sharpenLevel>0</sharpenLevel>
+        <!-- 五官锐化-->
+        <sharpenEyebrowLevel>30</sharpenEyebrowLevel> 
+    </FullSizeSkinSoftenAdParam>
+
+    <FaceSrFunc>
+        <LowISOThres>0</LowISOThres>
+        <MidLowISOThred>100</MidLowISOThred>
+        <MidHighISOThred>2560</MidHighISOThred>
+        <HighISOThred>25600</HighISOThred>
+        <YawMinAngle>-80</YawMinAngle>
+        <YawMaxAngle>80</YawMaxAngle>
+        <PitchMinAngle>-80</PitchMinAngle>
+        <PitchMaxAngle>80</PitchMaxAngle>
+        <BlendRate>20</BlendRate>
+        <ExtendRateX>11</ExtendRateX>
+        <ExtendRateY>44</ExtendRateY>
+        <FaceIouThred>0.1</FaceIouThred>
+        <FaceEnhanceModelMaxFaceSize>260</FaceEnhanceModelMaxFaceSize>
+        <FaceEnhanceModelMinFaceSize>128</FaceEnhanceModelMinFaceSize>
+        <FaceEnhanceMidModelMaxFaceSize>512</FaceEnhanceMidModelMaxFaceSize>
+        <FaceEnhanceMidModelMinFaceSize>260</FaceEnhanceMidModelMinFaceSize>
+        <FaceEnhanceBigModelMaxFaceSize>16000</FaceEnhanceBigModelMaxFaceSize>
+        <FaceEnhanceBigModelMinFaceSize>512</FaceEnhanceBigModelMinFaceSize>
+
+        <MidISOFaceEnhanceModelMaxFaceSize>260</MidISOFaceEnhanceModelMaxFaceSize>
+        <MidISOFaceEnhanceModelMinFaceSize>128</MidISOFaceEnhanceModelMinFaceSize>
+        <MidISOFaceEnhanceMidModelMaxFaceSize>512</MidISOFaceEnhanceMidModelMaxFaceSize>
+        <MidISOFaceEnhanceMidModelMinFaceSize>260</MidISOFaceEnhanceMidModelMinFaceSize>
+        <MidISOFaceEnhanceBigModelMaxFaceSize>16000</MidISOFaceEnhanceBigModelMaxFaceSize>
+        <MidISOFaceEnhanceBigModelMinFaceSize>512</MidISOFaceEnhanceBigModelMinFaceSize>
+
+        <HighISOFaceEnhanceModelMaxFaceSize>260</HighISOFaceEnhanceModelMaxFaceSize>
+        <HighISOFaceEnhanceModelMinFaceSize>128</HighISOFaceEnhanceModelMinFaceSize>
+        <HighISOFaceEnhanceMidModelMaxFaceSize>512</HighISOFaceEnhanceMidModelMaxFaceSize>
+        <HighISOFaceEnhanceMidModelMinFaceSize>260</HighISOFaceEnhanceMidModelMinFaceSize>
+        <HighISOFaceEnhanceBigModelMaxFaceSize>16000</HighISOFaceEnhanceBigModelMaxFaceSize>
+        <HighISOFaceEnhanceBigModelMinFaceSize>512</HighISOFaceEnhanceBigModelMinFaceSize>
+        <UpOffset>0.0</UpOffset>
+    </FaceSrFunc>
+
+</AiFaceEnhanceConfig>

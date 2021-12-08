@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AiMFSRConfig version="2.0.1.0">
+    <!-- 网络相关参数 -->
+    <!-- 运行设备 0.cpu 1.gpu 2.dsp 3.npu 4.composed-->
+    <Devices>4</Devices>
+    <!-- PD 0.7250 1.8250 -->
+    <Platform>1</Platform>
+    <!-- 网络选择-->
+    <NetSelector>1</NetSelector>
+    <LockCPUFreq>1</LockCPUFreq>
+    <ArrMask>00001110</ArrMask>
+    
+    <ThreadNum>3</ThreadNum>
+    <!--NoProcess>1</NoProcess-->
+    <!-- npu模型路径 range:0(-1~1) 1(0~1)-->
+    <NpuPureX1X2ModelPath use="1" space2depth="1" range="1" resi="1" engine="10" device="4" inw="1024" inh="1024">/vendor/camera3rd/nti/301010004000000005.bin</NpuPureX1X2ModelPath>
+    <NpuPureX5ModelPath use="1" space2depth="1" range="1" resi="1" engine="10" device="4" inw="1024" inh="1024">/vendor/camera3rd/nti/301010004000000005.bin</NpuPureX5ModelPath>
+    <NpuSmallX1X2ModelPath use="1" space2depth="1" range="1" resi="1" engine="10" device="4" inw="1024" inh="1024">/vendor/camera3rd/nti/301010004000000001.bin</NpuSmallX1X2ModelPath>
+    <NpuSmallX5ModelPath use="1" space2depth="1" range="1" resi="1" engine="10" device="4" inw="1024" inh="1024">/vendor/camera3rd/nti/301010004000000001.bin</NpuSmallX5ModelPath>
+    <NpuNormalX1X2ModelPath use="1" space2depth="1" range="1" resi="1" engine="10" device="4" inw="1024" inh="1024">/vendor/camera3rd/nti/301010004000000002.bin</NpuNormalX1X2ModelPath>
+    <NpuNormalX5ModelPath use="1" space2depth="1" range="1" resi="1" engine="10" device="4" inw="1024" inh="1024">/vendor/camera3rd/nti/301010004000000002.bin</NpuNormalX5ModelPath>
+    <NpuBigX1X2ModelPath use="1" space2depth="0" range="0" resi="1" engine="10" device="4">/vendor/camera3rd/nti/301010004000000003.bin</NpuBigX1X2ModelPath>
+    <NpuBigX5ModelPath use="1" space2depth="0" range="0" resi="1" engine="10" device="4">/vendor/camera3rd/nti/301010004000000003.bin</NpuBigX5ModelPath>
+
+    <sisr1xlowiso use="1" space2depth="1" range="0" resi="1" engine="10" device="4" inw="1024" inh="1024">/vendor/camera3rd/nti/301010004001010004.bin</sisr1xlowiso>
+    <sisr1x use="1" space2depth="1" range="0" resi="1" engine="10" device="4" inw="1024" inh="1024">/vendor/camera3rd/nti/301010004001010002.bin</sisr1x>
+    <sisr1xhighiso use="1" space2depth="1" range="0" resi="1" engine="10" device="4" inw="1024" inh="1024">/vendor/camera3rd/nti/301010004001010005.bin</sisr1xhighiso>
+    <sisr1xlowisoPlus use="1" space2depth="1" range="1" resi="1" engine="10" device="4" inw="1024" inh="1024">/vendor/camera3rd/nti/301010004001010009.bin</sisr1xlowisoPlus>
+    <sisr1xPlus use="1" space2depth="1" range="1" resi="1" engine="10" device="4" inw="1024" inh="1024">/vendor/camera3rd/nti/301010004001010010.bin</sisr1xPlus>
+    <sisr1xhighisoPlus use="1" space2depth="1" range="1" resi="1" engine="10" device="4" inw="1024" inh="1024">/vendor/camera3rd/nti/301010004001010011.bin</sisr1xhighisoPlus>
+    <sisr2xlowiso use="1" space2depth="0" range="1" resi="1" engine="10" device="4" inw="256" inh="256">/vendor/camera3rd/nti/301010004001011004.bin</sisr2xlowiso>
+    <sisr2x use="1" space2depth="0" range="1" resi="1" engine="10" device="4" inw="256" inh="256">/vendor/camera3rd/nti/301010004001011002.bin</sisr2x>
+    <sisr2xhighiso use="1" space2depth="0" range="1" resi="1" engine="10" device="4" inw="256" inh="256">/vendor/camera3rd/nti/301010004001011001.bin</sisr2xhighiso>
+
+    <!-- <facesr use="0" space2depth="0" range="0" resi="0" engine="10" device="4">/vendor/camera3rd/nti/301010004001010001.bin</facesr> -->
+    <FaceEn use="1">
+        <FaceModelFold>/vendor/camera3rd/nti/portraitenhance/rear/</FaceModelFold>
+        <FaceXMLPath>/vendor/camera3rd/nti/portraitenhance/rear/FaceEnhanceConfig.xml</FaceXMLPath>
+        <isoMin>0</isoMin>
+        <isoMax>99999</isoMax>
+        <appZoomMin>0</appZoomMin>
+        <appZoomMax>99</appZoomMax>
+    </FaceEn>
+
+    <x1Param>
+        <!-- MFSR模型前最大上采样倍率 -->
+        <NetPreUpScale>
+            <low>1.6</low>
+            <middleL>1.6</middleL>
+            <middleH>1.4</middleH>
+            <high>1.0</high>
+        </NetPreUpScale>
+        <!-- MFSR模型前上采样倍率系数，上采用倍率=digitalZoom/NetPreUpScaleFactor -->
+        <NetPreUpScaleFactor>
+            <low>1.0</low>
+            <middleL>1.2</middleL>
+            <middleH>1.2</middleH>
+            <high>1.0</high>
+        </NetPreUpScaleFactor>
+
+        <!-- SISR2x模型生效最小digitalZoom -->
+        <sisr2xZoomMin>4</sisr2xZoomMin>
+
+        <!-- ISO分段模型选择 -->
+        <mfsrISO>
+            <low>200</low>
+            <middle>800</middle>
+            <high>3200</high>
+        </mfsrISO>
+        <sisr1xISO>
+            <low>99999</low>
+            <middle>99999</middle>
+            <high>99999</high>
+        </sisr1xISO>
+        <sisr2xISO>
+            <low>99999</low>
+            <middle>99999</middle>
+            <high>99999</high>
+        </sisr2xISO>
+
+        <!-- ISO分段锐化参数 -->
+        <sisr1xSharp>
+            <low>2.5</low>
+            <middleLMax>2.0</middleLMax>
+            <middleLMin>1.5</middleLMin>
+            <middleHMax>1.5</middleHMax>
+            <middleHMin>0.1</middleHMin>
+            <high>0.1</high>
+        </sisr1xSharp>
+        <sisr2xSharp>
+            <low>2.0</low>
+            <middleLMax>2.5</middleLMax>
+            <middleLMin>1.5</middleLMin>
+            <middleHMax>1.5</middleHMax>
+            <middleHMin>0.5</middleHMin>
+            <high>0.5</high>
+        </sisr2xSharp>
+
+        <!-- ISO分段噪声遗留参数 -->
+        <mfsrNoiseLeak>
+            <low>0.6</low>
+            <middleL>0.3</middleL>
+            <middleH>0.3</middleH>
+            <high>0.9</high>
+        </mfsrNoiseLeak>
+        <sisr1xNoiseLeak>
+            <low>0.0</low>
+            <middleL>0.9</middleL>
+            <middleH>0.9</middleH>
+            <high>0.9</high>
+        </sisr1xNoiseLeak>
+        <sisr2xNoiseLeak>
+            <low>0.6</low>
+            <middleL>0.3</middleL>
+            <middleH>0.6</middleH>
+            <high>0.3</high>
+        </sisr2xNoiseLeak>
+
+        <!-- ISO分段鬼影降噪参数 -->
+        <ghostDenoise>
+            <low>0</low>
+            <middleL>0</middleL>
+            <middleH>1</middleH>
+            <high>3</high>
+        </ghostDenoise>
+        <ghostShift>
+            <low>1</low>
+            <middleL>1</middleL>
+            <middleH>1</middleH>
+            <high>1</high>
+        </ghostShift>
+    </x1Param>
+
+    <x2Param>
+        <!-- MFSR模型前最大上采样倍率 -->
+        <NetPreUpScale>
+            <low>1.6</low>
+            <middleL>1.6</middleL>
+            <middleH>1.2</middleH>
+            <high>1.0</high>
+        </NetPreUpScale>
+        <!-- MFSR模型前上采样倍率系数，上采用倍率=digitalZoom/NetPreUpScaleFactor -->
+        <NetPreUpScaleFactor>
+            <low>1.0</low>
+            <middleL>1.2</middleL>
+            <middleH>1.2</middleH>
+            <high>1.0</high>
+        </NetPreUpScaleFactor>
+
+        <!-- SISR2x模型生效最小digitalZoom -->
+        <sisr2xZoomMin>4</sisr2xZoomMin>
+
+        <!-- ISO分段模型选择 -->
+        <mfsrISO>
+            <low>100</low>
+            <middle>400</middle>
+            <high>1600</high>
+        </mfsrISO>
+        <sisr1xISO>
+            <low>99999</low>
+            <middle>99999</middle>
+            <high>99999</high>
+        </sisr1xISO>
+        <sisr2xISO>
+            <low>99999</low>
+            <middle>99999</middle>
+            <high>99999</high>
+        </sisr2xISO>
+
+        <!-- ISO分段锐化参数 -->
+        <sisr1xSharp>
+            <low>3.5</low>
+            <middleLMax>3.5</middleLMax>
+            <middleLMin>2.0</middleLMin>
+            <middleHMax>2.0</middleHMax>
+            <middleHMin>0.1</middleHMin>
+            <high>0.1</high>
+        </sisr1xSharp>
+        <sisr2xSharp>
+            <low>3.0</low>
+            <middleLMax>3.0</middleLMax>
+            <middleLMin>1.5</middleLMin>
+            <middleHMax>1.5</middleHMax>
+            <middleHMin>0.1</middleHMin>
+            <high>0.1</high>
+        </sisr2xSharp>
+
+        <!-- ISO分段噪声遗留参数 -->
+        <mfsrNoiseLeak>
+            <low>0.6</low>
+            <middleL>0.3</middleL>
+            <middleH>0.6</middleH>
+            <high>0.9</high>
+        </mfsrNoiseLeak>
+        <sisr1xNoiseLeak>
+            <low>0</low>
+            <middleL>0.9</middleL>
+            <middleH>0.9</middleH>
+            <high>0.9</high>
+        </sisr1xNoiseLeak>
+        <sisr2xNoiseLeak>
+            <low>0.6</low>
+            <middleL>0.6</middleL>
+            <middleH>0.6</middleH>
+            <high>0.6</high>
+        </sisr2xNoiseLeak>
+
+        <!-- ISO分段鬼影降噪参数 -->
+        <ghostDenoise>
+            <low>0</low>
+            <middleL>0</middleL>
+            <middleH>2</middleH>
+            <high>3</high>
+        </ghostDenoise>
+        <ghostShift>
+            <low>1</low>
+            <middleL>1</middleL>
+            <middleH>1</middleH>
+            <high>1</high>
+        </ghostShift>
+    </x2Param>
+
+    <x5Param>
+        <!-- MFSR模型前最大上采样倍率 -->
+        <NetPreUpScale>
+            <low>1.6</low>
+            <middleL>1.6</middleL>
+            <middleH>1.0</middleH>
+            <high>1.0</high>
+        </NetPreUpScale>
+        <!-- MFSR模型前上采样倍率系数，上采用倍率=digitalZoom/NetPreUpScaleFactor -->
+        <NetPreUpScaleFactor>
+            <low>1.0</low>
+            <middleL>1.4</middleL>
+            <middleH>1.0</middleH>
+            <high>1.0</high>
+        </NetPreUpScaleFactor>
+
+        <sisr2xZoomMin>4</sisr2xZoomMin>
+
+        <mfsrISO>
+            <low>200</low>
+            <middle>800</middle>
+            <high>3200</high>
+        </mfsrISO>
+        <sisr1xISO>
+            <low>400</low>
+            <middle>1600</middle>
+            <high>3200</high>
+        </sisr1xISO>
+        <sisr2xISO>
+            <low>400</low>
+            <middle>1600</middle>
+            <high>3200</high>
+        </sisr2xISO>
+
+        <sisr1xSharp>
+            <low>1.5</low>
+            <middleLMax>1.5</middleLMax>
+            <middleLMin>0.5</middleLMin>
+            <middleHMax>1.0</middleHMax>
+            <middleHMin>0.1</middleHMin>
+            <high>0.1</high>
+        </sisr1xSharp>
+        <sisr2xSharp>
+            <low>1.5</low>
+            <middleLMax>1.5</middleLMax>
+            <middleLMin>0.5</middleLMin>
+            <middleHMax>1.5</middleHMax>
+            <middleHMin>0.1</middleHMin>
+            <high>0.1</high>
+        </sisr2xSharp>
+
+        <mfsrNoiseLeak>
+            <low>0.9</low>
+            <middleL>0.9</middleL>
+            <middleH>0.9</middleH>
+            <high>0.9</high>
+        </mfsrNoiseLeak>
+        <sisr1xNoiseLeak>
+            <low>0.9</low>
+            <middleL>0.9</middleL>
+            <middleH>0.9</middleH>
+            <high>0.9</high>
+        </sisr1xNoiseLeak>
+        <sisr2xNoiseLeak>
+            <low>0.9</low>
+            <middleL>0.9</middleL>
+            <middleH>0.9</middleH>
+            <high>0.9</high>
+        </sisr2xNoiseLeak>
+
+        <ghostDenoise>
+            <low>0</low>
+            <middleL>0</middleL>
+            <middleH>1</middleH>
+            <high>3</high>
+        </ghostDenoise>
+        <ghostShift>
+            <low>1</low>
+            <middleL>1</middleL>
+            <middleH>1</middleH>
+            <high>1</high>
+        </ghostShift>
+    </x5Param>
+
+    <!-- preprocess下采样的倍率 一般在2、4中选择 -->
+    <preprocessScale>2</preprocessScale>
+
+    <GhostFunc>
+        <!-- ghost相关参数 -->
+        <!-- kernal值暂不支持调试 -->
+        <GhostBlurKernel>1</GhostBlurKernel>
+        <GhostDilateKernel>3</GhostDilateKernel>
+        <!-- ISO分段采用不同GhostArea -->
+        <GhostThreshold1X>4000</GhostThreshold1X>
+        <GhostThreshold2X>2000</GhostThreshold2X>
+        <GhostThreshold5X>1000</GhostThreshold5X>
+        <!-- GhostArea越大鬼影区域越少 -->
+        <GhostAreaSmallLowIso>6</GhostAreaSmallLowIso>
+        <GhostAreaLargeLowIso>6</GhostAreaLargeLowIso>
+        <GhostAreaSmallHighIso>50</GhostAreaSmallHighIso>
+        <GhostAreaLargeHighIso>50</GhostAreaLargeHighIso>
+    </GhostFunc>
+
+    <!-- 0: mfsr->sharpnet->resize->clahe->sharp  1:mfsr->resize->sharpnet->clahe->sharp -->>
+    <PostProcessMode>0</PostProcessMode>
+
+    <!-- CLAHE不建议开启 -->
+    <UseCLAHE>0</UseCLAHE>
+
+    <!-- use:0 no sharp, 1 post sisr sharp, 2 pre sisr sharp, 3 post&pre sisr sharp-->>
+    <SharpFunc use="2">
+        <!-- sharp相关参数 -->
+        <SharpRadius>3</SharpRadius>
+        <!-- sharp强度 -->
+        <SharpStrength>10</SharpStrength><!-- /10 -->
+        <SharpStrengthPost>1</SharpStrengthPost>
+        <!-- sharpMethod: 目前只支持1 -->
+        <SharpMethod>1</SharpMethod>
+        <!-- 以下参数暂不生效 -->
+        <SharpJsonPath>/vendor/camera3rd/nti/sharpV004_pd2011.json</SharpJsonPath>
+        <CNRJsonPath>/vendor/camera3rd/nti/chromaNRV005Publish_DEV_8bit_MF2_SF6_noISPCNR.json</CNRJsonPath>
+    </SharpFunc>
+
+    <FaceSrFunc>
+        <!-- face相关参数 -->
+        <BlendRate>20</BlendRate>
+        <ExtendRate>15</ExtendRate>
+        <!-- default:1, 0:GPU, 1:NPU -->
+        <RunDevice>0</RunDevice>
+    </FaceSrFunc>
+
+</AiMFSRConfig>

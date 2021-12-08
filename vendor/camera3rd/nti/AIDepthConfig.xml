@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AIDepthConfig version="0.0.1">
+    <depthModel2>
+        <depthType>2</depthType>
+        <!--模型路径-->
+        <modelPath>/vendor/camera3rd/nti/depthCapture.bin</modelPath>
+        <!--算法运行框架-->
+        <networkRuntime>neuron</networkRuntime>
+        <!--算法运行设备-->
+        <deviceType>3</deviceType>
+        <!--线程数(仅CPU有效)-->
+        <threadNum>1</threadNum>
+        <!--功耗等级(0不设置 1高功耗 2低功耗)-->
+        <powerMode>0</powerMode>
+        <!--模型是否有分割图输出-->
+        <segEnable>0</segEnable>
+    </depthModel2>
+</AIDepthConfig>

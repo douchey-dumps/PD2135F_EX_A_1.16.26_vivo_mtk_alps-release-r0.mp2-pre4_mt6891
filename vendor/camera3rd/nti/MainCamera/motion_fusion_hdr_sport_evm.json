@@ -1,0 +1,428 @@
+{
+    "version":
+    {
+        "majorVersion": 1,
+        "minorVersion": 0,
+        "releaseVersion": 4,
+        "tuningVersion": 0
+    },
+    
+    "debug":
+    {
+        "comment_debuglevel": "0:fatal, 1:error/init, 2:key, 3:info, 4:debug",
+        "debuglevel": 4,
+
+        "comment_watermarker": "0:disable, >=1:enable",
+        "watermarkerEn": 0,
+        
+        "comment_bypass": "0:disable, >=1:enable",
+        "bypassEn": 0,
+
+        "comment_algorithm_mode": " 0: fast, 1:medium, temporally",
+        "algorithmMode": 0,
+        
+        "comment_dump": "0:disable, >=1:enable",
+        "dumpEn": 0,
+        
+        "comment_time_threshold":"return if run time over threshold",
+        "timeThreshold":4500
+    },
+            
+    "auxgainknee":
+    {        
+        "comment_rawISO": "rawISO = shortGain * 50.",
+        "rawISOKneeNum": 11,
+        "rawISOKnee": [50, 100, 200, 400, 600, 800, 1600, 2400, 3200, 4000, 6400],
+    
+        "drcGainKneeNum": 4,
+        "drcGainKnee": [1, 2, 3, 4],
+    
+        "lumaKneeNum": 4,
+        "lumaKnee": [0.1, 0.25, 0.5, 0.75],
+    
+        "radialGainKneeNum": 4,
+        "radialGainKnee": [1.0, 1.0, 2.0, 3.0]
+    },
+    
+    "noiseProfile":
+    {
+        "a0": 0.0002728392,
+        "a1": 0.0420028243,
+        "b0": 0.0000002329,
+        "b1": -0.0001300830
+    },
+    
+    "bpc":
+    {
+        "comment_bpcEnable": "bpc enable flag",
+        "bpcEnable": 0,
+        
+        "comment_bpcHotFactor": "specifies the treshold for a hot pixel value to be selected for correction. A higher value results in fewer pixels detected as bad pixels.",
+        "bpcHotFactor": 1.5,
+        
+        "comment_bpcOffsetMax": "specifies the offset threshold for a hot pixel detection. A higher value results in fewer pixels detected as bad pixels.",
+        "bpcOffsetMax": 3,
+        
+        "comment_bpcColdFactor": "specifies the treshold for a cold pixel value to be selected for correction. A lower value results in fewer pixels detected as bad pixels.",
+        "bpcColdFactor": 0.333,
+        
+        "comment_bpcOffsetMin": "specifies the offset threshold for a cold pixel detection. A higher value results in fewer pixels detected as bad pixels.",
+        "bpcOffsetMin": 2,
+        
+        "comment_highlightDetectThresh": "A smaller value means that fewer pixels will be reset as 'highlight pixel' after correction.",
+        "highlightDetectThresh": 1.2,
+        
+        "comment_highlightValueThresh": "only those pixels with value higher than the threshold can be highlight pixel.",
+        "highlightValueThresh": 64,
+        
+        "comment_bpcColdAbsThresh": "judgment threshold of cold bpc.",
+        "bpcColdAbsThresh": 10
+    },
+    
+    "ainr":
+    {
+        "comment_ainrEnable": "1 - enable AINR, 0 - disable AINR.",
+        "ainrEnable": 0,
+        
+        "comment_blockEnable": "block parallel processing. 1 - enable, 0 - disable.",
+        "blockEnable": 0,
+        
+        "ainrFunctionXmlPath":"AIDenoiseFunctionHDRSportConfigEV0.xml",
+        "ainrEffectXmlPath":"AIDenoiseEffectHDRSportConfigEV0.xml",
+        "ainrBinPath":""
+    },
+    
+        
+    "median":
+    {    
+        "noiseestimation": 
+        {
+            "comment_noiseestimation_method": "0:bypass, 1:laplace band pass filter,2 noise profile",
+            "noiseestimationmethod": 1,
+    
+            "comment_noisesigma": "noise sigma for range filter if bypass noise estimation",
+            "noisesigma": 5.0,
+    
+            "comment_pixel count threshold":"if pixel count < threshold, profile will be invalid",
+            "pixelcountthreshold":100,
+            
+            "comment_percentage threshold":"noise estimation percentage threshold according to ISO value",
+            "percentagethresholdBayer":
+            [
+                0.5, 0.65, 0.65, 0.65,
+                0.5, 0.65, 0.65, 0.65,
+                0.5, 0.65, 0.65, 0.65,
+                0.5, 0.65, 0.65, 0.65,
+                0.5, 0.65, 0.65, 0.65,
+                0.5, 0.6, 0.6, 0.6, 
+                0.5, 0.6, 0.6, 0.6,
+                0.5, 0.6, 0.6, 0.6,
+                0.5, 0.6, 0.6, 0.6,
+                0.5, 0.6, 0.6, 0.6,
+                0.5, 0.6, 0.6, 0.6
+            ],
+    
+            "comment_noise_calculation_method":"0:ave, 1:percentage",
+            "noisecalculationmethod":1,
+    
+            "noiseSigmaThresholdRatioWithPixel":[0.4, 0.4, 0.4, 0.45, 0.5, 0.55, 0.6, 0.6, 0.6, 0.6, 0.6]
+        },
+    
+        "alignment": 
+        {
+            "comment_alignmethod": "0:opticalflow_method, 1:multi-H_method, 2:blockmatch+opticalflow_method, 3:homography_method, 4:pbm_method",
+            "alignmethod": 0,
+    
+            "comment_opticalflow_method": "0: farneback, 1:l1TV, 2:nti_dis, 3:l1_dis, 4:epic_flow",
+            "opticalflowmethod": 2,
+    
+            "comment_finestScale": "1 / finestScale is the begin scale for alignment ",
+            "finestScale": 2,
+            
+            "comment_global_alignment": "0:off, 1:on",
+            "globalAlignment": 1,
+    
+            "disflow":
+            {
+                "comment_dis_finest_scale":"finest layer of pyramid in dis optical flow, suggest to be default",
+                "disfinestscale":0,
+                
+                "comment_dis_patch_size":"patch size in inverse search, suggest to be default",
+                "dispatchsize":8,
+                
+                "comment_dis_patch_stride":"patch stride in inverse search, suggest to be default",
+                "dispatchstride":4,
+                
+                "comment_dis_gradient_descent_iterations":"iterations in inverse search processing",
+                "disiteration":24,
+                
+                "comment_dis_variational_refinement_iterations":"refinement interations, suggest to be default",
+                "disrefinementiteration":0,
+                
+                "comment_dis_use_spatial_propagation":"whether use spatial propagation in inverse search, 0:off, 1:on, suggest to be default",
+                "dispropagation":1
+            },
+    
+            "mismatch":
+            {
+                "comment_mismatch": "using mismatch map to guide multi frame merge, 0:0ff, 1:on",
+                "mismatchEnable":1,
+                
+                "comment_mismatchC":"ralated to noise level,range[0.1,5]",
+                "mismatchC": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+                
+                "comment_mismatchMax":"range[0,1]",
+                "mismatchMax": [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+    
+                "comment_mismatchHR": "calculating mismatch map in the high resolution, 0:0ff, 1:on",
+                "mismatchHREnable":0,
+                
+                "comment_mismatchHR_BlockSize": "the neighborhood block size when calculating mismatch map in the high resolution, odd number only",
+                "mismatchHRBlockSize":3
+            }
+        },
+    
+        "fusion": 
+        {
+            "blocksize": 16,
+            
+            "comment_transformMethod": "0: dct, 1: wavlet_haar, 2: wavelet_db, 3: wavlet_haar_dislocation",
+            "transformMethod": 3,
+    
+            "comment_fusionMethod": "0: ave, 1: p-power, 2: wiener merge, 3: wiener merge ref dominate, 4: robust, 5: wiener p_power, 6: wiener merge dislocation",
+            "fusionMethod": 6,
+    
+            "comment_overlapsize": "int in [0, blocksize], 0: non-overlap, blocksize: overall overlap",
+            "overlapsize": 4,
+            
+            "comment_blockmvRefinement": " 0: round, 1: floor and ceil mv search, 2: corner mv search",
+            "blockmvRefinementMethod": 2,
+    
+            "comment_waveletLevels":"wavelet levels",
+            "waveletLevels":1,
+    
+            "comment_waveletWienerCMatrix": "wavelet wiener fusion parameters, ll,lh,hl,hh",
+            "waveletWienerCMatrix":
+            [
+                0.004, 0.02, 0.02, 0.04, 
+                0.008, 0.04, 0.04, 0.08, 
+                0.016, 0.08, 0.08, 0.16, 
+                0.024, 0.12, 0.12, 0.24, 
+                0.032, 0.16, 0.16, 0.32, 
+                0.048, 0.24, 0.24, 0.48, 
+                0.064, 0.32, 0.32, 0.64, 
+                0.096, 0.48, 0.48, 0.96, 
+                0.120, 0.60, 0.60, 1.20, 
+                0.120, 0.60, 0.60, 1.20,
+                0.120, 0.60, 0.60, 1.20,
+    
+                0.002, 0.002, 0.002, 0.004, 
+                0.004, 0.004, 0.004, 0.008, 
+                0.008, 0.008, 0.008, 0.016, 
+                0.016, 0.016, 0.016, 0.032, 
+                0.032, 0.032, 0.032, 0.064, 
+                0.064, 0.064, 0.064, 0.128, 
+                0.096, 0.096, 0.096, 0.192, 
+                0.120, 0.120, 0.120, 0.240, 
+                0.144, 0.144, 0.144, 0.288,
+                0.144, 0.144, 0.144, 0.288,
+                0.144, 0.144, 0.144, 0.288
+            ],
+    
+            "multiChannelEnable": 1,
+    
+            "channelMinRatio": [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0],
+    
+            "comment_highFrequencyCoefThreshold":"coef ratio between high frequency and low frequency, only for wavelet fusion",
+            "highFrequencyCoefThreshold":[0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+        },
+    
+        "singleFrameNR": 
+        {
+            "comment_postCVDiffBlend": "blend the diff image process",
+            "postCVDiffBlend":
+            {
+                "comment_postCVDiffBlendEnable": "disable: 0, enable: 1",
+                "postCVDiffBlendEnable": 0,
+    
+                "comment_postCVDiffBlendMethod": "channelBychannel: 0, binning: 1",
+                "postCVDiffBlendMethod": 1,
+    
+                "comment_postBlendDeviationRadius": "radius of calculate the deviation",
+                "postBlendDeviationRadius": 3,
+    
+                "comment_postBlendDeviationLowerFactor": "lower factor of calculate the deviation",
+                "postBlendDeviationLowerFactor": [0.11, 0.12, 0.12, 0.12, 0.12, 0.13, 0.13, 0.14, 0.14, 0.14, 0.14],
+    
+                "comment_postBlendDeviationHigherFactor": "higher factor of calculate the deviation",
+                "postBlendDeviationHigherFactor": [0.12, 0.13, 0.13, 0.13, 0.13, 0.14, 0.14, 0.15, 0.15, 0.15, 0.15],
+    
+                "comment_postBlendRangeRadius": "radius of range filter",
+                "postBlendRangeRadius": 2,
+    
+                "comment_postBlendDeviationRangeFilter": "range filter of the diff maps",
+                            "postBlendDeviationRangeFilter": [0.100, 0.120, 0.140, 0.160, 0.180, 0.200, 0.220, 0.240, 0.260, 0.260, 0.260],
+    
+                "comment_postBlendDeviationDecsFactor": "decreasing factor of the blend result",
+                "postBlendDeviationDecsFactor": [1.0, 0.9, 0.9, 0.85, 0.8, 0.6, 0.4, 0.2, 0.2, 0.2, 0.2],
+    
+                "comment_postBlendGraRatio": "uint[0~255], ratio of the texture map for blend",
+                "postBlendGraRatio": [ 10, 10, 10, 10, 10, 10, 11, 12, 12, 12, 12 ],
+    
+                "comment_postBlendNoiseThr": "uint[0~255], threshold between noise and texture",
+                "postBlendNoiseThr": [ 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90 ],
+    
+                "comment_postBlendNoiseClip": "uint[0~255], max ratio for noise shrink",
+                "postBlendNoiseClip": [ 150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 150 ],
+    
+                "comment_postBlendNoiseStren": "uint[0~255], add noise ratio of full picture",
+                "postBlendNoiseStren": [ 220, 220, 220, 220, 220, 220, 220, 220, 220, 220, 220 ],
+    
+                "comment_postBlendChannelBalanceEnable":  "1 - enable ChannelBalance, 0 - disable ChannelBalance",
+                "postBlendChannelBalanceEnable": 1,
+    
+                "comment_postBlendNoiseClipMeanRatio": "uint[0~128], ratio of noise shrink by local mean",
+                "postBlendNoiseClipMeanRatio": [ 80, 80, 80, 80, 80, 75, 75, 70, 70, 70, 70 ],
+    
+                "comment_postBlendNoiseSigma": "uint[0~63], control the max noise sigma",
+                "postBlendNoiseSigma": [ 63, 63, 63, 63, 63, 63, 63, 63, 63, 63, 63 ],
+    
+                "comment_postBlendNoiseMaxLut": "uint[0~255], look-up table of the max noise value for noise sigma",
+                "postBlendNoiseMaxLut": [ 0,   4,   8,  12,  16,  19,  23,  27, 
+                                         30,  34,  37,  41,  44,  48,  52,  55, 
+                                         58,  61,  65,  68,  72,  75,  78,  82, 
+                                         85,  88,  91,  95,  98, 101, 104, 107, 
+                                        111, 114, 117, 120, 124, 126, 130, 133, 
+                                        136, 139, 142, 146, 148, 152, 155, 157, 
+                                        160, 163, 166, 170, 172, 176, 179, 181, 
+                                        185, 188, 191, 194, 198, 200, 203, 206 ],
+    
+                "comment_postBlendDiffMergeMethod": "texture only: 0, noise only: 1, texture and noise: 2",
+                "postBlendDiffMergeMethod": 2,
+    
+                "comment_postBlendNoiseMappingEnable": "disable: 0, enable: 1",
+                "postBlendNoiseMappingEnable": 1,
+    
+                "comment_postBlendNoiseMappinglumPoint": "the max percentage of lumilosity",
+                "postBlendNoiseMappinglumPoint": [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.2, 0.2, 0.2, 0.2, 0.2],
+    
+                "comment_postBlendNoiseMappingweiPoint": "the y-intercept of weight",
+                "postBlendNoiseMappingweiPoint": [0.8, 0.8, 0.8, 0.7, 0.7, 0.7, 0.6, 0.6, 0.6, 0.6, 0.6],
+    
+                "comment_postBlendNoiseMappinglumBlackPoint": "the max percentage of blacklevel lumilosity",
+                "postBlendNoiseMappinglumBlackPoint": [0.002, 0.002, 0.002, 0.003, 0.003, 0.003, 0.003, 0.003, 0.003, 0.003, 0.003],
+    
+                "comment_postBlendNoiseMappingweiBlackPoint": "the y-intercept of blacklevel weight",
+                "postBlendNoiseMappingweiBlackPoint": [0.2, 0.2, 0.2, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
+            }
+        }
+    },
+    
+    
+    "fast":
+    {
+        "TotalLevNum": 11,
+        "faceEnable": 1,
+        "waterMarkEnable": 0,
+        
+        "comment_scaleHigFreq": "high freq denoise strength, higer value stronger noise reduction.",
+        "scaleHigFreq": 1.0,
+        
+        "comment_scaleMidFreq": "mid freq denoise strength, higer value stronger noise reduction.",
+        "scaleMidFreq": 1.0,
+        
+        "comment_scaleLowFreq": "low freq denoise strength, higer value stronger noise reduction.",
+        "scaleLowFreq": 1.0,
+        
+        "comment_bayerSharpenEnable": "1 - enable bayer sharpen. 0 - disable bayer sharpen.",
+        "bayerSharpenEnable": 0,
+        
+        "maxValidFrameBlendEnable": 0,
+        "expTimeValid": 0,
+        "sfnrThreshExpTime": 16000,
+
+        "comment_sfnrThreshISO": "bypass sfnr threshhold: higher than sfnrThreshISO, then bypass sfnr",
+        "sfnrThreshISO": 30000,
+        
+        "comment_highResolutionThresh": "high resolution threshold. use block processing to reduce memory usage when image resolution is higher than the threshold. unit: MegaPixel",
+        "highResolutionThresh": 24,
+        
+        "cpuInfo":
+        {
+            "cpuAinrCoreIdxStart": 0,
+            "cpuAinrCoreIdxEnd": 0,
+            "cpuRawnrCoreIdxStart": 4,
+            "cpuRawnrCoreIdxEnd": 7,
+            "cpuCoreNum": 8
+        },
+
+        "quadBayerConfig":
+        {
+            "comment_isQuadBayer":"0 - not quad Bayer, 1 - quad Bayer (raw data before remosaicing).",
+            "isQuadBayer":0,
+        
+            "comment_quadBayerType":"0 - has been reordered to Bayer, 1 - original 4x4 quad Bayer.",
+            "quadBayerType":1
+        },
+
+        "levConfigData": 
+        {
+            "comment_filterStrength": "denoise strength, which scales the noise profile lut.",
+            "filterStrength": [0.6, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+         
+            "comment_sharpnessThr": "if the frame whose sharpness is less than the certain amount of the reference frame will not be used for multi-frame denoise.",
+            "sharpnessThr": [0.965, 0.965, 0.965, 0.965, 0.965, 0.965, 0.965, 0.965, 0.965, 0.9, 0.9],
+            
+            "comment_maxNotUsedFrame": "specifies the maximum frames which will not be used when their frame sharpness are not satisfied.",
+            "maxNotUsedFrame": [3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2],
+            
+            "comment_minLeftFrame": "specifies the minimal frames which will be used to merge, higher prority than maxNotUsedFrame",
+            "minLeftFrame": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+            
+            "comment_multiFrameFuseWeight": "inital multiframe fuse weight [0-64], larger value, multi frame fuse more, default value = 64",
+            "multiFrameFuseWeight": [64.0, 64.0, 64.0, 64.0, 64.0, 64.0, 64.0, 64.0, 64.0, 64.0, 64.0],
+            
+            "comment_motionFuseRatio": "motion area fusion ratio to static area [0-0.5]",
+            "motionFuseRatio": [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5],
+            
+            "comment_motionFilterStrength":"motion area filter strength, higher value stronger noise reduction",
+            "motionFilterStrength": [1.4, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2],
+            
+            "comment_motionBlendRatio":"motion area blend ratio, lower value stronger noise reduction",
+            "motionBlendRatio": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+            
+            "comment_brightnessRatioThresh": "pbm enable and fusion less base on brigntness threshold",
+            "brightnessRatioThresh":[1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5],
+
+            "comment_blendRatio": "blending factor between original pixel and denoised pixel. Lower value = softer image, Higher value = more noisy image.",
+            "blendRatio": [0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7],
+            
+            "comment_faceHighBlendRatio": "high freq blending factor between original pixel and denoised pixel in face area. Lower value = softer image, Higher value = more noisy image.",
+            "faceHighBlendRatio": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+            
+            "comment_faceMiddleLowBlendRatio": "middle low freq blending factor between original pixel and denoised pixel in face area. Lower value = softer image, Higher value = more noisy image.",
+            "faceMiddleLowBlendRatio": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+            
+            "comment_grainAdderRatio": "controls the amount of grain added to the image. Lower value = less grain, Higher value = more grain.",
+            "grainAdderRatio": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+            
+            "comment_darkControl": "controls the denoise strength of the dark region. Lower value = weak noise reduction, Higher value = stronger noise reduction.",
+            "darkControl": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+            
+            "comment_higFreqSimilarityThr": "high freq similarity threshold, higer value stronger noise reduction.",
+            "higFreqSimilarityThr": [1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6],
+            
+            "comment_midFreqSimilarityThr": "mid freq similarity threshold, higer value stronger noise reduction.",
+            "midFreqSimilarityThr": [1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2],
+            
+            "comment_lowFreqSimilarityThr": "low freq similarity threshold, higer value stronger noise reduction.",
+            "lowFreqSimilarityThr": [1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2],
+            
+            "comment_higFreqAdjFactor":"high freq adjust factor, lower value stronger noise reduction.",
+            "higFreqAdjFactor": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+            
+            "comment_lowFreqAdjFactor":"low freq adjust factor, lower value stronger noise reduction.",
+            "lowFreqAdjFactor": [0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.7, 0.8, 0.8, 0.8]
+        }
+    }
+}

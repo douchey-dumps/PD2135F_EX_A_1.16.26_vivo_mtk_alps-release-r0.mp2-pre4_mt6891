@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AudioParam version="1.0">
+  <ParamTree>
+    <Param path="RCV" param_id="0"/>
+    <Param path="HAC" param_id="1"/>
+    <Param path="HS" param_id="2"/>
+    <Param path="HP" param_id="2"/>
+    <Param path="SPK" param_id="3"/>
+    <Param path="HS5POLE" param_id="4"/>
+    <Param path="HS5POLE_ANC" param_id="4"/>
+    <Param path="TTY" param_id="5"/>
+    <Param path="USB" param_id="2"/>
+    <Param path="SPK_SV" param_id="3"/>
+    <Param path="RCV_SV" param_id="0"/>
+    <Param path="HEARING_AID" param_id="6"/>
+    <Param path="LPBK_RCV" param_id="0"/>
+    <Param path="LPBK_HP" param_id="2"/>
+    <Param path="LPBK_SPK" param_id="3"/>
+    <Param path="LPBK_NODELAY_HP_MIC1" param_id="2"/>
+    <Param path="LPBK_NODELAY_HP_MIC2" param_id="2"/>
+    <Param path="LPBK_NODELAY_HP_MIC3" param_id="2"/>
+    <Param path="RCV_EMERGENCY" param_id="0"/>
+    <Param path="RCV_2MIC" param_id="0"/>
+    <Param path="RCV_2MICEV" param_id="0"/>
+    <Param path="SPK_EMERGENCY" param_id="3"/>
+    <Param path="SPK_2MIC" param_id="3"/>
+    <Param path="SPK_2MICEV" param_id="3"/>
+    <Param path="BT" param_id="2"/>
+    <Param path="MISC" param_id="2"/>
+    <Param path="HEARING_AID" param_id="0"/>
+    <Param path="NB,RCV,GSM" param_id="55"/>
+    <Param path="WB,RCV,GSM" param_id="57"/>
+    <Param path="SWB,RCV,GSM" param_id="9"/>
+    <Param path="NB,HAC,GSM" param_id="55"/>
+    <Param path="WB,HAC,GSM" param_id="57"/>
+    <Param path="SWB,HAC,GSM" param_id="12"/>
+    <Param path="NB,TTY,GSM" param_id="56"/>
+    <Param path="WB,TTY,GSM" param_id="52"/>
+    <Param path="SWB,TTY,GSM" param_id="15"/>
+    <Param path="NB,HP,GSM" param_id="48"/>
+    <Param path="WB,HP,GSM" param_id="45"/>
+    <Param path="SWB,HP,GSM" param_id="18"/>
+    <Param path="NB,HS,GSM" param_id="48"/>
+    <Param path="WB,HS,GSM" param_id="45"/>
+    <Param path="SWB,HS,GSM" param_id="21"/>
+    <Param path="NB,SPK,GSM" param_id="56"/>
+    <Param path="WB,SPK,GSM" param_id="52"/>
+    <Param path="SWB,SPK,GSM" param_id="24"/>
+    <Param path="NB,USB,GSM" param_id="25"/>
+    <Param path="WB,USB,GSM" param_id="26"/>
+    <Param path="SWB,USB,GSM" param_id="27"/>
+    <Param path="NB,RCV_SV,GSM" param_id="23"/>
+    <Param path="NB,SPK_SV,GSM" param_id="8"/>
+    <Param path="WB,SPK_SV,GSM" param_id="7"/>
+    <Param path="NB,LPBK_RCV,GSM" param_id="29"/>
+    <Param path="WB,LPBK_RCV,GSM" param_id="30"/>
+    <Param path="SWB,LPBK_RCV,GSM" param_id="31"/>
+    <Param path="NB,LPBK_HP,GSM" param_id="32"/>
+    <Param path="WB,LPBK_HP,GSM" param_id="33"/>
+    <Param path="SWB,LPBK_HP,GSM" param_id="34"/>
+    <Param path="NB,LPBK_SPK,GSM" param_id="35"/>
+    <Param path="WB,LPBK_SPK,GSM" param_id="37"/>
+    <Param path="SWB,LPBK_SPK,GSM" param_id="38"/>
+    <Param path="NB,HEARING_AID,GSM" param_id="39"/>
+    <Param path="WB,HEARING_AID,GSM" param_id="40"/>
+    <Param path="SWB,HEARING_AID,GSM" param_id="41"/>
+  </ParamTree>
+  <ParamUnitPool>
+    <ParamUnit param_id="0">
+      <Param name="dl_gain" value="22,19,16,13,10,7,4"/>
+      <Param name="ul_gain" value="23"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="1">
+      <Param name="dl_gain" value="22,19,16,13,10,7,4"/>
+      <Param name="ul_gain" value="0"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="2">
+      <Param name="dl_gain" value="27,24,21,18,15,12,9"/>
+      <Param name="ul_gain" value="27"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="3">
+      <Param name="dl_gain" value="22,19,16,13,10,7,4"/>
+      <Param name="ul_gain" value="27"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="4">
+      <Param name="dl_gain" value="27,24,21,18,15,12,9"/>
+      <Param name="ul_gain" value="24"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="5">
+      <Param name="dl_gain" value="27,24,21,18,15,12,9"/>
+      <Param name="ul_gain" value="0"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="6">
+      <Param name="dl_gain" value="48,33,25,19,13,6,0"/>
+      <Param name="ul_gain" value="0"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="9">
+      <Param name="dl_gain" value="22,19,16,13,10,7,4"/>
+      <Param name="ul_gain" value="23"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="12">
+      <Param name="dl_gain" value="22,19,16,13,10,7,4"/>
+      <Param name="ul_gain" value="0"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="15">
+      <Param name="dl_gain" value="27,24,21,18,15,12,9"/>
+      <Param name="ul_gain" value="0"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="18">
+      <Param name="dl_gain" value="27,24,21,18,15,12,9"/>
+      <Param name="ul_gain" value="27"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="21">
+      <Param name="dl_gain" value="27,24,21,18,15,12,9"/>
+      <Param name="ul_gain" value="27"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="24">
+      <Param name="dl_gain" value="22,19,16,13,10,7,4"/>
+      <Param name="ul_gain" value="27"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="25">
+      <Param name="dl_gain" value="25,20,15,10,5,0,0"/>
+      <Param name="ul_gain" value="27"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="26">
+      <Param name="dl_gain" value="26,21,16,11,6,1,1"/>
+      <Param name="ul_gain" value="27"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="27">
+      <Param name="dl_gain" value="27,24,21,18,15,12,9"/>
+      <Param name="ul_gain" value="27"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="23">
+      <Param name="dl_gain" value="0,0,0,0,0,0,0"/>
+      <Param name="ul_gain" value="23"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="7">
+      <Param name="dl_gain" value="0,0,0,0,0,0,0"/>
+      <Param name="ul_gain" value="16"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="8">
+      <Param name="dl_gain" value="7,0,0,0,0,0,0"/>
+      <Param name="ul_gain" value="20"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="29">
+      <Param name="dl_gain" value="22,19,16,13,10,7,4"/>
+      <Param name="ul_gain" value="23"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="30">
+      <Param name="dl_gain" value="22,19,16,13,10,7,4"/>
+      <Param name="ul_gain" value="23"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="31">
+      <Param name="dl_gain" value="22,19,16,13,10,7,4"/>
+      <Param name="ul_gain" value="23"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="32">
+      <Param name="dl_gain" value="27,24,21,18,15,12,9"/>
+      <Param name="ul_gain" value="27"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="33">
+      <Param name="dl_gain" value="27,24,21,18,15,12,9"/>
+      <Param name="ul_gain" value="27"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="34">
+      <Param name="dl_gain" value="27,24,21,18,15,12,9"/>
+      <Param name="ul_gain" value="27"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="35">
+      <Param name="dl_gain" value="22,19,16,13,10,7,4"/>
+      <Param name="ul_gain" value="27"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="37">
+      <Param name="dl_gain" value="22,19,16,13,10,7,4"/>
+      <Param name="ul_gain" value="27"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="38">
+      <Param name="dl_gain" value="22,19,16,13,10,7,4"/>
+      <Param name="ul_gain" value="27"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="39">
+      <Param name="dl_gain" value="22,19,16,13,10,7,4"/>
+      <Param name="ul_gain" value="23"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="40">
+      <Param name="dl_gain" value="22,19,16,13,10,7,4"/>
+      <Param name="ul_gain" value="23"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="41">
+      <Param name="dl_gain" value="22,19,16,13,10,7,4"/>
+      <Param name="ul_gain" value="23"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="55">
+      <Param name="dl_gain" value="22,17,12,7,4,1,1"/>
+      <Param name="ul_gain" value="18"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="57">
+      <Param name="dl_gain" value="22,17,12,7,4,1,1"/>
+      <Param name="ul_gain" value="18"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="45">
+      <Param name="dl_gain" value="33,27,21,15,9,3,3"/>
+      <Param name="ul_gain" value="26"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="48">
+      <Param name="dl_gain" value="31,25,19,13,7,1,1"/>
+      <Param name="ul_gain" value="26"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="52">
+      <Param name="dl_gain" value="26,21,16,11,7,0,0"/>
+      <Param name="ul_gain" value="15"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="56">
+      <Param name="dl_gain" value="31,26,20,14,9,0,0"/>
+      <Param name="ul_gain" value="20"/>
+      <Param name="stf_gain" value="0"/>
+    </ParamUnit>
+  </ParamUnitPool>
+</AudioParam>

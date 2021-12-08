@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AIDeglareFunctionConfig version="0.0.2">
+<Framework>neuron</Framework>
+<Device>3</Device>
+<ModelName>model.bin</ModelName>
+<NNModelInfo>
+  <RunWidth>512</RunWidth>
+  <RunHegiht>512</RunHegiht>
+  <RunDepth>3</RunDepth>
+  <InputChannel>3</InputChannel>
+  <OutputChannel>3</OutputChannel>
+  <RunPattern>3</RunPattern>
+  <ResidualOutput>1</ResidualOutput>
+  <OutputMin>-0.40438780188560486</OutputMin>
+  <OutputMax>0.297101229429245</OutputMax>
+</NNModelInfo>
+</AIDeglareFunctionConfig>
